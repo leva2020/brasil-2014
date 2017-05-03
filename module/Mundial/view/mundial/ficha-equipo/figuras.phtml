@@ -1,0 +1,52 @@
+<script>
+    function mostrarFigura(figura,boton){
+        jQuery('div[id*=tabsJugador-]').removeClass('active');
+        jQuery('a[id*=btn-figura-]').removeClass('active');
+        jQuery('#'+figura).addClass('active');
+        jQuery('#'+boton).addClass('active');
+    }
+    
+    function mostrarFiguraDesc(figura,boton){
+        jQuery('#'+figura).removeClass('active');
+        jQuery('#'+boton).css('display','none');
+    }
+</script>
+<div class="bloqueFigura">
+    <div id="fondomenu">
+        <ul>
+            <?php $claseAct = '';?>
+            <?php $i=3;?>
+            <?php foreach($figuras as $figura):?>
+                <?php if($i==1):?>
+                    <?php $claseAct = 'active';?>
+                <?php endif;?>
+                <li><a onclick="mostrarFigura('tabsJugador-<?php print $i?>','btn-figura-<?php print $i?>')" class="<?php print $claseAct;?>" id="btn-figura-<?php print $i?>"><?php print $i?></a></li>
+                <?php $i--;?>
+            <?php endforeach;?>
+        </ul> 
+        <?php 
+        $i=1;
+        foreach($figuras as $figura):
+            $claseAct = '';
+            if($i == 1):
+                $claseAct = 'active';
+            endif;
+            ?>
+            <div id="tabsJugador-<?php print $i;?>" class="botonesNomina <?php print $claseAct; ?>">
+                <div>
+                    <img alt="<?php print $figura['nombre'];?>" title="<?php print $figura['nombre'];?>" src="<?php print $figura['imagen'];?>" />
+                    <h1>Figura <?php print $i?></h1>
+                    <h2><?php print $figura['nombre'];?></h2>
+                    <p id="desc-figura-<?php print $i;?>" class="active"><?php print $figura['descripcion'];?></p>
+                    <?php if (strlen($figura['descripcion']) > 200) :?>
+                        <a id="btn-ver-figura-<?php print $i;?>" onclick="mostrarFiguraDesc('desc-figura-<?php print $i;?>','btn-ver-figura-<?php print $i;?>');" class="btnFigura">Ver más</a>
+                    <?php endif;?>
+                </div>
+            </div>
+            <?php
+            $i++;
+            endforeach;
+        ?>
+    </div>                      
+    <?php print $this->redesSociales($compartir, 'redes-sociales-multimedia');?>
+</div>

@@ -1,0 +1,33 @@
+<section class="noticias-principales"> 
+    <article>
+        <div>
+            <h2><?php print $noticia['articulo']['titulo']; ?></h2>
+            <?php if($noticia['articulo']['formatoRel'] == 'IMAGEN'):?>
+                <figure> <a href="#"><img src="<?php print $noticia['articulo']['imagen_baja_art']; ?>"/></a>
+                    <figcaption id="mostrar-detalle-art" onclick="infoArticulo();">Foto: <?php print $noticia['articulo']['credito_imagen_art']; ?><br/>
+                    </figcaption>
+                </figure>
+            <?php elseif($noticia['articulo']['formatoRel'] == 'VIDEO'):?>
+                <?php //print $noticia['articulo']['video']; ?>
+                <?php print $this->renderVideo($noticia['articulo']['id_video'], $noticia['articulo']['imagen_baja_video'], $noticia['articulo']['titulo']);
+                //$idRecurso, $imgVideo, $titulo, $width='373px', $height='186px', $claseDiv = 'contenedor_player', $vista = 'render-video', $claseFigure = ''
+                ?>
+            <?php endif; ?>
+            <section id="info-detalle-art" class="detalle-art" style="display: none;">
+                <p><a href="#"><?php print $noticia['articulo']['sumario']; ?></a> </p>
+                <?php if($noticia['articulo']['credito']):?>
+                    <span>Por: <?php print $noticia['articulo']['credito']; ?></span>
+                <?php endif; ?>
+                <?php print $this->formatoFecha($noticia['articulo']['fecha']);?>
+                <?php print $this->redesSociales($noticia['articulo']); ?>
+            </section>
+            
+        </div>
+    </article>
+</section>
+<section class="contenido_articulo">
+    <article>
+        <?php print $noticia['articulo']['contenido']; ?>
+    </article>
+    <?php print $this->redesSociales($noticia['articulo']); ?>
+ </section>

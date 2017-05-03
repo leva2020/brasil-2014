@@ -1,0 +1,80 @@
+<div class="secciones">
+    <div class="overlay"></div>
+
+
+    <div id="contenedor-hshsm14">
+        <section id="row1-hsm14">
+            <!-- :::::::::::::::::::::::::::::::::: Bloq Publicidad-->
+            <?php print $this->pauta('9703', '432756', 'publ2-hsm14'); ?>
+            
+            <article>
+                <section class="slider1-hsm14">
+                    <h3>#COLOMBIA SEMIFINAL</h3>
+                    <?php print $this->carouselPpal($notas);?>
+                </section>
+                
+                <article class="todasnoticia-hsm14">
+                    <div class="titulo-top">
+                        <h3>Todas la noticias</h3>
+                    </div>
+
+                    <section class="presentacion">
+                        <ul class='tabs'>
+                            <li><a id="tab1" onclick="notasFiltro(1);">#VENEZUELA</a></li>
+                            <li><a id="tab2" onclick="notasFiltro(1);">#SOMOS COLOMBIA</a></li>
+                            <li><a id="tab3" onclick="notasFiltro(1);">#GOOOL</a></li>
+                        </ul>
+                        <div id='tab1Content'></div>
+                        <script>
+                            jQuery('#tab1Content').load('/brazil-2014-dev/redes-sociales/notas1');
+                            function notasFiltro(orden){
+                                jQuery('#tab1Content').load('/brazil-2014-dev/redes-sociales/notas'+orden);
+                            }
+                        </script>
+                    </section>
+
+                </article>
+
+                <!-- [  Instagram / Twitter ] .................................................................................................-->
+                <section>
+                    <div class="instagram-hsm14">
+                        <img class="logo-hsm14" src="../img/imgSocial/istagram.png" alt="">
+                        <div>
+                            <h2>EL MUNDIAL EN INSTAGRAM</h2>
+                        </div>
+                        <figure>
+                            <img alt="" title="" src="../img/imgSocial/f1_instagram.jpg" alt="">
+                            <figcaption>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="twitter-M14">
+                        <div class="titulo">TWITTER @brasil2014</div>
+                        <div class="barraMas">#Brasil2014</div>
+                        <div class="contenido">
+
+                        </div>
+                        <div class="barraMenos">#Brasil2014</div>
+                    </div>
+                    <!--[ bloq Memes ] ................................................................. -->
+                    <div class="memes-hsm14">
+                        <h2>MEMES</h2>
+                        <a class="facebtn" href="#">Me gusta</a>
+                        <a class="compartirbtn" href="#">Compartir</a>
+                        <figure>
+                            <img alt="" title="" src="../img/imgSocial/meme1.jpg" alt="">
+                            <img alt="" title="" src="../img/imgSocial/meme2.jpg" alt="">
+                            <img alt="" title="" src="../img/imgSocial/meme3.jpg" alt="">
+                            <img alt="" title="" src="../img/imgSocial/meme2.jpg" alt="">
+                            <img alt="" title="" src="../img/imgSocial/meme2.jpg" alt="">
+                        </figure>
+                        <a class="btn4" href="#">VER TODOS LOS MEMES</a>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </div>
+
+</div>

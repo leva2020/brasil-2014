@@ -1,0 +1,20 @@
+<div class="iconos-compartir">
+    <div class="iconos flecha-redes art"></div>
+    <div class="iconos-redes art">
+            <ul class="lista-redes">
+                    <li class="iconos btn-facebook">
+                        <?php /*<a href="javascript: void(0);" onclick="window.open('http://m.facebook.com/sharer.php?u=<?php print $url;?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');estadisticasRedes('facebbok+',<?php print $idRecurso;?>);"></a>*/?>
+                        <a target="_blank" href="http://m.facebook.com/sharer.php?u=<?php print $url;?>">&nbsp; &nbsp;</a> 
+                    </li>
+                    <li class="iconos btn-twitter">
+                        <a href="http://twitter.com/home?status=<?php print $url; ?>+via+@ELTIEMPO" data-text="<?php print $titulo; ?>" target="_blank">&nbsp; &nbsp;</a>
+                        <?php /*<a href="javascript:void(0);" data-counturl="<?php echo $url;?>" data-text="<?php echo $titulo; ?>" onclick="var titulo='<?php echo $titulo; ?>'; titulo=encodeURIComponent(titulo); var url='http://mobile.twitter.com/share?url=<?php echo $url;?>&via=ELTIEMPO&text='+titulo; window.open(url,'ventanacompartir', 'toolbar=0, status=0, width=650, height=450');estadisticasRedes('twitter+',<?php echo $idRecurso;?>);"></a>*/?>
+                    </li>
+                    <li class="iconos btn-google">
+                        <a href="http://www.google.com/buzz/post?url=<?php print $url; ?>&amp;type=small-count" target="_blank">&nbsp; &nbsp;</a>
+                        <?php /*<a href="javascript:void(0);" onclick="window.open('https://plus.google.com/share?url=<?php echo $url;?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');estadisticasRedes('google+',<?php echo $idRecurso;?>);"></a>*/?>
+                    </li>
+                    <!--<li class="iconos btn-correo"><a href="#"></a></li>-->
+            </ul>
+    </div>
+</div> 

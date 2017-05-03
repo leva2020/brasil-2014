@@ -1,0 +1,82 @@
+<?php if($parametroActivo == 1):?>
+    <?php if($articulo):?>
+        <article class="artEmergencia"><p class="actualizadoNivel"><span class="iconos ico-hora" title="<?php print $fecha;?>" ></span></p>
+            <h1><a href="<?php print $articulo['url'];?>"><?php print $articulo['titulo']; ?></a></h1>
+            <div class="lead">
+                <h2><a href="<?php print $articulo['url'];?>"><?php print $articulo['lead'];?></a></h2>
+            </div>
+             <div class="slider assetMedia">
+                <div id="carusel-home-emergencia" class="flexslider">
+                    <ul class="slides">
+                        <?php foreach($imagen['datos_galeria'] as $img):?>
+                        <li>
+                            <img src="<?php print $img['imagen_alta']; ?>"  alt="<?php print $img['titulo']; ?>" /> 
+                        </li>
+                        <?php endforeach;?>
+                    </ul>
+                </div>
+
+            </div>
+            <!--Fin Elemento Multimedia -->
+            <?php /*if($relacionados):?>
+                <ul class="recursosRelac">
+                    <?php
+                    $i=0;$claseIco = '';
+                    foreach($relacionados as $rel):
+                        if($i<3):
+                            if($rel['formato'] == 'IMAGEN'):
+                                $claseIco = 'ico_img';
+                            elseif($rel['formato'] == 'ARTICULO'):
+                                $claseIco = 'ico_articulo';
+                            endif;
+                            ?><li><span class="<?php print $claseIco; ?>">arti</span><h2><a href="#"><?php print $rel['titulo']; ?></a></h2></li><?php
+                        endif;
+                        $i++;
+                    endforeach;
+                    ?>
+                </ul>
+            <?php endif;*/?>
+        <!-- relacionados -->
+            <?php if($secundarios):?>
+                <section class="artRelac">
+                    <?php
+                        $i=0;
+                        foreach($secundarios as $sec):
+                            if($i<3):
+                            ?>
+                            <article>
+                                <?php if($sec['imagen_baja']):?>
+                                <figure>
+                                        <img src="<?php print $sec['imagen_baja']; ?>" alt="">
+                                </figure>
+                                <?php endif;?>
+                                <h2><a href="<?php print $sec['url']; ?>"><?php print $sec['titulo']; ?></a></h2>
+                            </article>
+                            <?php
+                            endif;
+                            $i++;
+                        endforeach;
+                        
+                    ?>
+                </section>
+            <?php endif;?>
+        </article>
+    <?php endif;?>
+    <script>
+        jQuery(document).ready(function(){
+            $('#carusel-home-emergencia').flexslider({
+                animation: "slide",
+                controlNav: false,
+                touch : true,
+                animationSpeed: 400,
+                animationLoop: false,
+                maxItems: 1,
+                touch: true,
+            });
+        });
+        
+        jQuery(document).ready(function(){
+            ET.Comun.fechaActualizacion();
+        });
+    </script>
+<?php endif;?> 

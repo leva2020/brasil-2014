@@ -1,0 +1,27 @@
+<?php if($formato == 'IMAGEN'):?>
+     <figure class="img-M14"> 
+        <img src="<?php print $recurso;?>" alt="">
+        <figcaption class="tImg-M14">
+            <?php print $lead; ?>
+        </figcaption>
+    </figure>
+<?php elseif($formato == 'VIDEO'):?>
+    <?php print $this->renderVideo('render-video-articulo', $recurso);?>
+    <figcaption class="tImg-M14-pp">
+        <?php print $lead; ?>
+    </figcaption>
+<?php elseif($formato == 'AUDIO'):?>
+    <audio controls>
+        <source src="<?php print $recurso; ?>" type="audio/mpeg" />
+    </audio>
+    <figcaption class="tImg-M14-pp">
+        <?php print $lead; ?>
+    </figcaption>
+<?php elseif($formato == 'HTML'):?>
+    <div class="embed">
+        <?php print $recurso;?>
+        <figcaption class="tImg-M14-pp">
+            <?php print $lead; ?>
+        </figcaption>
+    </div>
+<?php endif;?>

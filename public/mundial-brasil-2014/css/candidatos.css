@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.grilla_candidatos {
+	width: 100%;
+	height: 200px;
+}
+ul.lista_candidatos {
+	padding: 20px;
+}
+li.candidato_thumb {
+	float: left;
+	list-style: none;
+	margin-top: -4px;
+}
+.nombre {
+	color: #fff;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	margin: 36px auto;
+	color: #fff;
+	width: 90px;
+	height: 54px;
+}
+.nombre p {
+	padding: 28px 0 1px 8px;
+font-family: 'robotoregular';
+text-align: center;
+font-size: 14px;
+}
+.nombre_largo {
+	color: #fff;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(99%, rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	margin: 32px auto;
+	color: #fff;
+	width: 90px;
+	height: 58px;
+}
+.nombre_largo p {
+	padding: 25px 0 1px 3px;
+	font-family: 'robotoregular';
+	text-align: center;
+	font-size: 14px;
+}

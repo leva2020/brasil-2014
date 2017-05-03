@@ -1,0 +1,15 @@
+<article>
+    <?php if($nota['multimedia']):?>
+        <?php if($pos == 0 && $nota['multimedia']['formato'] == 'VIDEO'):?>
+            <?php print $this->renderVideo('render-video-articulo', $nota['multimedia']);?>
+        <?php elseif($nota['multimedia']['formato'] == 'IMAGEN' || $nota['multimedia']['formato'] == 'GALERIAFOTOS'):?>
+            <figure>
+                <a href="#"><img alt="<?php print $nota['multimedia']['titulo'];?>" title="<?php print $nota['multimedia']['titulo'];?>" src="<?php print $nota['multimedia']['imagen_baja'];?>" /></a>
+            </figure>
+        <?php endif;?>
+    <?php endif;?>
+    <figcaption>
+        <h2><?php print $nota['articulo']['titulo'];?></h2>
+        <p><?php print $nota['articulo']['sumario'];?></p>
+    </figcaption>
+</article>

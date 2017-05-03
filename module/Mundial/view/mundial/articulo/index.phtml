@@ -1,0 +1,41 @@
+<div id="overlay" class="overlay"></div>
+<div id="contenedor-M14">
+    <section id="row1-M14">
+        <!-- :::::::::::::::::::::::::::::::::: Bloq Publicidad-->
+        <?php print $this->pauta('9703', '432756', 'publ2-M14'); ?>
+        <article>
+            <article>
+                <?php print $this->formatoFecha($articulo['fecha']); ?>
+                <h1 class="ti1-M14"><?php print $articulo['titulo']; ?></h1>
+                <?php print $this->recursoRelPpal($articulo['sumario'], $multimedia); ?>
+                <div class="parrafos-M14">
+                    <?php print $articulo['contenido']; ?>
+                </div>
+            </article>
+            <section class="bloqrsocial-M14">
+                <!--<a class="btnR1" href="#">VER MÁS NOTICIAS SOBRE MUNDIAL 2014</a>-->
+                <?php print $this->redesSociales($articulo, 'articulo'); ?>
+            </section>
+            
+            <!-- :::::::::::::::::::::::::::::::::: Bloq Mas Noticias-->
+            <?php if ($relacionados): ?>
+                <section class="masnoticia-M14">
+                    <h3>Más noticias sobre LOS EQUIPOS DEL MUNDO</h3>
+                    <?php foreach ($relacionados as $rel): ?>
+                        <article class="row1">
+                            <?php if ($rel['imagen_baja']): ?>
+                                <a href="<?php print $rel['url']; ?>"><img src="<?php print $rel['imagen_baja']; ?>" alt="<?php print $rel['titulo_imagen']; ?>" title="<?php print $rel['titulo_imagen']; ?>"></a>
+                            <?php endif; ?>
+                            <p class="pnoticia">
+                                <?php print $this->formatoFecha($rel['fecha'], 'relacionados'); ?>
+                                <span class="dir-M14">MUNDIAL 2014</span>
+                            <h2><a href="<?php print $rel['url']; ?>"><?php print $rel['titulo']; ?></a></h2>
+                            </p>
+                        </article>
+                    <?php endforeach; ?>
+                    <?php print $this->pauta('9702', '432756', 'publ2-M14'); ?>
+                </section>
+            <?php endif; ?>
+        </article>
+    </section>
+</div>

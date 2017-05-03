@@ -1,0 +1,14 @@
+<section class="masnoticia-M14 curiosidades">
+    <div class="titulo-top">
+        <h3>Otros temas del mundial</h3>
+    </div>
+    <?php
+    for ($i = 0; $i < count($notas); $i++):
+        ?>
+        <article class="row2">
+            <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo'];?></a></h2>
+        </article>
+        <?php
+    endfor;
+    ?>
+</section>

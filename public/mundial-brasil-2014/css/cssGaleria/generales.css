@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../../fonts/nexa_free_bold-webfont.eot');
+    src: url('../../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/nexa_free_bold-webfont.woff') format('woff'),
+         url('../../fonts/nexa_free_bold-webfont.ttf') format('truetype'),
+         url('../../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../../fonts/nexa_free_light-webfont.eot');
+    src: url('../../fonts/nexa_free_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/nexa_free_light-webfont.woff') format('woff'),
+         url('../../fonts/nexa_free_light-webfont.ttf') format('truetype'),
+         url('../../fonts/nexa_free_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'octin_sports_rgregular';
+    src: url('../../fonts/octin_sports_rg-webfont.eot');
+    src: url('../../fonts/octin_sports_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/octin_sports_rg-webfont.woff') format('woff'),
+         url('../../fonts/octin_sports_rg-webfont.ttf') format('truetype'),
+         url('../../fonts/octin_sports_rg-webfont.svg#octin_sports_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationregular';
+    src: url('../../fonts/sansation-regular-webfont.eot');
+    src: url('../../fonts/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/sansation-regular-webfont.woff') format('woff'),
+         url('../../fonts/sansation-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* GENERALES */
+.container{
+	overflow: hidden;
+	width: 100%;
+}
+.container .content{
+	background: #fff;
+	box-shadow: -3px 0px 3px rgba(0,0,0,0.3);
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	left: 0;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+
+	/*transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+
+.container .content.active{
+	left: 85%;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/*transform: translate(85%, 0);
+	-webkit-transform: translate(85%, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+/* HEADER */
+
+header{
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+header.fijo{
+position: fixed;
+left: 0px;
+}
+
+.top-bar{
+	background: #2983c5;
+	height: 33px;
+	width: 100%
+}
+.top-bar ul{
+	float: right;
+}
+.top-bar ul li{
+	float: left;
+	margin: 0 0 0 5px;
+}
+.top-bar ul li.fijo{
+	position: relative;
+}
+
+.top-bar ul li p{
+	color: #FFF;
+	font-size: 12px;
+	font-family: 'nexa_lightregular';
+	margin: 12px 0 0;
+}
+.top-bar ul li .logo-ET a{
+	background: url(../../img/imgGaleria/logoET.png) no-repeat left top;
+	display: block;
+	height: 15px;
+	margin: 7px 0 0;
+	text-indent: -9999px;
+	width: 83px;
+}
+.top-bar ul li .logo-FR a{
+	background: url(../../img/imgGaleria/logoFR.png) no-repeat left top;
+	display: block;
+	height: 22px;
+	margin: 5px 0 0;
+	text-indent: -9999px;
+	width: 65px;
+}
+.top-bar .btn_compartir{
+	background: #2176b4 url(../../img/imgGaleria/sprite.png) no-repeat 8px 8px;
+	display: block;
+	height: 33px;
+	text-indent: -9999px;
+	width: 33px;
+	z-index: 10;
+	background-color:#FFA01A;
+}
+.top-bar .compartir.activo .btn_compartir{
+	position: relative;
+}
+.top-bar .compartir ul{
+		background-color:#FFA01A;
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 83px;
+}
+.top-bar .compartir.activo ul{
+	display: block;
+}
+.top-bar .compartir ul li{
+	float: right;
+	margin: 0;
+	padding: 10px;
+}
+.top-bar .compartir ul li a{
+	color: #FFF;
+	font-family: 'nexa_lightregular';
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.overlay{
+	background: rgba(0,0,0,0.5);
+	content: "";
+	height: auto;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 1000;
+
+	transition: opacity 350ms ease;
+	-webkit-transition: opacity 350ms ease;
+	-moz-transition: opacity 350ms ease;
+}
+.overlay.activa{
+	opacity: 1;
+	bottom: 0;
+}
+
+
+
+
+
+/* MENU */
+
+.menu{
+	background: #96bb54;
+	border-top: 2px solid #FFF;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	height: 46px;
+	width: 100%
+}
+.menu ul li{
+	float: left;
+}
+.menu .btn-menu{
+	background: #7fa53a;
+	height: 46px;
+	width: 46px;
+}
+.menu .btn-menu a{
+	background: url(../../img/imgGaleria/sprite.png) no-repeat 9px -22px;
+	display: block;
+	height: 46px;
+	text-indent: -9999px;
+	width: 46px;
+}
+.menu .btn-menu a:hover{
+	opacity: 0.5;
+}
+.menu h2 a{
+	background: url(../../img/imgGaleria/logoEspecial.png) no-repeat;
+	display: block;
+	height: 57px;
+	margin-top: -5px;
+	text-indent: -9999px;
+	width: 250px;
+}
+.menu .logoEspecial{
+	float: right;
+}
+
+
+.container-menu{
+	background: #7fa53a;
+	width: 100%;
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	overflow-y:hidden;
+	overflow:hidden; 
+}
+.container-menu li{
+	border-top: 1px solid #96bb54;
+	border-bottom: 1px solid #638625;
+	padding: 10px;
+}
+.container-menu li a{
+	color: #FFF;
+	font-family: 'octin_sports_rgregular';
+	font-size: 14px;
+	text-decoration: none;
+}
+.container-menu li a.logo_nav{
+	background: url(../../img/imgGaleria/logoNav.png) no-repeat;
+	display: block;
+	height: 50px;
+	text-indent: -9999px;
+}
+
+
+
+
+/* PUBLICIDAD */
+
+.publ2-M14{
+background: #f1f1f1;
+margin: 0 auto;
+position: relative;
+margin-top: 30px;
+margin-bottom: 30px;
+width: 84%;
+padding: 0px;
+}
+.publ2-M14 p{
+	color: #999;
+	font-size: 9px;
+	font-family: 'Arial';
+	height: 11px;
+	padding: 4px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.publ2-M14 div{
+display: block;
+height: 50px;
+margin: 0 auto;
+width: 100%;
+padding: 0px;
+}
+
+
+/* FOOTER */
+
+footer{
+	border-top: 3px solid #009aff;
+	background-image:url(../../img/imgGaleria/footerbg.png);
+	background-repeat:repeat;
+	width: 100%;
+	margin-top: 30px;
+}
+footer .terminos{
+	overflow: hidden;
+	padding: 20px;
+}
+footer .terminos .logo_footer{
+	float: left;
+}
+footer .terminos .logo_footer a{
+	background: url(../../img/imgGaleria/logoET-footer.png) no-repeat left top;
+	border: none;
+	display: block;
+	height: 15px;
+	text-indent: -9999px;
+	width: 82px;
+}
+footer .terminos a{
+	color: #FFF;
+	font-size: 14px;
+	float: right;
+	text-decoration: none;
+}
+footer .copy{
+	border-top: 3px solid #ffeb00;
+	padding: 10px 0;
+}
+footer .copy p{
+	color: #FFF;
+	font-size: 11px;
+	text-align: center;
+}

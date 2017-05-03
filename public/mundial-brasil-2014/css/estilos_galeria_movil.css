@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* estilos galeria */
+
+ul li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a{ text-decoration:none;}
+
+.wrapNotiRel_New{
+	width:300px;
+	font-family:"Open Sans", verdana;	
+	padding:10px 0;
+}
+
+.wrapNotiRel_New ul.newsRel_list{
+	text-align:center;
+	margin:0 auto 10px;	
+}
+.wrapNotiRel_New ul.newsRel_list li{
+	font-size:13px;
+	text-align:left;
+	line-height:14px;
+	display:inline-table;
+	*display:inline;
+	zoom:1;
+}
+.wrapNotiRel_New ul.newsRel_list li .section_newsRel{
+	color:#6b6b6b;
+	margin:2px 7px;
+	padding: 4px;}
+.wrapNotiRel_New ul.newsRel_list li a.text_newsRel{
+	color:#111;
+	cursor:pointer;
+	padding:1px 8px 12px;
+	float:left;
+}
+.wrapNotiRel_New ul.newsRel_list li a.text_newsRel:hover{color:#5a5a5a; }
+
+/* BOTONES */
+
+.wrapNotiRel_New a.bx-prev{background: #000 url('../images/sprites_ele14.png') no-repeat 5px -144px;
+width: 48px;
+height: 45px;
+display: inline-block;
+position: relative;
+bottom: 128px;
+z-index: 9999;
+text-indent:-999999px;
+
+}
+.wrapNotiRel_New a.bx-next{background: #000 url('../images/sprites_ele14.png') no-repeat 6px -187px;
+width: 47px;
+height: 45px;
+display: inline-block;
+position: relative;
+float: right;
+bottom: 128px;
+z-index: 9999;
+text-indent:-999999px;
+}
+.wrapNotiRel_New a.bx-prev:hover{ background: #A8A8A8 url('../images/sprites_ele14.png') no-repeat -52px -187px;
+opacity: 0.5;
+z-index: 9999;}
+.wrapNotiRel_New a.bx-next:hover{ background: #fff url('../images/sprites_ele14.png') no-repeat -55px -144px;
+opacity: 0.5;
+z-index: 9999;}
+
+.wrapNotiRel_New .wrapSlider_NR .bx-wrapper {
+	position: relative;
+	padding: 0;
+	*zoom: 1;
+}
+.wrapNotiRel_New .wrapSlider_NR .bx-controls .bx-pager{
+	display:block;
+	margin-left:37px;
+}
+
+/**/
+
+.wrapNotiRel_New .blockMini_NR_left, .wrapNotiRel_New .blockMini_NR_right{
+	background:url(../images/sprites_ele14.png) no-repeat;
+	width:9px;
+	height:9px;
+	display:block;
+}
+.wrapNotiRel_New .blockMini_NR_left{ background-position:-33px 0; float:left;}
+.wrapNotiRel_New .blockMini_NR_right{ background-position:-42px 0; float:right;}
+.wrapNotiRel_New .shadow_NR{ background:url(../images/shadow.png) 0 0 no-repeat; width:610px; height:31px; margin:0 auto;}
+
+a.bx-pager-link {
+	display:none;
+}
+
+a.bx-pager-link.active { background: none repeat scroll 0 0 #1ba4b0;}

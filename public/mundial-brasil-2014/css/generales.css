@@ -1,0 +1,427 @@
+/*Fonts*/
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-reg-webfont.eot');
+    src: url('../fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-reg-webfont.woff') format('woff'),
+         url('../fonts/lato-reg-webfont.ttf') format('truetype'),
+         url('../fonts/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url('../fonts/librebaskerville-bold-webfont.eot');
+    src: url('../fonts/librebaskerville-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/librebaskerville-bold-webfont.woff') format('woff'),
+         url('../fonts/librebaskerville-bold-webfont.ttf') format('truetype'),
+         url('../fonts/librebaskerville-bold-webfont.svg#libre_baskervillebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../fonts/librebaskerville-regular-webfont.eot');
+    src: url('../fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('../fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('../fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'icons_mundial';
+    src: url('http://e.eltiempo.com/media/produccion/mundial_movil/css/fuentes/entypo.eot');
+    src: url('http://e.eltiempo.com/media/produccion/mundial_movil/css/fuentes/entypo.eot?#iefix') format('embedded-opentype'),
+         url('http://e.eltiempo.com/media/produccion/mundial_movil/css/fuentes/entypo.woff') format('woff'),
+         url('http://e.eltiempo.com/media/produccion/mundial_movil/css/fuentes/entypo.ttf') format('truetype'),
+         url('http://e.eltiempo.com/media/produccion/mundial_movil/css/fuentes/entypo.svg#entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*End fonts*/
+/* GENERALES */
+body{
+	background:url('../images/bg_ele14.jpg');
+}
+
+.container{
+	overflow: hidden;
+	width: 100%;
+}
+.container .content{
+	background:url('../images/bg_ele14.jpg');
+	box-shadow: -3px 0px 3px rgba(0,0,0,0.3);
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	left: 0;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+
+	/*transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+
+.ico{
+	font-family: 'icons_mundial';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container .content.active{
+	left: 85%;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/*transform: translate(85%, 0);
+	-webkit-transform: translate(85%, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+/* HEADER */
+
+header{
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+header.fijo{
+	position: fixed;
+}
+.top-bar{
+	background: #000;
+	height: 33px;
+	width: 100%
+}
+.top-bar ul{
+	float: left;
+}
+.top-bar ul li{
+	float: left;
+	margin: 0 0 0 5px;
+}
+.top-bar ul li p{
+	color: #3a3a3a;
+	font-size: 14px;
+	font-family: 'latoregular';
+	margin: 12px 0 0;
+	display: none;
+}
+.top-bar ul li .logo-ET a{
+	background: url('../images/logoET.png') no-repeat left top;
+	display: block;
+	height: 17px;
+	margin: 9px 0 0 5px;
+	text-indent: -9999px;
+	width: 83px;
+}
+.top-bar ul li .logo-FR a{
+	background: url('../images/logoFR.png') no-repeat left top;
+	display: block;
+	height: 22px;
+	margin: 5px 0 0;
+	text-indent: -9999px;
+	width: 65px;
+}
+.top-bar .btn_compartir{
+	background: #2176b4;
+	color: #FFF;
+	display: block;
+	font-size: 36px;
+	height: 33px;
+	text-decoration: none;
+	width: 33px;
+}
+.top-bar .btn_compartir:after{
+	content: "\E73C";
+	right: 7px;
+	position: absolute;
+	top: -2px;
+}
+
+.top-bar .compartir.activo .btn_compartir{
+	z-index: 20;
+}
+.top-bar .compartir ul{
+	background: #2176b4;
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 83px;
+}
+.top-bar .compartir.activo ul{
+	display: block;
+}
+.top-bar .compartir ul li{
+	float: right;
+	margin: 0;
+	padding: 10px;
+}
+.top-bar .compartir ul li a{
+	color: #FFF;
+	font-family: 'nexa_lightregular';
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.overlay{
+	background: rgba(0,0,0,0.5);
+	content: "";
+	height: auto;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 1000;
+
+	transition: opacity 350ms ease;
+	-webkit-transition: opacity 350ms ease;
+	-moz-transition: opacity 350ms ease;
+}
+.overlay.activa{
+	opacity: 1;
+	bottom: 0;
+}
+/* MENU */
+
+.menu{
+	background: #FFF;
+	border-top: 2px solid #FFF;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	height: 46px;
+	width: 100%;
+	margin: 0 0 10px 0;
+	display: block;
+}
+.menu ul li{
+	float: left;
+}
+.menu .btn-menu{
+	background: #fff;
+height: 46px;
+width: 46px;
+border-right: 1px solid #ccc;
+}
+.menu .btn-menu a{
+	color: #000;
+	display: block;
+	font-size: 65px;
+	height: 46px;
+	text-decoration: none;
+	width: 46px;
+}
+.menu .btn-menu a:after{
+	content: "\2630";
+	left: 6px;
+	position: absolute;
+	top: 25px;
+}
+.menu h2 a{
+	background: url('../images/logoEspecial.png') no-repeat;
+	display: block;
+	height: 47px;
+	margin-top: 0;
+	text-indent: -9999px;
+	width: 208px;
+}
+.menu .logoEspecial{
+	float: left;
+}
+.iconos {
+	background: url('../images/sprite-iconos.png') no-repeat left top;
+	display: block;
+	float: left;
+	width: 22px;
+	height: 24px;
+}
+.icono a {
+	background: url('../images/sprite-iconos.png') no-repeat left top;
+	display: block;
+	float: right;
+	width: 22px;
+	height: 24px;
+}
+.menu ul li.icono.flecha {
+	float: right;
+}
+.icono.flecha a {
+	background-position: 7px -647px;
+	width: 47px;
+	height: 46px;
+	border-left: 1px solid #a5a5a5;
+	/*margin:82px -61px 0 0;*/
+}
+.container-menu{
+	width: 100%;
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.container-menu li{
+	padding: 15px;
+	margin: 3px 0;
+}
+.container-menu .item-uno {
+	background: #3a3a3a;
+}
+.container-menu .item-dos {
+	background: #4b4b4b;
+}
+.container-menu li a{
+	color: #FFF;
+	font-family: 'robotobold';
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+}
+.container-menu li a.logo_nav{
+	background: url('../images/logoEspecial.png') no-repeat;
+	display: block;
+	height: 50px;
+	text-indent: -9999px;
+}
+/* PUBLICIDAD */
+
+.pauta{
+	background: #f1f1f1;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+.pauta p{
+	color: #999;
+	font-size: 9px;
+	font-family: 'Arial';
+	height: 11px;
+	padding: 4px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pauta div{
+	background: url('../images/300x50.jpg') no-repeat left top;
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	width: 300px;
+}
+.redes-ele14 {
+	display: none;
+}
+.logredes-ele14 {
+	background: #FFF;
+	position: fixed;
+	z-index: 3;
+	top: 82px;
+	padding: 5px 3px;
+	width: 39px;
+	right: 0;
+	border: 1px solid #C8CACA;
+}
+.logredes-ele14 a{
+	background:url('../images/sprites_ele14.png') no-repeat;
+	padding: 10px 0px;
+	margin:0;
+	display: block;
+}
+a.lface-ele14 {
+	background-position: 1px 0;
+	height: 18px;
+	width: 36px;
+}
+a.ltwitter-ele14 {
+	background-position: -35px 1px;
+	height: 18px;
+	height: 18px;
+	width: 36px;
+}
+a.lgplus-ele14{
+	background-position: -73px 3px;
+	height: 18px;
+	width: 36px;
+}
+a.lemail-ele14{
+	background-position: -110px 4px;
+	height: 18px;
+	width: 36px;
+}
+
+/* FOOTER */
+
+footer{
+	background: #000;
+	width: 100%;
+}
+footer .terminos{
+	border-bottom: 1px solid #464545;
+	overflow: hidden;
+	padding: 20px;
+}
+footer .terminos .logo_footer{
+	float: left;
+}
+footer .terminos .logo_footer a{
+	background: url('../images/logoET-footer.png') no-repeat left top;
+	border: none;
+	display: block;
+	height: 15px;
+	text-indent: -9999px;
+	width: 82px;
+}
+footer .terminos a{
+	color: #007e96;
+	font-size: 14px;
+	float: right;
+	text-decoration: none;
+	font-family: 'robotoregular';
+}
+footer .copy{
+	border-top: 1px solid #464545;
+	padding: 10px 0;
+}
+footer .copy p{
+	color: #bcbcbc;
+	font-size: 11px;
+	text-align: center;
+	font-family: 'robotoregular';
+	font-weight: normal;
+}
+
+.active.twitter-container.row {height: 182px;
+}
+.modulo twitter iframe { height: 307px;}
+#live-feed-container {height: 189px!important;}

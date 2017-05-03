@@ -1,0 +1,79 @@
+<div class="overlay"></div>
+<div id="contenedor-M14">
+    <section id="row1-M14">
+        <article>						
+            <article>
+                <h2 class="ti1-M14"><?php print $titulo; ?></h2>						
+                <div class="parrafos-M14">
+                    <p><?php print $sumario; ?></p>
+                </div>
+                <div id="infografia-mundial">
+                    <?php if($formato == 'imagen'):?>
+                        <figure class="img-M14">
+                            <img src="<?php print $fuente; ?>" alt="">
+                        </figure>
+                    <?php endif;?>
+                </div>
+            </article>
+            
+            <?php print $this->redesSociales($infografia, 'articulo');?>
+            
+            <?php print $this->pauta('9703', '432768', 'publ2-M14');?>
+            
+            <section class="container_otras_gal">
+                <div class="tit">
+                    <h3>Infografías</h3>
+                </div>
+            </section>	
+            <section class="gal-ppal">
+                <div id="main" role="main">
+                    <section class="slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <?php 
+                                //print '<pre>';var_dump($otrasInfografias);print '</pre>';
+                                foreach($otrasInfografias as $infografias):?>
+                                    <?php if($infografias['imagen']):?>
+                                        <li>
+                                            <a href="<?php print $infografias['info']['url'];?>"><figure><img src="<?php print $infografias['imagen']['imagen_baja'];?>" alt="<?php print $infografias['imagen']['titulo'];?>" title="<?php print $infografias['imagen']['titulo'];?>" /></figure></a>
+                                            <figcaption><h2><a href="<?php print $infografias['info']['url'];?>"><?php print $infografias['info']['titulo'];?></a></h2></figcaption>
+                                        </li>
+                                    <?php endif;?>
+                                <?php endforeach;?>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </article>
+    </section>    
+</div>
+
+<script type="text/javascript">
+$(window).load(function(){
+    $('.flexslider').flexslider({
+        animation: "slide", 
+        directionNav:true,
+        slideshow: false,
+        touch: true
+    });
+});
+</script>
+
+<?php if($formato == 'html'):?>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url: '/html/cross-domain.php',
+                type: 'POST',
+                data: 'csurl=<?php print $fuente; ?>',
+                error: function(htmlResponse){
+                    $('#infografia-mundial').html('<!--' + htmlResponse + '-->');
+                },
+                success: function(texto){
+                    $('#infografia-mundial').html(texto);
+                }
+            });
+        });
+    </script>
+<?php endif;?>

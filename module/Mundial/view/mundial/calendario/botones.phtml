@@ -1,0 +1,13 @@
+<?php if($boton == 'index'):?>
+    <a class="btnVerGrupos" data-animation="fade" data-reveal-id="a1" href="#a1">Ver partidos </br>por grupos</a>	        
+    <div class="botonesInferiores">
+        <a href="calendarioMovilGrupos.html">Grupos</a>
+        <a href="calendarioMovilPosiciones.html">Posiciones</a>
+    </div>
+<?php elseif($boton == 'posiciones'):?>
+    <a class="btnVerGrupos posiciones" data-animation="fade" data-reveal-id="a1" href="#a1">Ver por grupos</a>        
+    <div class="botonesInferiores posiciones">
+        <a href="calendarioMovilCalendario.html">Calendario</a>
+        <a href="calendarioMovilGrupos.html">Grupos</a>
+    </div>
+<?php endif;?>

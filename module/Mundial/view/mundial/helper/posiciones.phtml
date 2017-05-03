@@ -1,0 +1,12 @@
+<?php $i=1;?>
+<?php foreach($grupo as $equ):?>
+    <ul class="datos <?php print $equ['equipo_sel']; ?>">
+        <li><p><?php print $i;?></p></li>
+        <li><p><?php print $equ['nom']; ?></p></li>
+        <li><p><?php print $equ['pj']; ?></p></li>
+        <li><p><?php print $equ['gd']; ?></p></li>
+        <li><p><?php print $equ['pg']; ?></p></li>
+        <li class="puntos"><p><?php print $equ['pts']; ?></p></li>
+    </ul>
+    <?php $i++;?>
+<?php endforeach;?>

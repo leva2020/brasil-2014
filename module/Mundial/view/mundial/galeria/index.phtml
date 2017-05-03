@@ -1,0 +1,42 @@
+<?php print $this->pauta('9703', '432759', 'publ2-M14'); ?>
+<div class="secciones">
+    <div class="overlay"></div>
+    <section class="container_gal">
+        <h2><?php print $titulo; ?></h2>
+        <p><?php print $sumario; ?></p>
+        <div id="main" role="main">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <?php foreach ($imagenes as $img): ?>
+                            <li>
+                                <a><figure><img src="<?php print $img['imagen_baja']; ?>" alt="<?php print $img['titulo']; ?>" title="<?php print $img['titulo']; ?>" /></figure></a>
+                                <figcaption><p><?php print $img['titulo']; ?></p></figcaption>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <script type="text/javascript">
+                        //$(window).load(function(){
+                        $('.flexslider').flexslider({
+                            animation: "slide",
+                            directionNav: true,
+                            slideshow: false,
+                            touch: true
+                        });
+                        //});
+                    </script>
+                </div>
+            </section>
+        </div>
+    </section>
+    <?php print $this->redesSociales($galeria['info'], 'multimedia'); ?>
+
+    <section class="container_otras_gal">
+        <div class="tit">
+            <h3>Otras galerias del mundial</h3>
+        </div>
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => 'fotos', 'procede' => 'fotos',)); ?>
+    </section>
+    <section class="container_coment"></section>
+</div>
+

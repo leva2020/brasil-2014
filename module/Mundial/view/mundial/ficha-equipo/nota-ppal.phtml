@@ -1,0 +1,11 @@
+<article>
+    <div id="main" role="main">
+        <?php if($formato == 'imagen'):?>
+            <div class="container_foto">
+                <img src="<?php print $recurso; ?>" alt="<?php print $titulo; ?>" title="<?php print $titulo; ?>">
+            </div>
+        <?php endif;?>
+    </div>
+    <h2><?php print $nota['articulo']['titulo'];?></h2>
+    <p><?php print $nota['articulo']['sumario'];?></p>
+</article>

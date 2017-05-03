@@ -1,0 +1,999 @@
+.secciones.fix{
+	padding: 80px 0 0;
+}
+
+
+/* --Clearfix */
+.cf:before,
+.cf:after {content:""; display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+
+.slider { margin: 0!important;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+/* Loading
+***********************/
+.loading #container {opacity: 0;}
+.loading:before  { content: 'LOADING'; display: block; margin: 100px 0 0; text-align: center; color: #fff; font-weight: bold; font-size: 60px; opacity: 0.3; }
+body {width: 100%; float: left; opacity: 1; -webkit-transition: opacity 1s ease;}
+
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 960px) {
+	.gal-ppal {padding: 4px 0px;}
+}
+@media screen and (max-width: 768px) {
+	.gal-ppal{padding: 4px 0px;}
+}
+
+
+/* MODULOS DE NOTICIA PRINCIPAL Y SECUNDARIAS SECCIONES   */
+
+a {
+	text-decoration:none; 
+	color: #393939;
+}
+
+.contHomeSeccion{
+margin: 0 auto;
+width: 90%;
+height: auto;
+background-color: #EAEAEA;
+margin-bottom: 30px;
+}
+.contHomeSeccion .tit_homeSeccion{
+background-color: grey;
+display: block;
+height: 40px;
+margin: 30px auto auto;
+width: 100%;
+position: relative;
+}
+
+.contHomeSeccion .tit_homeSeccion.curiosidades{
+	background-color:#ff8030;
+}	
+
+.contHomeSeccion .tit_homeSeccion.seleccionColombia{
+	background-color:#FCEA02;
+}	
+
+.contHomeSeccion .tit_homeSeccion.mundo{
+	background-color:#009CFF;
+}	
+
+
+.contHomeSeccion .tit_homeSeccion.videoFotos{
+	background-color:#FF3C36;
+}	
+
+.contHomeSeccion .tit_homeSeccion.opinion{
+	background-color:#96BB54;
+}	
+
+
+
+
+.contHomeSeccion .tit_homeSeccion h3,.contHomeSeccion .tit_homeSeccion h1{
+color: #FFFFFF;
+font-family: 'octin_sports_rgregular';
+font-size: 18px;
+padding: 13px;
+text-align: center;
+width: 90%;
+line-height: 12px;
+font-weight: normal;
+}
+.contHomeSeccion.seleccionColombia .tit_homeSeccion h3{
+color:black;
+
+}
+
+h3.tituloHomeSeccion{
+font-family: 'octin_sports_rgregular';
+    font-size:20px;
+    color:white;
+    text-align: center;
+    line-height: 35px; 
+}
+
+.contHomeSeccion article{
+padding-bottom:10px;	
+}	
+
+.contHomeSeccion article figure{
+margin: 0 auto;
+width: 100%;
+padding: 15px;
+padding-top: 0px;
+}
+
+
+.contHomeSeccion section + article figure{
+margin: 0 auto;
+width: 100%;
+padding: 15px;
+padding-top: 0px;
+}
+
+	
+.contHomeSeccion section + article figure a img{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contHomeSeccion section + article figure + figcaption h2 {
+padding: 15px;
+width: 90%;
+padding-top: 10px;
+padding-bottom: 0px;
+color:#393939;
+font-size:16px; 
+}
+
+.contHomeSeccion.curiosidades section + article figure + figcaption h2 a,
+.contHomeSeccion.seleccionColombia section + article figure + figcaption h2 a,
+.contHomeSeccion.mundo section + article figure + figcaption h2 a,
+.contHomeSeccion.videoFotos section + article figure + figcaption h2 a,
+.contHomeSeccion.opinion section + article figure + figcaption h2 a{
+background-color: transparent;
+color: #393939;
+padding: 16px;
+width: 100%;
+padding-top: 10px;
+padding-bottom: 0px;
+font-size: 15px;
+font-weight: normal;
+padding-right: 0px;
+text-decoration: none;
+}	
+
+.contHomeSeccion.curiosidades article:nth-child(5) > figcaption p,
+.contHomeSeccion.seleccionColombia article:nth-child(5) > figcaption p,
+.contHomeSeccion.mundo article:nth-child(5) > figcaption p,
+.contHomeSeccion.videoFotos article:nth-child(5) > figcaption p,
+.contHomeSeccion.opinion article:nth-child(5) > figcaption p {
+padding-bottom: 24px;
+border-bottom: none;
+}
+
+
+.contHomeSeccion.curiosidades article figure+ figcaption h2 a,
+.contHomeSeccion.seleccionColombia article figure+ figcaption h2 a,
+.contHomeSeccion.mundo article figure+ figcaption h2 a,
+.contHomeSeccion.videoFotos article figure+ figcaption h2 a,
+.contHomeSeccion.opinion article figure+ figcaption h2 a{
+color: #393939;
+font-family: 'sansationbold';
+font-size: 16px;
+font-weight: normal;
+width: 49%;
+height: auto;
+padding: 0px;
+float: right;
+line-height: 18px;
+text-decoration: none;
+padding-right: 21px;
+
+}
+
+
+
+.contHomeSeccion article figure a img{
+float: left;
+height: auto;
+width: 128px;
+border: 1px solid;
+margin-top: 15px;
+}
+
+.contHomeSeccion.curiosidades article figure a img{
+	border-color:#ff8030;
+}	
+
+
+.contHomeSeccion.seleccionColombia article figure a img{
+	border-color:#FCEA02;
+}	
+
+.contHomeSeccion.mundo article figure a img{
+	border-color:#009CFF;
+	
+}	
+
+.contHomeSeccion.videoFotos article figure a img{
+	border-color:#FF3C36;	
+}
+
+.contHomeSeccion.opinion article figure a img{
+	border-color:#96BB54;	
+}
+
+.contHomeSeccion article figcaption{
+	padding:0px;
+}
+
+
+.contHomeSeccion.opinion article figure + figcaption h2{
+	width: 90%;	
+}	
+
+.contHomeSeccion article figure + figcaption h2{
+	width: 45%;	
+	padding-top:0px;
+}	
+
+.contHomeSeccion article figcaption h2{
+font-family: 'sansationbold';
+font-size: 17px;
+font-weight: normal;
+width: 90%;
+height: auto;
+padding: 15px;
+float: left;
+padding-bottom: 0px;
+background-color: transparent;
+color: #393939;
+padding-top: 20px;
+}
+
+.contHomeSeccion.opinion article figcaption h2{
+	width: 100%;
+}
+
+.contHomeSeccion.curiosidades article figcaption h2 a{
+	color:#ff8030;
+	font-weight: normal;
+	font-family: 'sansationbold';
+	font-size: 17px;
+	font-weight: normal;
+	width: 90%;
+	height: auto;
+	padding: 15px;
+	float: left;
+	padding-bottom: 0px;
+	background-color:transparent; 	
+}
+.contHomeSeccion.seleccionColombia article figcaption h2 a{
+	color:black;
+	font-weight: normal;
+	font-family: 'sansationbold';
+	font-size: 16px;
+	font-weight: normal;
+	width: 90%;
+	height: auto;
+	padding: 15px;
+	float: left;
+	padding-bottom: 0px;
+	background-color:transparent; 	
+}	
+
+.contHomeSeccion.mundo article figcaption h2 a{
+	color:#009CFF;
+	font-weight: normal;
+	font-family: 'sansationbold';
+	font-size: 17px;
+	font-weight: normal;
+	width: 90%;
+	height: auto;
+	padding: 15px;
+	float: left;
+	padding-bottom: 0px;
+	background-color:transparent; 	
+}	
+
+.contHomeSeccion.videoFotos article figcaption h2 a{
+	color:#FF3C36;
+	font-weight: normal;
+	font-family: 'sansationbold';
+	font-size: 17px;
+	font-weight: normal;
+	width: 90%;
+	height: auto;
+	padding: 15px;
+	float: left;
+	padding-bottom: 0px;
+	background-color:transparent; 	
+}	
+
+.contHomeSeccion.opinion article figcaption h2 a{
+	color:#96BB54;
+	font-weight: normal;
+	font-family: 'sansationbold';
+	font-size: 17px;
+	font-weight: normal;
+	width: 90%;
+	height: auto;
+	padding: 15px;
+	float: left;
+	padding-bottom: 0px;
+	background-color:transparent; 	
+}	
+
+
+.contHomeSeccion article figcaption p {
+color: #393939;
+font-family: 'sansationregular';
+font-size: 15px;
+margin: 0 auto;
+padding: 0;
+line-height: 21px;
+width: 90%;
+border-bottom: 1px solid grey;
+padding-bottom: 20px;
+clear: both;
+padding-top: 10px;
+}
+
+
+
+
+.contHomeSeccion.curiosidades article figcaption p {
+	border-bottom: 1px solid #ff8030;
+}
+
+
+.contHomeSeccion.seleccionColombia article figure p{
+	border-bottom: 1px solid #FCEA02;
+}
+
+.contHomeSeccion.mundo article figure p {
+	border-bottom: 1px solid #009CFF;
+}
+
+.contHomeSeccion.videoFotos article figure p {
+	border-bottom: 1px solid #FF3C36;
+}
+
+.contHomeSeccion.opinion article figure p{
+	border-bottom: 1px solid #96BB54;
+}
+
+/*----------------------------
+	 Bloq Mas Noticias
+---------------------------------*/
+
+.titulo-top {
+background-color: #ff8030;
+cursor: pointer;
+height: 1px;
+margin-bottom: 20px;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+}
+
+
+
+.titulo-top.curiosidades{
+	background-color:#ff8030;
+}
+
+.titulo-top.curiosidades h3{
+	color:#ff8030;
+
+}
+
+.titulo-top.seleccionColombia h3{
+	color:black;
+}
+
+.titulo-top.seleccionColombia{
+	background-color:black;
+}
+
+
+.titulo-top.mundo{
+	margin-bottom: 20px;
+	background-color:#009CFF;
+}
+
+.titulo-top.mundo h3{
+	color:#009CFF;
+}
+
+.titulo-top.opinion{
+	background-color:#96BB54;
+}
+
+.titulo-top.opinion h3{
+	color:#96BB54;
+}
+
+.titulo-top.videoFotos{
+	background-color:#FF413B;
+}
+
+.titulo-top.videoFotos h3{
+	color:#FF413B;
+}
+
+
+
+.titulo-top h3 {
+background: none repeat scroll 0 0 #FFFFFF;
+color: #FF7300;
+display: inline;
+font-family: 'Octin Sports';
+font-weight: normal;
+font-size: 18px;
+margin-top: -6px;
+padding: 0 22px 0 0;
+position: absolute;
+}
+
+.masnoticia-M14.curiosidades,.masnoticia-M14.seleccionColombia,.masnoticia-M14.mundo,.masnoticia-M14.videoFotos,.masnoticia-M14.opinion{
+background: #fff;
+height: auto;
+margin: 0 auto;
+padding: 0px;
+width: 90%;
+margin-bottom: 30px;
+margin-top: 50px;
+}
+	
+	
+
+.masnoticia-M14.curiosidades h2 a,.masnoticia-M14.curiosidades h3 a{
+color: #ff8030;
+font-family: 'Octin Sports';
+font-size: 18px;
+margin: 0;
+margin-top: -5px;
+}
+
+.masnoticia-M14.seleccionColombia h2 a,.masnoticia-M14.seleccionColombia h3 a{
+color: black;
+font-family: 'Octin Sports';
+font-size: 18px;
+margin: 0;
+margin-top: -5px;
+
+}
+
+.masnoticia-M14.mundo h2 a,.masnoticia-M14.mundo h3 a{
+color: #009CFF;
+font-family: 'Octin Sports';
+font-size: 18px;
+margin: 0;
+margin-top: -5px;
+
+}
+
+
+.masnoticia-M14.videoFotos h2 a,.masnoticia-M14.videoFotos h3 a{
+color:#FF3C36;
+font-family: 'Octin Sports';
+font-size: 18px;
+margin: 0;
+margin-top: -5px;
+
+}
+
+.masnoticia-M14.opinion h2 a,.masnoticia-M14.opinion h3 a{
+color:#96BB54;
+font-family: 'Octin Sports';
+font-size: 18px;
+margin: 0;
+margin-top: -5px;
+
+}
+
+.masnoticia-M14.curiosidades .row1,.masnoticia-M14.curiosidades .row2{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-top: 1px solid #ff8030;
+height: 80px;
+margin: 6px 0;
+padding: 20px 0;
+width: 100%;
+padding-bottom: 30px;
+}
+
+
+#articulos_cargar_mas_seleccion-colombia > article:nth-child(1),#articulos_cargar_mas_selecciones-del-mundo > article:nth-child(1) {
+border: none;
+}
+
+.masnoticia-M14.seleccionColombia .row1,.masnoticia-M14.seleccionColombia .row2{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-top: 1px solid #ccc;
+height: 80px;
+margin: 6px 0;
+padding: 20px 0;
+width: 100%;
+padding-bottom: 30px;
+}
+
+.masnoticia-M14.mundo .row1,.masnoticia-M14.mundo .row2{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-top: 1px solid #009CFF;
+height: 80px;
+margin: 6px 0;
+padding: 20px 0;
+width: 100%;
+padding-bottom: 30px;
+}
+
+.masnoticia-M14.videoFotos .row1,.masnoticia-M14.videoFotos .row2{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-top: 1px solid #FF3C36;
+height: 80px;
+margin: 6px 0;
+padding: 20px 0;
+width: 100%;
+padding-bottom: 30px;
+}
+.masnoticia-M14.opinion .row1,.masnoticia-M14.opinion .row2{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-top: 1px solid #96BB54;
+height: 80px;
+margin: 6px 0;
+padding: 20px 0;
+width: 100%;
+padding-bottom: 30px;
+}
+
+.masnoticia-M14 .row1 > h2{
+font-family: 'sansationbold';
+font-size: 17px;
+font-weight: normal;
+width: 90%;
+height: auto;
+padding: 10px;
+padding-bottom: 0px;
+background-color: transparent;
+color: #393939;
+padding-top: 30px;
+}
+
+.masnoticia-M14 .row1 > h2 a {
+width: 90%;
+padding:0px;
+font-family: 'sansationbold';
+font-size: 17px;
+color: black;
+letter-spacing: 0.25px;
+font-weight: normal;
+}
+
+.masnoticia-M14.curiosidades .titulo-top + article,.masnoticia-M14.seleccionColombia .titulo-top + article,.masnoticia-M14.mundo .titulo-top + article,.masnoticia-M14.videoFotos .titulo-top + article,.masnoticia-M14.opinion .titulo-top + article{
+border-top: 0px;
+}
+
+.masnoticia-M14 img {
+float: left;
+height: auto;
+width: 128px;
+border: 1px solid grey;
+}
+
+.masnoticia-M14.curiosidades img,.masnoticia-M14.seleccionColombia img,.masnoticia-M14.mundo img,.masnoticia-M14.videoFotos img,.masnoticia-M14.opinion img{
+float: left;
+width: 128px;
+border: 1px solid grey;
+height: 90px;
+}
+
+
+.masnoticia-M14.curiosidades .row1 p a,.masnoticia-M14.seleccionColombia .row1 p a,.masnoticia-M14.mundo .row1 p a,.masnoticia-M14.videoFotos .row1 p a,.masnoticia-M14.opinion .row1 p a{
+color: #606060;
+    float: right;
+    font-family: 'Sansation';
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 18px;
+    margin: 0;
+    padding-left: 10px;
+    width: 205px;
+}
+
+.masnoticia-M14.curiosidades .row1 a + h2 a, .masnoticia-M14.seleccionColombia .row1 a + h2 a, .masnoticia-M14.mundo .row1 a + h2 a, .masnoticia-M14.videoFotos .row1 a + h2 a, .masnoticia-M14.opinion .row1 a + h2 a {
+color: #393939;
+float: right;
+font-family: 'Sansation';
+font-size: 16px;
+font-weight: bold;
+height: 30px;
+line-height: 18px;
+margin-top: -30px;
+padding-left: 12px;
+width: 50%;
+position: absolute;
+font-weight: normal;
+}
+
+.masnoticia-M14.curiosidades .row1 img + h2,.masnoticia-M14.seleccionColombia .row1 img + h2,.masnoticia-M14.mundo .row1 img + h2,.masnoticia-M14.videoFotos .row1 img + h2,.masnoticia-M14.opinion .row1 img + h2{
+color: #606060;
+font-family: 'Sansation';
+font-size: 16px;
+font-weight: normal;
+height: 30px;
+line-height: 18px;
+margin-top: 0px;
+padding-left: 12px;
+width: 50%;
+padding: 0px;
+background: none;
+float: right;
+position: relative;
+	
+}
+
+.masnoticia-M14.curiosidades .row1 > h2 a,
+.masnoticia-M14.seleccionColombia .row1 > h2 a,
+.masnoticia-M14.mundo .row1 > h2 a,
+.masnoticia-M14.videoFotos .row1 > h2 a,
+.masnoticia-M14.opinion	.row1 > h2 a,{
+color: #606060;
+float: right;
+font-family: 'sansationregular';
+font-size: 16px;
+font-weight: bold;
+height: auto;
+line-height: 21px;
+margin-bottom: -20px;
+padding: 11px;
+width: 46%;
+font-weight: normal;
+	margin-top: 20px;
+}
+
+
+.masnoticia-M14.curiosidades .row2 > h2 a,
+.masnoticia-M14.curiosidades .row2 > h2,
+.masnoticia-M14.seleccionColombia .row2 > h2 a,
+.masnoticia-M14.mundo .row2 > h2 a,
+.masnoticia-M14.videoFotos .row2 > h2 a,
+.masnoticia-M14.opinion .row2 > h2 a{
+color: #606060;
+float: right;
+font-family: 'sansationregular';
+font-size: 16px;
+font-weight: bold;
+height: auto;
+line-height: 21px;
+padding: 11px;
+width: 93%;
+background-color: #EFEFEF;
+font-weight: normal;
+}
+
+.masnoticia-M14.curiosidades .row2,.masnoticia-M14.seleccionColombia .row2,.masnoticia-M14.mundo .row2,.masnoticia-M14.videoFotos .row2,.masnoticia-M14.opinion .row2{
+border: none;
+height: auto;
+margin-top: -16px;
+position: relative;
+overflow: hidden;
+}
+
+/*  REDES SOCIALES */
+	
+.social{
+background-color: #EAEAEA;
+height: 30px;
+margin: 0px auto 20px;
+position: relative;
+width: 90%;
+z-index: 0;
+}
+
+.social .compartirTit{
+	color: #656565;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 10px;
+    height: 12px;
+    padding: 4px 0 0 20px;
+    text-decoration: none;
+    line-height: 18px;
+}
+
+.social .comentarios_titulo{
+	background: #dfdfdf;
+	height: 38px;
+	margin: 5px 0;
+}
+.social .comentarios_titulo a{
+	color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+	text-align:left;
+	padding: 8px 20px 5px;
+	text-decoration:none;
+}
+
+
+.social .comentarios{
+	background: #eaeaea;
+	height: auto;
+	margin: 2px 0;
+}
+
+.social .comentarios p{
+	color: #000;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 14px;
+	padding: 12px 0 0;
+	text-align:center;
+	text-decoration: none;
+	margin:10px;
+}
+
+.social .comentarios a{
+	color: #656565;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+	text-align:center;
+	padding: 8px 20px 5px;
+	text-decoration:none;
+}
+.social .compartir{
+ height: 30px;
+    width: 300px;
+}
+.social .compartir ul li{
+border-left: 1px solid #FFF;
+float: left;
+padding: 7px 12px;
+background-color: #EAEAEA;
+width: 66px;
+}
+.social .compartir ul li:first-child{
+	border:none;
+}
+.social .compartir ul li p{
+	color: #656565;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 10px;
+	height: 12px;
+	padding: 4px 0 0;
+}
+.social .compartir ul li a{
+	background: url(../../img/imgHomeSeccion/sprite_gal_movil.png) no-repeat left -188px;
+	color: #656565;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 10px;
+	height: 12px;
+	padding: 4px 0 0 20px;
+	text-decoration: none;
+}
+.social .compartir ul li a.twitter{
+	background-position: 0 -224px;
+}
+.social .compartir ul li a.correo{
+	background-position: 0 -260px;
+}
+
+
+
+/* btn ver ficah equipo seleccion colombia*/
+.btnSeleccionColombia{
+width: 90%;
+height: 60px;
+background: url("../../img/imgHomeSeccion/sprite_gal.png") no-repeat scroll 17px -955px #FCEA02;
+margin-bottom: 40px;
+cursor: pointer;
+margin-left: 20px;
+}
+
+.btnSeleccionColombia h3{
+background: url("../../img/imgHomeSeccion/sprite_gal.png") no-repeat scroll 240px -1222px transparent;
+color: black;
+font-family: 'Octin Sports';
+font-weight: normal;
+font-size: 16px;
+padding: 17px;
+width: 60%;
+padding-left: 76px;
+font-weight: normal;
+}
+
+
+/*----- CARGAR MAS --------*/
+.cargar_mas{
+font-family: 'octin_sports_rgregular';
+padding: 2px 20px;
+position: relative;
+z-index: 20;
+display: block;
+height: 32px;
+cursor: pointer;
+color: #fff;
+line-height: 35px;
+font-size: 16px;
+text-transform: uppercase;
+text-decoration: none;
+background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -362px grey;
+text-align: center;
+margin-top: -12px;
+}	
+
+.cargar_mas a {
+	text-decoration:none; 
+	color: white;
+}
+
+.secciones.curiosidades .cargar_mas{
+	background-color:#ff8030;
+}	
+
+.secciones.mundo .cargar_mas{
+	background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -366px #009AFF;
+}
+
+.secciones.seleccionColombia .cargar_mas {
+	background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -305px #FFEA00;
+}
+.secciones.seleccionColombia .cargar_mas a {
+	color:black;
+}
+
+.secciones.videoFotos .cargar_mas {
+	background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -366px #FF413B;
+}
+
+.secciones.opinion .cargar_mas {
+	background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -366px #96BB54;
+}
+
+.modulo.redes .cargar_mas {
+	background: url(../../img/imgHomeSeccion/sprite.png) no-repeat right -366px #F18800;
+}
+
+
+
+/* caricatura del dia*/
+
+figure.caricatura{
+	margin:0px;
+	padding:0px;
+}
+
+.caricatura a{
+	width:300px;
+	height:300px; 
+	overflow: hidden; 
+}
+
+.caricatura a img{
+width:300px;
+height:auto;  	
+}
+
+.caricaturavermas {
+height: 30px;
+width: auto;
+background-color: #FF7300;
+color: white;
+text-align: center;
+padding: 4px;
+font-size: 16px;
+font-family: 'Octin Sports';
+font-weight: normal;
+line-height: 29px;
+cursor: pointer;
+margin-bottom: 30px;
+}
+
+.caricaturavermas:hover{
+	color:black;
+	} 
+.caricaturavermas:after{
+content:" >>";	
+}
+
+/*GALERIA PPAL*/
+
+.gal-ppal{
+padding: 0;
+margin-top: 40px;
+}
+#main > section > div > figure > img {
+width: 100%;
+}
+
+.gal-ppal h3{
+	padding-left:20px;
+}
+
+#main {overflow: hidden;}
+
+.flexslider .slides li{
+	position: relative;
+}
+.flexslider .slides p,.flexslider .slides h2{
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	color: #FFF;
+	font-family: 'nexa_boldregular';
+	font-size: 15px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-weight:normal;
+}
+
+
+/*----------------------------
+	Bloq Twitter
+-----------------------------*/
+.twitter-M14{
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+height: auto;
+margin-bottom: 30px;
+margin-top: 30px;
+position: relative;
+width: 90%;
+margin: 0 auto;
+}
+
+.twitter-M14 .contenido{
+	width:auto;
+	height: 250px;
+	position:relative;  
+	background-color:white;
+	overflow:hidden; 
+}
+
+.twitter-M14 .titulo{
+background: url("../images/ico_twitter.jpg") no-repeat scroll 10px 0 #FFFFFF;
+height: 25px;
+padding: 8px;
+color: #0091C6;
+font-family: 'Octin Sports';
+font-size: 15px;
+text-indent: 50px;
+width: 90%;
+}
+
+.twitter-M14 .barraMas{
+  background-color: #328BCD;
+    color: #FFFFFF;
+    font-family: 'Octin Sports';
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    width: auto;
+       cursor:pointer; 
+}
+
+.twitter-M14 .barraMas:after{
+   content: "+";
+    float: right;
+    font-size: 36px;
+    margin-right: 20px; 
+}
+
+.twitter-M14 .barraMenos{
+ background-color: #328BCD;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Octin Sports';
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-indent: 15px;
+    width: auto;
+}
+
+.twitter-M14 .barraMenos:after{
+   content: "-";
+    float: right;
+    font-size: 36px;
+    margin-right: 20px; 
+}

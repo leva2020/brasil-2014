@@ -1,0 +1,97 @@
+<?php
+
+function array_sort($array, $on, $order = SORT_ASC) {
+    $new_array = array();
+    $sortable_array = array();
+    if (count($array) > 0) {
+        foreach ($array as $k => $v) {
+            if (is_array($v)) {
+                foreach ($v as $k2 => $v2) {
+                    if ($k2 == $on) {
+                        $sortable_array[$k] = $v2;
+                    }
+                }
+            } else {
+                $sortable_array[$k] = $v;
+            }
+        }
+        switch ($order) {
+            case SORT_ASC:
+                asort($sortable_array);
+                break;
+            case SORT_DESC:
+                arsort($sortable_array);
+                break;
+        }
+        foreach ($sortable_array as $k => $v) {
+            $new_array[$k] = $array[$k];
+        }
+    }
+    return $new_array;
+}
+?>
+<div class="secciones">
+    <div class="overlay"></div>
+    <?php print $this->pauta('9702', '432757', 'pauta'); ?>
+
+    <section class="ac-container">
+
+        <div class="menu_ficha">
+            <?php print $this->partial('mundial/ficha-equipo/grupos'); ?> 	
+        </div> 	 
+
+        <div class="pais">
+            <span class="bandera Col"></span>
+            <h2><?php print $resena['titulo']; ?></h2>
+        </div>        
+        <?php print $this->partial('mundial/ficha-equipo/nota-ppal', array('nota' => $notaPpal, 'formato' => $formatoPpal, 'recurso' => $recursoPpal, 'titulo' => $ttRecursoPpal)); ?>
+    </section>
+
+    <section class="container_otras_gal">
+        <div class="tit">
+            <h3>Noticias Relacionadas</h3>
+        </div>
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => $procede, 'procede' => $procede,)); ?>
+    </section>
+
+    <?php print $this->pauta('9703', '432757', 'pauta'); ?>
+
+    <?php print $this->partial('mundial/ficha-equipo/tablas-posiciones', array('posiciones' => $posiciones, 'equipo' => $equipo, 'grupoAct' => $grupoAct)); ?>
+
+</div>
+
+</br>
+<?php //print $this->partial('mundial/ficha-equipo/nomina'); ?>
+</br>
+
+<?php print $this->partial('mundial/ficha-equipo/resena', array('resena' => $resena)); ?>
+
+<?php print $this->partial('mundial/ficha-equipo/palmares', array('palmares' => $palmares)); ?>
+
+<?php print $this->partial('mundial/ficha-equipo/tecnico', array('tecnico' => $tecnico)); ?>
+
+</br>
+<div class="bloqueMejoresGoles">
+    <div class="container_otras_gal">
+        <div class="tit">
+            <h3>Los Mejores goles</h3>
+        </div>
+    </div>	
+    <div class="container_video">
+        <figure>
+            <img alt="" title="ficha de equipo" src="/mundial-brasil-2014/img/imgFichaEquipo/video_movil.jpg">
+        </figure>
+    </div>
+</div>
+</br>
+
+<?php print $this->partial('mundial/ficha-equipo/figuras', array('figuras' => $figuras, 'compartir' => $compartir)); ?>
+
+</br>	
+</section>
+<section class="container_videosFotos">
+    <div class="tit">
+        <h3>Videos y fotos</h3>
+    </div>
+    <?php print $this->carouselPpal($notasMultimedia); ?>
+</section>

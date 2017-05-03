@@ -1,0 +1,66 @@
+<div class="secciones opinion">
+    <div class="overlay"></div>
+
+    <?php print $this->pauta('9702', '432766', 'pauta');?>
+
+    <section class="contHomeSeccion opinion">
+        <div class="tit_homeSeccion opinion">
+            <h3 class="tituloHomeSeccion"> Opinión</h3>
+        </div>
+        
+        <?php print $this->redesSociales($compartir, 'seccion');?>
+        
+        <article>
+            <figure>
+                <a href="#"><img alt="" title="" src="/brazil-2014-dev/img/imgHomeSeccion/colombia.jpg" /></a>
+            </figure>
+            <figcaption>
+                <h2><a href="<?php print $notas[0]['articulo']['url'];?>"><?php print $notas[0]['articulo']['titulo']?></a></h2>
+                <p><a href="<?php print $notas[0]['articulo']['url'];?>"><?php print $notas[0]['articulo']['sumario']?></a></p>
+            </figcaption>
+        </article>
+
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => 'opinion', 'procede' => 'opinion',));?>
+    </section>
+
+    <?php print $this->pauta('9703', '432766', 'pauta');?>
+
+
+    <section class="gal-ppal">
+        <div class="titulo-top">
+            <h3>caricatura del día</h3>
+        </div>
+        <div id="main" role="main">
+            <section class="slider">
+                <div class="flexslider">
+                    <figure>
+                        <img src="<?php print $caricatura['imagen']['imagen_baja']; ?>" alt="<?php print $caricatura['imagen']['titulo']; ?>">
+                    </figure>
+                </div>
+            </section>
+        </div>
+        <div class="caricaturavermas">Ver más</div>
+    </section>
+
+
+    <div class="twitter-M14">
+        <div class="titulo">TWITTER @brasil2014</div>
+        <div class="barraMas">#Brasil2014</div>
+        <div class="contenido">
+
+        </div>
+        <div class="barraMenos">#Brasil2014</div>
+    </div>
+
+    <section class="masnoticia-M14 curiosidades">
+        <div class="titulo-top">
+            <h3>lo más visto</h3>
+        </div>
+        <?php 
+            for($i=0; $i<$maximoVistas; $i++):
+                print $this->notas($vistas[$i], 'row1');
+            endfor;
+        ?>				
+    </section>
+
+</div>

@@ -1,0 +1,42 @@
+<section class="tabs-wrap bloque">
+				<div id="tabs">
+							
+					<ul class="nav">
+				       <li id="nav-visto" class="nav-one"><a class="current" onclick="select_las_mas('visto');">Más visto</a></li>
+				       <li id="nav-leido" class="nav-two"><a onclick="select_las_mas('leido');">Más leido</a></li>
+				   </ul>
+					
+					<div class="list-wrap">
+					
+						<ul id="visto">
+							<li><h2><a href="#">Partido de la U pide la dirección del Sena para todo</a></h2></li>
+							<li><h3><a href="#">Gobierno votará por nueva baja de tasa de interés, que está en 4%</a></h3></li>
+							<li><h3><a href="#">Investigarán a defensa de la Nación en caso de Palacio de Justicia</a></h3></li>
+							<li><h3><a href="#">A juicio, Miguel Nule Amín por masacre de Macayepo</a></h3></li>
+							<li><h3><a href="#">Anglogold tutela a municipio porque no dejan transitar a trabajadores</a></h3></li>
+						</ul>
+						 
+						 <ul id="leido" class="hide" style="display:none;">
+				           <li><h2><a href="#">Investigador del caso Pistorius acusado por 7 intentos de asesinato</a></h2></li>
+				           <li><h3><a href="#">Si el general Naranjo fuera candidato presidencial, ganaría a Santos</a></h3></li>
+				           <li><h3><a href="#">Capturan a responsables de bomba activada el día de los niños en Valle</a></h3></li>
+				           <li><h3><a href="#">5 hombres valientes le ponen el pecho al cáncer de mama</a></h3></li>
+				           <li><h3><a href="#">Traslado de tubería de Pacific retrasa obra de la Ruta del Sol</a></h3></li>
+						 </ul>
+						 
+					 </div>
+					 <!-- End list wrap -->
+				
+				</div>
+				<!-- End tabs -->
+			</section>
+<script>
+	function select_las_mas(tab){
+		$('#nav-visto a').removeClass('current');
+		$('#nav-leido a').removeClass('current');
+		$('#nav-'+tab+' a').addClass('current');
+		$('#visto').hide();
+		$('#leido').hide();
+		$('#'+tab).show();
+	}
+</script>

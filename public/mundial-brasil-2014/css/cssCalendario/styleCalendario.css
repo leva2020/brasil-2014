@@ -1,0 +1,3315 @@
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_free_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+@font-face {
+    font-family: 'octin_sports_rgregular';
+    src: url('../fonts/octin_sports_rg-webfont.eot');
+    src: url('../fonts/octin_sports_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/octin_sports_rg-webfont.woff') format('woff'),
+         url('../fonts/octin_sports_rg-webfont.ttf') format('truetype'),
+         url('../fonts/octin_sports_rg-webfont.svg#octin_sports_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_free_light-webfont.eot');
+    src: url('../fonts/nexa_free_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_free_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_free_light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_free_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('../fonts/droidsans-bold-webfont.eot');
+    src: url('../fonts/droidsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/droidsans-bold-webfont.woff') format('woff'),
+         url('../fonts/droidsans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/droidsans-bold-webfont.svg#droid_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('../fonts/droidsans-webfont.eot');
+    src: url('../fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/droidsans-webfont.woff') format('woff'),
+         url('../fonts/droidsans-webfont.ttf') format('truetype'),
+         url('../fonts/droidsans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sansationregular';
+    src: url('../fonts/sansation-regular-webfont.eot');
+    src: url('../fonts/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-regular-webfont.woff') format('woff'),
+         url('../fonts/sansation-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationbold';
+    src: url('../fonts/sansation-bold-webfont.eot');
+    src: url('../fonts/sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-bold-webfont.woff') format('woff'),
+         url('../fonts/sansation-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-bold-webfont.svg#sansationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#contenedor_gral{
+   background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #DFDFDF;
+    display: block;
+    height: 414px;
+    margin-left: 55px;
+    margin-top: 36px;
+    padding: 15px 6px 15px 13px;
+    width: 1024px;
+}
+
+.subtitsec{
+   background: url("../../img/imgCalendario/orange.jpg") repeat-x scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    margin: -27px 0 10px;
+    width: 285px;
+}    
+
+.subtitsec a.ser{
+ background: none repeat scroll 0 0 #FFFFFF;
+    color: #FF8030;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-right: 15px;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: 'octin_sports_rgregular';  
+ }
+    
+div.posmark {
+    border-radius: 10px 0 0 10px;
+    display: block;
+    height: 71px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    background:url('../../img/imgCalendario/spriteGeneral.png') -54px 0px #FF9A36;
+}
+div.posmark a {
+    display: block;
+    font-family: 'nexa_boldregular';
+    font-size: 8px;
+    line-height: 20px;
+    padding-top: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+}
+   
+#contenedor_gral h1 {
+    font-family: 'nexa_boldregular', arial, helvetica;
+    font-size: 13px;
+    background: #FD9844;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 10px 20px;
+    float: left;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0 20px 0;
+    height: 16px;
+}
+.titulo {
+    overflow: hidden;
+}
+.borde-1 {
+    background:url('../../img/imgCalendario/lado1.png') no-repeat left top;
+    width: 11px;
+    height: 36px; 
+    float: left;    
+}
+.borde-2 {
+    background:url('../../img/imgCalendario/lado2.png') no-repeat left top;
+    width: 11px;
+    height: 36px; 
+    float: left;
+}
+
+.grupo, .tabla {
+  background: none repeat scroll 0 0 #E2E2E2;
+   height:inherit;
+  margin-top: 0px;
+  z-index: 3;
+   margin: 0 auto;
+  margin: 0 auto 0 50px;
+    width: 285px;
+   
+}
+
+.grupo.octavos {
+  background: none repeat scroll 0 0  #E2E2E2;
+   height:395px;
+}
+.grupo.cuartos {
+  background: none repeat scroll 0 0  #E2E2E2;
+   height:200px;
+}
+
+.grupo.semifinal {
+  background: none repeat scroll 0 0  #E2E2E2;
+   height:100px;
+}
+
+.grupo.final {
+  background: none repeat scroll 0 0  #E2E2E2;
+   height:50px;
+}
+
+
+.reveal-modal.small .grupo{
+ background: none repeat scroll 0 0 #A8A8A8;
+    height: 100px;
+    margin: 10px auto 0;
+    width: 280px;
+    z-index: 3;
+} 
+
+.reveal-modal.small .grupo.a, .tabla.ga{
+	 background: none repeat scroll 0 0 #F4B25B;
+      height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+.reveal-modal.small .grupo.b, .tabla.gb{
+	 background: none repeat scroll 0 0 #6da7bc;;
+    height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+.reveal-modal.small .grupo.c, .tabla.gc{
+	 background: none repeat scroll 0 0 #79bc7c;
+     height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+.reveal-modal.small .grupo.d, .tabla.gd{
+	 background: none repeat scroll 0 0 #e8d885;
+      height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+.reveal-modal.small .grupo.e, .tabla.ge{
+	 background: none repeat scroll 0 0 #e8d885;
+     height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+
+.reveal-modal.small .grupo.f, .tabla.gf{
+	 background: none repeat scroll 0 0 #aaaa9d;
+    height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+
+.reveal-modal.small .grupo.g, .tabla.gg{
+	 background: none repeat scroll 0 0 #6da7bc;
+      height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+
+.reveal-modal.small .grupo.h, .tabla.gh{
+	 background: none repeat scroll 0 0 #F4B25B;
+      height: auto;
+    margin: 0 auto;
+    z-index: 3;
+    width: 280px;
+} 
+.grupo.a, .tabla.ga {
+ background: none repeat scroll 0 0 #F4B25B;
+    height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.b, .tabla.gb {
+    background: #6da7bc;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.c, .tabla.gc {
+    background: #79bc7c;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.d, .tabla.gd {
+    background: #e8d885;
+   height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.e, .tabla.ge {
+    background: #e8d885;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.f, .tabla.gf {
+    background: #aaaa9d;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.g, .tabla.gg {
+    background: #6da7bc;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo.h, .tabla.gh {
+    background: #F4B25B;
+  height: 295px;
+    margin: 0 auto;
+    z-index: 3;
+margin: 0 auto;
+width: 90%;
+}
+.grupo .numeros {
+    width: 195px;
+    background: none!important;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 28px;
+    font-family: 'octin_sports_rgregular';
+    padding: 11px 26px;
+}
+.grupo .numeros li {
+    width: 32px;
+    float: left;
+    padding: 26px 40px 0px 25px;
+}
+.todos-los-equipos ul,.todos-los-equiposOctavos ul,.todos-los-equiposCuartos ul {
+    padding: 10px;
+    width: 82px;
+    margin: 0 10px 10px 0;
+    float: left;
+    list-style: none;
+}
+
+
+.todos-los-equipos ul.marcador,.todos-los-equiposOctavos ul.marcador,.todos-los-equiposCuartos ul.marcador{
+    float: left;
+    height: 24px;
+    width: 65px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todos-los-equipos ul.marcador:after,.todos-los-equiposOctavos ul.marcador:after,.todos-los-equiposCuartos ul.marcador:after{
+ content: "VS";
+    margin-left: 20px;
+    margin-top: 17px;
+    position: absolute;
+    font-family: 'sansationregular';
+}
+
+.todos-los-equipos ul.marcadorFase,.todos-los-equiposOctavos ul.marcadorFase,.todos-los-equiposCuartos ul.marcadorFase{
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 133px;
+    width: 30px;
+}
+ 
+.todos-los-equipos ul.marcadorFase li,.todos-los-equiposOctavos ul.marcadorFase li,.todos-los-equiposCuartos ul.marcadorFase li{
+   background-color: #FFFFFF;
+    color: #000000;
+    display: none;
+    float: left;
+    font-family: 'sansationregular';
+    font-size: 16px;
+    height: 28px;
+    line-height: 30px;
+    margin-left: 1px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 25px;
+}
+ 
+.todos-los-equipos ul.marcadorFase li.vs,.todos-los-equiposOctavos ul.marcadorFase li.vs,.todos-los-equiposCuartos ul.marcadorFase li.vs{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #000000;
+    display: block;
+    font-family: 'sansationbold';
+    font-size: 12px;
+    height: 45px;
+    line-height: 35px;
+    margin: 0;
+      padding-top: 9px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 7px;
+    text-transform: uppercase;
+    width: 22px;
+} 
+
+ 
+ul.marcador3{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+float: left;
+height: 24px;
+list-style: none outside none;
+margin: 0 0 0 41px;
+padding: 0;
+width: 60px;
+}
+
+ul.marcador3:after{
+content: "VS";
+margin-left: 17px;
+position: absolute;
+margin-top: 15px;
+font-family: 'sansationregular';
+}
+ 
+ul.marcador3 li{
+     background-color: #FFFFFF;
+    color: #000000;
+    float: left;
+    font-size: 18px;
+    height: 35px;
+    line-height: 36px;
+    margin-left: 1px;
+    margin-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 25px;
+     font-family: 'sansationregular';
+     display:none;
+}
+ 
+.todos-los-equipos ul.marcador li{
+   background-color: #FFFFFF;
+    color: #000000;
+    float: left;
+    font-size: 18px;
+    height: 45px;
+    line-height: 46px;
+    margin-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    width: 25px;
+       font-family: 'sansationregular';
+            display:none;
+}
+ 
+ 
+.todos-los-equipos .grupo.b ul{
+    background:#6295A3;
+}
+.todos-los-equipos .grupo.c ul{
+     background:#6DA06D;
+}
+.todos-los-equipos .grupo.d ul{
+     background:#D1B43B;
+}
+.todos-los-equipos .grupo.e ul{
+      background:#D1B43B;
+}
+.todos-los-equipos .grupo.f ul{
+     background:#84847E;
+}
+.todos-los-equipos .grupo.g ul{
+     background:#6295A3;
+}
+.todos-los-equipos .grupo.h ul{
+      background:#E58628;
+}
+.todos-los-equipos ul.lado {
+    margin: 0;
+}
+.todos-los-equipos ul.lado li {
+    float: right;
+    text-align: right;
+}
+.grupo {
+    position: relative;
+}
+.grupo .pais {
+    background: url('../../img/imgCalendario/sprite-banderas.png') no-repeat left top;
+    display: block;
+    width: 54px;
+    height: 34px;
+}
+.grupo .pais:hover {
+    background: rgba(255, 255, 255, 0.17) url('../../img/imgCalendario/sprite-banderas.png') no-repeat left top;
+    display: block;
+    width: 54px;
+    height: 34px;
+}
+.todos-los-equipos ul.abajo {
+    padding: 20px 10px 0px 10px;
+}
+.grupo .pais.col,.franjaPartidos ul li span.col {
+    background-position: -6px -6px;
+}
+.grupo .pais.eua,.franjaPartidos ul li span.eua  {
+    background-position: -4px -49px;
+}
+.grupo .pais.fra,.franjaPartidos ul li span.fra  {
+    background-position: -7px -92px;
+}
+.grupo .pais.arg,.franjaPartidos ul li span.arg {
+    background-position: -3px -136px;
+}
+.grupo .paisin{
+    background-position: -7px -176px;
+}
+.grupo .pais.agl,.franjaPartidos ul li span.agl{
+    background-position: -3px -175px;
+}
+
+.grupo .pais.aus,.franjaPartidos ul li span.aus{
+    background-position: -3px -217px;
+}
+.grupo .pais.bra,.franjaPartidos ul li span.bra {
+    background-position: -7px -256px;
+}
+.grupo .pais.crc,.franjaPartidos ul li span.crc {
+    background-position: -3px -296px;
+}
+.grupo .pais.bel,.franjaPartidos ul li span.bel  {
+    background-position: -9px -335px;
+}
+.grupo .pais.bos,.franjaPartidos ul li span.bos {
+    background-position: -3px -377px;
+}
+.grupo .pais.chi,.franjaPartidos ul li span.chi {
+    background-position: -9px -417px;
+}
+.grupo .pais.cro,.franjaPartidos ul li span.cro {
+    background-position: -3px -461px;
+}
+.grupo .pais.irn,.franjaPartidos ul li span.irn {
+    background-position: -9px -507px;
+}
+.grupo .pais.cor,.franjaPartidos ul li span.cor {
+    background-position: -3px -547px;
+}
+.grupo .pais.ecu,.franjaPartidos ul li span.ecu {
+    background-position: -8px -591px;
+}
+.grupo .pais.esp,.franjaPartidos ul li span.esp {
+    background-position: -3px -632px;
+}
+.grupo .pais.gha,.franjaPartidos ul li span.gha {
+    background-position: -9px -677px;
+}
+.grupo .pais.hol,.franjaPartidos ul li span.hol {
+    background-position: -3px -719px;
+}
+.grupo .pais.ing,.franjaPartidos ul li span.ing {
+    background-position: -3px -761px;
+}
+.grupo .pais.mex,.franjaPartidos ul li span.mex {
+    background-position: -8px -1316px;
+}
+.grupo .pais.nig,.franjaPartidos ul li span.nig {
+    background-position: -8px -802px;
+}
+.grupo .pais.ale,.franjaPartidos ul li span.ale {
+    background-position: -6px -841px;
+}
+.grupo .pais.por,.franjaPartidos ul li span.por {
+    background-position: -8px -927px;
+}
+.grupo .pais.sui,.franjaPartidos ul li span.sui {
+    background-position: -6px -971px;
+}
+.grupo .pais.gre,.franjaPartidos ul li span.gre {
+    background-position: -6px -885px;
+}
+.grupo .pais.ita,.franjaPartidos ul li span.ita {
+    background-position: -5px -1015px;
+}
+.grupo .pais.jap,.franjaPartidos ul li span.jap{
+    background-position: -6px -1058px;
+}
+.grupo .pais.cam,.franjaPartidos ul li span.cam {
+    background-position: -6px -1101px;
+}
+.grupo .pais.cdm,.franjaPartidos ul li span.cdm  {
+    background-position: -7px -1147px;
+}
+.grupo .pais.hon,.franjaPartidos ul li span.hon {
+    background-position: -6px -1191px;
+}
+.grupo .pais.uru,.franjaPartidos ul li span.uru {
+    background-position: -6px -1233px;
+}
+.grupo .pais.rus,.franjaPartidos ul li span.rus {
+    background-position: -5px -1272px;
+}
+
+
+.grupo .pais-p{
+    background: url('../../img/imgCalendario/sprite-banderas-2.png') no-repeat left top;
+    display: block;
+    height: 15px;
+    margin-top: -9px;
+    width: 30px;
+}
+.grupo .pais-p.col {
+    background-position: -3px 0px;
+}
+.grupo .pais-p.eua {
+    background-position: -3px -17px;
+}
+.grupo .pais-p.fra {
+    background-position: -3px -36px;
+}
+.grupo .pais-p.arg {
+    background-position: -3px -56px;
+}
+.grupo .pais-p.agl {
+    background-position: -3px -75px;
+}
+.grupo .pais-p.aus{
+    background-position: -3px -96px;
+}
+.grupo .pais-p.bra {
+    background-position: -3px -113px;
+}
+.grupo .pais-p.crc {
+    background-position: -3px -133px;
+}
+.grupo .pais-p.bel {
+    background-position: -3px -153px;
+}
+.grupo .pais-p.bos {
+    background-position: -3px -173px;
+}
+.grupo .pais-p.chi {
+    background-position: -3px -196px;
+}
+.grupo .pais-p.cro {
+    background-position: -3px -216px;
+}
+.grupo .pais-p.irn {
+    background-position: -3px -236px;
+}
+.grupo .pais-p.cor {
+    background-position: -3px -258px;
+}
+.grupo .pais-p.ecu {
+    background-position: -3px -279px;
+}
+.grupo .pais-p.esp {
+    background-position: -3px -300px;
+}
+.grupo .pais-p.gha {
+    background-position: -3px -322px;
+}
+.grupo .pais-p.hol {
+    background-position: -3px -343px;
+}
+.grupo .pais-p.ing {
+    background-position: -3px -367px;
+}
+.grupo .pais-p.nig {
+    background-position: -3px -389px;
+}
+.grupo .pais-p.ale {
+    background-position: -3px -413px;
+}
+.grupo .pais-p.por {
+    background-position: -3px -459px;
+}
+.grupo .pais-p.sui {
+    background-position: -3px -484px;
+}
+.grupo .pais-p.gre {
+    background-position: -3px -436px;
+}
+.grupo .pais-p.ita {
+    background-position: -3px -505px;
+}
+.grupo .pais-p.jap{
+    background-position: -3px -528px;
+}
+.grupo .pais-p.cam {
+    background-position: -3px -551px;
+}
+.grupo .pais-p.cdm {
+    background-position: -3px -574px;
+}
+.grupo .pais-p.hon {
+    background-position: -3px -598px;
+}
+.grupo .pais-p.uru {
+    background-position: -3px -623px;
+}
+.grupo .pais-p.rus {
+    background-position: -3px -645px;
+}
+.grupo .pais-p.mex {
+    background-position: -3px -672px;
+}
+.grupo li a {
+    font-family: 'octin_sports_rgregular';
+    color: #FFF;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+.grupo li a:hover {
+    text-decoration: underline;
+}
+.grupo .letra a {
+    text-decoration: none;
+}
+.grupo .letra {
+    font-family: 'octin_sports_rgregular';
+    font-size: 58px;
+    -moz-border-radius: 62px;
+    -webkit-border-radius: 62px;
+    border-radius: 81px;
+    -moz-box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    -webkit-box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    position: absolute;
+    z-index: 2;
+    padding: 8px 24px;
+    top: 47px;
+    left: 70px;
+    -moz-box-shadow: inset 1px 1px 14px #ffffff;
+    -webkit-box-shadow: inset 1px 1px 14px #ffffff;
+    box-shadow: inset 1px 1px 14px #ffffff;
+    border: solid 1px rgba(139, 139, 139, 0.36);
+    cursor: pointer;
+    line-height: 0.9;
+    width: 34px;
+    text-align: center;
+    height: 62px;
+}
+.grupo .fechas {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.grupo .fecha p{
+    position: absolute;
+    top: 58px;
+    left: 20px;
+    z-index: 3;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'octin_sports_rgregular';  
+    pointer-events: none;
+}
+.grupo.a .fecha p {
+    color: #E08A24;
+}
+.grupo.b .fecha p {
+    color: #4d8b96; 
+}
+.grupo.c .fecha p {
+    color: #6da06d; 
+}
+.grupo.d .fecha p {
+    color: #d1b43b; 
+}
+.grupo.e .fecha p {
+    color: #d1b43b;     
+}
+.grupo.f .fecha p {
+    color: #84847e;
+}
+.grupo.g .fecha p {
+    color: #4d8b96; 
+}
+.grupo.h .fecha p {
+    color: #e58628; 
+}
+.grupo .letra:hover {
+    background: #FFF!important;
+    -moz-box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    -webkit-box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    box-shadow: 3px 3px 13px rgba(59, 59, 59, 0.37);
+    border: none;
+}
+.grupo .letra.uno {
+    background: #fbb33b;
+    color: #ec952e; 
+    text-decoration: none;
+}
+.grupo .letra.dos {
+    background: #6da7bc;
+    color: #4d8b96; 
+    text-decoration: none;
+}
+.grupo .letra.tres {
+    background: #79bc7c;
+    color: #6da06d; 
+    text-decoration: none;
+}
+.grupo .letra.cuatro {
+    background: #e8d885;
+    color: #d1b43b; 
+    text-decoration: none;
+}
+.grupo .letra.cinco {
+    background: #e8d885;
+    color: #d1b43b; 
+    text-decoration: none;
+}
+.grupo .letra.seis {
+    background: #aaaa9d;
+    color: #84847e; 
+    text-decoration: none;
+}
+.grupo .letra.siete {
+    background: #6da7bc;
+    color: #4d8b96; 
+    text-decoration: none;
+}
+.grupo .letra.ocho {
+    background: #F4B25B;
+    color: #e58628; 
+    text-decoration: none;
+}
+.grupo .fondo {
+    background: #fbad38;
+    width: 215px;
+    height: 167px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.grupo .fondo.pri {
+    background: rgba(244, 178, 91, 0.75);
+}
+.grupo .fondo.seg {
+    background: rgba(109, 167, 188, 0.75);
+}
+.grupo .fondo.ter {
+    background: rgba(121, 188, 124, 0.75);
+}
+.grupo .fondo.cua {
+    background: rgba(232, 216, 133, 0.75);
+}
+.grupo .fondo.qui {
+    background: rgba(232, 216, 133, 0.75);
+}
+.grupo .fondo.sex {
+    background: rgba(170, 170, 157, 0.75);
+}
+.grupo .fondo.sep {
+    background: rgba(109, 167, 188, 0.75);
+}
+.grupo .fondo.oct {
+    background: rgba(244, 178, 91, 0.75);
+}
+.tabla {
+    position: absolute;
+    width: 221px;
+    height: 171px;
+    z-index: 4;
+    left: 5px;
+    top: 2px;
+    display: none;
+}
+.simbolo-letra {
+   background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 80px;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-top: 1px;
+    padding: 4px 7px;
+    position: absolute;
+}
+ 
+.simbolo-letra2 {
+height: 46px;
+    left: 90px;
+    position: absolute;
+    top: -23px;
+    width: 46px;
+}
+
+.simbolo-letra2.a {
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -95px rgba(0, 0, 0, 0);
+ }
+.simbolo-letra2.b {
+   background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -151px rgba(0, 0, 0, 0);
+ } 
+ .simbolo-letra2.c {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -210px rgba(0, 0, 0, 0);
+ }
+ .simbolo-letra2.d {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -264px rgba(0, 0, 0, 0);
+ }
+ .simbolo-letra2.e {
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -320px rgba(0, 0, 0, 0);
+ }
+ 
+ .simbolo-letra2.f{
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -385px rgba(0, 0, 0, 0);
+ }
+ 
+ .simbolo-letra2.g {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -451px rgba(0, 0, 0, 0);
+ }
+ .simbolo-letra2.h {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -515px rgba(0, 0, 0, 0);
+ }
+ 
+.tabla.ga .simbolo-letra {
+    color: #e78d34;
+}
+.tabla.gb .simbolo-letra {
+    color: #4d8b96;
+}
+.tabla.gc .simbolo-letra {
+    color: #6da06d;
+}
+.tabla.gd .simbolo-letra {
+    color: #d1b43b;
+}
+.tabla.ge .simbolo-letra {
+    color: #d1b43b;
+}
+.tabla.gf .simbolo-letra {
+    color: #84847e;
+}
+.tabla.gg .simbolo-letra {
+    color: #4d8b96;
+}
+.tabla.gh .simbolo-letra {
+    color: #e58628;
+}
+ 
+.todos-los-equiposTablas .tablaDatos.ga .simbolo-letra2 {
+    color: #e78d34;
+}
+.todos-los-equiposTablas .tablaDatos.gb .simbolo-letra2 {
+    color: #4d8b96;
+}
+.todos-los-equiposTablas .tablaDatos.gc .simbolo-letra2 {
+    color: #6da06d;
+}
+.todos-los-equiposTablas .tablaDatos.gd .simbolo-letra2 {
+    color: #d1b43b;
+}
+.todos-los-equiposTablas .tablaDatos.ge .simbolo-letra2 {
+    color: #d1b43b;
+}
+.todos-los-equiposTablas .tablaDatos.gf .simbolo-letra2 {
+    color: #84847e;
+}
+.todos-los-equiposTablas .tablaDatos.gg .simbolo-letra2 {
+    color: #4d8b96;
+}
+.todos-los-equiposTablas .tablaDatos.gh .simbolo-letra2 {
+    color: #e58628; 
+}
+ 
+ 
+.flecha {
+    width: 29px;
+    float: left;    
+}
+.flecha img {
+    float: left;
+    padding: 0;
+}
+.tabla-completa {
+    width: auto;
+}
+.tabla-completa .primera-parte {
+    float: left;
+     width: 72px;
+    color: #000;
+    padding: 1px 14px;
+    height: 21px;
+    margin: 0;
+}
+.tabla-completa .primera-parte .horarios {
+    font-family: 'nexa_lightregular';
+    font-size: 10px;
+    text-transform: uppercase;
+    height: 9px;
+    padding: 0px 0;
+    text-align:center;
+}
+ 
+.tabla-completa .primera-parte .horarios a{
+    font-family: 'nexa_lightregular';
+    font-weight:bold;
+    color:black;
+    cursor:pointer;
+    text-transform: uppercase;
+    height: 9px;
+    padding: 0px 0;
+    font-size: 10px;
+    text-decoration:none;
+} 
+.tabla-completa .primera-parte .horarios a:hover{
+color:white;
+} 
+ 
+.tabla-completa .primera-parte .nombre {
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.tabla-completa .tabla-pais {
+  cursor: pointer;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    height: 8px;
+    line-height: 7px;
+    margin: -6px 8px 0;
+    padding: 1px 2px 15px;
+    text-transform: uppercase;
+width: 30px;
+}
+
+.tabla-completa .tabla-pais2 {
+    cursor: pointer;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+width: 30px;
+}
+
+
+.tabla-completa .tabla-paisFase{
+cursor: pointer;
+float: left;
+font-family: 'octin_sports_rgregular';
+font-size: 14px;
+line-height: 30px;
+text-transform: uppercase;
+width: 20px;
+}
+
+.tabla-completa .tabla-pais3 {
+   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 15px;
+    line-height: 32px;
+    margin: 14px 5px 0 -11px;
+    padding: 0;
+    text-indent: 19px;
+    text-transform: uppercase;
+    width: 15px;
+}
+
+
+.tabla-completa .vs {
+    font-family: 'octin_sports_rgregular';
+    float: left;
+    color: #FFF;
+    font-size: 16px;
+    width: auto;
+    margin: 0;
+    height: 9px;
+    padding: 7px 6px 13px 0;
+}
+.tabla-completa .marcador li {
+  background-color: #FFFFFF;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+    height: 45px;
+    line-height: 50px;
+    margin-left: 2px;
+    width: 25px;
+}
+.tabla-completa .marcador {
+    width: 44px;
+    padding: 0;
+    height: auto;
+    margin: 0;
+}
+
+.filaFases {
+      background-color: #A8A8A8;
+    display: block;
+    float: left;
+    height: 45px;
+    margin-left: 0;
+    margin-top: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+.filaFases2{
+   background-color:transparent;
+    display: block;
+    float: left;
+    height: 45px;
+    margin-left: 0;
+    margin-top: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabla-completa .marcadorFases li {
+  background-color: #FFFFFF;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+    height: 45px;
+    line-height: 50px;
+    margin-left: 2px;
+    width: 25px;
+}
+
+.fila {
+  display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+
+.grupo.a .fila{
+   background: none repeat scroll 0 0 #E58628;
+    height: 45px;
+ width: 90%;
+}
+
+
+.filaDialogo{
+	 height: 47px;
+    margin-left: 65px;
+    padding-top: 20px;
+    width: auto;
+}
+
+.grupo.a .filaDialogo,.grupo.b .filaDialogo,.grupo.c .filaDialogo,.grupo.d .filaDialogo,.grupo.e .filaDialogo,.grupo.f .filaDialogo,.grupo.g .filaDialogo,.grupo.h .filaDialogo{
+ height: 47px;
+    margin-left: 65px;
+    padding-top: 20px;
+    width: auto;
+}
+
+h1.dialogoTitFases {
+    background-color: #A8A8A8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 20px;
+    height: 29px;
+    line-height: 33px;
+    margin-left: 74px;
+    margin-top: -7px;
+    position: absolute;
+    text-align: center;
+    width: 130px;
+    z-index: 11;
+}
+
+
+
+h1.dialogoTit {
+    border-radius: 80px;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 31px;
+    height: 40px;
+    line-height: 39px;
+    margin-left: 120px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    z-index: 11;
+}
+
+h1.dialogoTit.A{
+   background: none repeat scroll 0 0 #F4B25B;
+}
+h1.dialogoTit.B{
+ background: none repeat scroll 0 0 #6DA7BC;
+}
+h1.dialogoTit.C{
+ background: none repeat scroll 0 0 #79BC7C;
+}
+h1.dialogoTit.D{
+ background: none repeat scroll 0 0 #E8D885;
+}
+h1.dialogoTit.E{
+ background: none repeat scroll 0 0 #E8D885;
+}
+h1.dialogoTit.F{
+ background: none repeat scroll 0 0 #AAAA9D;
+}
+h1.dialogoTit.G{
+ background: none repeat scroll 0 0 #6DA7BC;
+}
+
+h1.dialogoTit.H{
+   background: none repeat scroll 0 0 #F4B25B;
+}
+
+.horaDialogo{
+   background-color: #FFFFFF;
+    color: #000000;
+    height: 29px;
+    margin-top: 6px;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+.horaDialogo h4{
+	 font-family: 'sansationregular';
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.grupo.b .fila{
+    background: none repeat scroll 0 0 #6295A3;
+    height: 45px;
+  width: 90%;
+}
+.grupo.c .fila{
+    background: none repeat scroll 0 0 #6DA06D;
+    height: 45px;
+   width: 90%;
+}
+
+.grupo.d .fila{
+    background: none repeat scroll 0 0 #D1B43B;
+   height: 45px;
+   width: 90%;
+}
+
+.grupo.e .fila{
+    background: none repeat scroll 0 0 #D1B43B;
+   height: 45px;
+  width: 90%;
+}
+
+.grupo.f .fila{
+    background: none repeat scroll 0 0 #84847E;
+   height: 45px;
+  width: 90%;
+}
+
+.grupo.g .fila{
+    background: none repeat scroll 0 0 #6295A3;
+     height: 45px;
+ width: 90%;
+}
+.grupo.h .fila{
+    background:#E58628;
+        height: 45px;
+   width: 90%;
+}
+
+.grupo.a .fila.color-a{
+background: none repeat scroll 0 0 #F4B25B;
+    height: 45px;
+  width: 90%;
+}
+
+.grupo.b .fila.color-b{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+     height: 45px;
+   width: 90%;
+}
+
+.grupo.c .fila.color-c{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+   height: 45px;
+width: 90%;
+}
+
+.grupo.d .fila.color-d{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 45px;
+width: 90%;
+}
+
+.grupo.e .fila.color-e{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+   height: 45px;
+  width: 90%;
+}
+
+.grupo.f .fila.color-f{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 218px;
+width: 90%;
+}
+
+.grupo.g .fila.color-g{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 45px;
+width: 90%;
+}
+
+.grupo.h .fila.color-h{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 45px;
+ width: 90%;
+}
+
+.tabla-completa .fila .tabla-pais li {
+  color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    line-height: 4;
+    margin-top: 10px;
+    position: absolute;
+    text-indent: 25px;
+}	
+ 
+
+.tabla-paisFase li {
+  color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    line-height: 2;
+    margin-left: -15px;
+    margin-top: 7px;
+    position: absolute;
+    text-indent: 19px;
+}
+.tabla-paisFase li.ganador {
+     margin-top: -10px;
+    text-indent: 32px;
+}
+ 
+ 
+.todos-los-equipos .fila.color-a ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-b ul {
+   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-c ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-d ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-e ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-f ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-g ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.todos-los-equipos .fila.color-h ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.izq {
+    width: 36px;
+    float: left;
+    height: 166px;
+    padding: 5px 0;
+}
+.footer {
+    background: #efeff1;
+    overflow: hidden;
+    padding: 10px 10px 4px;
+    width: 940px;
+}
+.footer .info-footer {
+    float: right;
+    font-family: 'droid_sansregular';
+    font-size: 13px;
+    padding: 0 5px;
+}
+.footer .info-footer p {
+    float: left;
+    padding: 9px 3px;
+}
+.footer .info-footer img {
+    float: left;
+}
+ 
+ 
+/* TABLA DE GRUPOS */
+ 
+.tabla_clasificacion{
+    margin: 0 0 20px;
+}
+.tabla_clasificacion .tit_tabla{
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 63px;
+}
+.tabla_clasificacion .tit_tabla h3{
+    background: #5182c1;
+    color: #FFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+}
+ 
+.tabla_clasificacion .container_tabla{
+    float: left;
+    height: 163px;
+    margin: 0 6px 6px 0;
+    padding: 7px;
+    width: 215px;
+}
+.tabla_clasificacion .container_tabla > h3{
+    color: #393939;
+    font-family: 'sansationregular';
+    font-size: 15px;
+    margin: 0px 0 0 10px;
+}
+.filtro_grupo{
+    height: 29px;
+    margin: 0px 0 0;
+     padding: 0 0 0px;
+}
+ 
+.filtro_grupo a{
+    color: #393939;
+    float: right;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    margin-left:10px;
+    background-color:white;
+    padding:3px;
+    margin-top:0px;
+	cursor:pointer;
+}
+ 
+ 
+.filtro_grupo a.active{
+    color: #393939;
+    float: right;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    margin-left:10px;
+    background:url(../images-calen/blancoTrans.png);
+    padding:3px;
+    cursor:pointer;
+    margin-top:0px;
+}
+ 
+.filtro_grupo a.active:hover{
+    color: #393939;
+    float: right;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    margin-left:10px;
+    background-color:white;
+    padding:3px;
+    cursor:pointer;
+    margin-top:0px;
+}
+ 
+.filtro_grupo ul{
+    float: left;
+}
+.filtro_grupo ul li{
+    background: #FFF;
+    border:1px solid #5182c1;
+    float: left;
+    height: 25px;
+    padding: 0px;
+    position: relative;
+    width: 50px;
+}
+.filtro_grupo ul li a{
+    color: #393939;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+}
+.filtro_grupo ul li span{
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #5182c1;
+    bottom: -8px;
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2px;
+    width: 0;
+}
+.filtro_grupo ul li:hover, .filtro_grupo ul li.active{background: #5182c1;}
+.filtro_grupo ul li:hover a, .filtro_grupo ul li.active a{color: #FFF;}
+.filtro_grupo ul li:hover span, .filtro_grupo ul li.active span{display: block;}
+ 
+ 
+ 
+/*------------TABLAS----------------------*/
+ 
+ 
+.botoneraTablas{
+   background-color: #FFFFFF;
+    height: 100px;
+    margin: 0 auto 0 0;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: fixed;
+    top: 168px;
+    width: 100%;
+    z-index: 10;
+}
+
+.botoneraCalendario{
+ height: 110px;
+    margin: 0 auto 0 0;
+    padding-left: 15px;
+    padding-top: 0;
+    top: 168px;
+    width: 93%;
+    z-index: 10;
+}
+
+.botoneraPosiciones{
+ height: 110px;
+    margin: 0 auto 0 0;
+    padding-left: 15px;
+    padding-top: 20px;
+    top: 168px;
+    width: 93%;
+    z-index: 10;
+}
+
+.botoneraCalendario a.btnTabla{
+margin-left: 12px;
+ } 
+
+
+.botoneraTablas.fijo,.botoneraCalendario.fijo{
+  top: 81px;
+}
+
+.btnTabla{
+   float: left;
+    height: 50px;
+    margin-left: 15px;
+    width: 50px;
+   cursor:pointer;
+} 
+ 
+.btnTabla.a {
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -95px rgba(0, 0, 0, 0);
+ }
+.btnTabla.b {
+   background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -151px rgba(0, 0, 0, 0);
+ } 
+.btnTabla.c {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -210px rgba(0, 0, 0, 0);
+ }
+.btnTabla.d {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -265px rgba(0, 0, 0, 0);
+ }
+.btnTabla.e {
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -321px rgba(0, 0, 0, 0);
+ }
+ 
+.btnTabla.f{
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -384px rgba(0, 0, 0, 0);
+ }
+ 
+.btnTabla.g {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -450px rgba(0, 0, 0, 0);
+ }
+.btnTabla.h {
+ background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -515px rgba(0, 0, 0, 0);
+ } 
+ 
+ 
+.conteneTablas{
+ height: 1650px;
+   margin-top: 40px;
+    width: 80%;
+ }
+ 
+#btnTabla{
+margin-top: 5px;
+margin-left: 173px;
+position: absolute;
+}
+a.btnVolverTabla{
+margin-right: 58px;
+    margin-top: 5px;
+	cursor:pointer;
+}
+ 
+.filaTablas{
+    display: block;
+    float: left;
+    overflow: hidden;
+     margin-top: -9px;
+}
+ 
+.todos-los-equiposTablas ul {
+  background: none repeat scroll 0 0 #E58628;
+    float: left;
+    height: 27px;
+    list-style: none outside none;
+    padding: 0;
+    width: 220px;
+}
+ 
+.todos-los-equiposTablas .grupoTablas {
+ float: left;
+    height: 163px;
+    padding: 7px;
+    width: 220px;
+}
+ 
+.todos-los-equiposTablas .grupoTablas.a  {
+    background-color: #F4B25B;
+   margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+    
+}
+.todos-los-equiposTablas .grupoTablas.b {
+    background: #6DA7BC;
+  margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.c {
+    background: #6da06d;
+ margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.d {
+    background: #d1b43b;
+  margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.e {
+    background: #d1b43b;
+ margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.f {
+    background: #84847e;
+ margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.g{
+    background: #6295a3;
+ margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+.todos-los-equiposTablas .grupoTablas.h {
+    background: #e58628;
+margin: 0 auto 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+ 
+.todos-los-equiposTablas  .filaTablas.color-a ul {
+    background: #F9D8B0;
+}
+.todos-los-equiposTablas  .filaTablas.color-a2 ul {
+    background: #E58628;
+}
+ 
+.todos-los-equiposTablas  .filaTablas.color-b ul {
+    background: #9FC4D1;
+}
+.todos-los-equiposTablas  .filaTablas.color-b2 ul {
+    background: #6295A3;
+}
+.todos-los-equiposTablas  .filaTablas.color-c ul {
+    background: #ABD8AD;
+}
+.todos-los-equiposTablas  .filaTablas.color-c2 ul {
+    background: #6DA06D;
+}
+.todos-los-equiposTablas  .filaTablas.color-d ul {
+    background: #F1E5A8;
+}
+.todos-los-equiposTablas  .filaTablas.color-d2 ul {
+    background:#D1B43B;
+}
+.todos-los-equiposTablas  .filaTablas.color-e ul {
+    background: #F1E5A8;
+}
+.todos-los-equiposTablas  .filaTablas.color-e2 ul {
+    background:#D1B43B;
+}
+.todos-los-equiposTablas  .filaTablas.color-f ul {
+    background: #CACABF;
+}
+.todos-los-equiposTablas  .filaTablas.color-f2 ul {
+    background: #84847E;
+}
+.todos-los-equiposTablas  .filaTablas.color-g ul {
+    background: #A9CDDA;
+}
+.todos-los-equiposTablas  .filaTablas.color-g2 ul {
+    background: #6295A3;
+}
+.todos-los-equiposTablas  .filaTablas.color-h ul {
+    background: #F1CC9A;
+}
+.todos-los-equiposTablas  .filaTablas.color-h2 ul {
+    background: #E58628;
+}
+ 
+.horariosTablas p{
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    position:absolute;
+    cursor:pointer;
+ }
+ 
+  
+.horariosTablas p span{
+  border-right: 1px solid #FFFFFF;
+    line-height: 26px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    padding-top: 6px;
+    text-align: center;
+ }
+  
+ .horariosTablas p span:first-child{
+   margin-left: 40px;
+ }
+  
+  .horariosTablas p span:last-child{
+   border:none;
+ }
+  
+  
+ .horariosTablasTitulo p{
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+  
+.horariosTablasTitulo p.a{
+      background-color:#FFDAAF;
+}
+.horariosTablasTitulo p.b{
+      background-color:#6295A3;
+}
+.horariosTablasTitulo p.c{
+      background-color:#ABD8AD;
+}
+.horariosTablasTitulo p.d{
+      background-color:#D1B43B;
+}
+.horariosTablasTitulo p.e{
+      background-color:#D1B43B;
+}
+.horariosTablasTitulo p.f{
+      background-color:#84847E;
+}
+.horariosTablasTitulo p.g{
+      background-color:#6295A3;
+}
+.horariosTablasTitulo p.h{
+      background-color:#E58628;
+}
+  
+ .horariosTablasTitulo span:first-child{
+     margin-left: 29px;
+ }
+  
+.horariosTablasTitulo p span{
+   line-height: 26px;
+    padding-bottom: 9px;
+    padding-right: 6px;
+    padding-top: 7px;
+    text-align: center;
+ }
+ 
+.grupoTablas .pais-pTabla {
+  background: url("../../img/imgCalendario/sprite-banderas-2.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    height: 15px;
+    line-height: 40px;
+    margin-top: 0px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30px;
+}
+ 
+.grupoTablas .pais-pTabla.col {
+    background-position: 0px 0px;
+}
+.grupoTablas .pais-pTabla.eua {
+    background-position: 0px -17px;
+}
+.grupoTablas .pais-pTabla.fra {
+    background-position: 0px -36px;
+}
+.grupoTablas .pais-pTabla.arg {
+    background-position: 0px -56px;
+}
+.grupoTablas .pais-pTabla.agl {
+    background-position: 0px -75px;
+}
+.grupoTablas .pais-pTabla.aus{
+    background-position: 0px -96px;
+}
+.grupoTablas .pais-pTabla.bra {
+    background-position: 0px -113px;
+}
+.grupoTablas .pais-pTabla.crc {
+    background-position: 0px -133px;
+}
+.grupoTablas .pais-pTabla.bel {
+    background-position: 0px -153px;
+}
+.grupoTablas .pais-pTabla.bos {
+    background-position: 0px -173px;
+}
+.grupoTablas .pais-pTabla.chi {
+    background-position: 0px -196px;
+}
+.grupoTablas .pais-pTabla.cro {
+    background-position: 0px -216px;
+}
+.grupoTablas .pais-pTablairn {
+    background-position: 0px -236px;
+}
+.grupoTablas .pais-pTabla.cor {
+    background-position: 0px -258px;
+}
+.grupoTablas .pais-pTabla.ecu {
+    background-position: 0px -279px;
+}
+.grupoTablas .pais-pTabla.esp {
+    background-position: 0px -300px;
+}
+.grupoTablas .pais-pTabla.gha {
+    background-position: 0px -322px;
+}
+.grupoTablas .pais-pTabla.hol {
+    background-position: 0px -343px;
+}
+.grupoTablas .pais-pTabla.ing {
+    background-position: 0px -367px;
+}
+.grupoTablas .pais-pTabla.nig {
+    background-position: 0px -389px;
+}
+.grupoTablas .pais-pTabla.ale {
+    background-position: 0px -413px;
+}
+.grupoTablas .pais-pTabla.por {
+    background-position: 0px -459px;
+}
+.grupoTablas .pais-pTabla.sui {
+    background-position: 0px -484px;
+}
+.grupoTablas .pais-pTabla.gre {
+    background-position: 0px -436px;
+}
+.grupoTablas .pais-pTabla.ita {
+    background-position: 0px -505px;
+}
+.grupoTablas .pais-pTabla.jap{
+    background-position: 0px -528px;
+}
+.grupoTablas .pais-pTabla.cam {
+    background-position: 0px -551px;
+}
+.grupoTablas .pais-pTabla.cdm {
+    background-position: 0px -574px;
+}
+.grupoTablas .pais-pTabla.hon {
+    background-position: 0px -598px;
+}
+.grupoTablas .pais-pTabla.uru {
+    background-position: 0px -623px;
+}
+.grupoTablas .pais-pTabla.rus {
+    background-position: 0px -645px;
+}
+.grupoTablas .pais-pTabla.mex {
+    background-position: 0px -672px;
+}
+ 
+ 
+ 
+/*  Menu */
+.menu {
+  height: 46px;
+    position: absolute;
+}
+.fondomenu  {
+ height: 33px;
+    margin-top: -30px;
+    position: absolute;
+    width: 941px;
+}
+ 
+.fondomenu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+margin-left:297px; 
+}
+.fondomenu ul li a {
+background-color: #FF9A36;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float:left;
+    font-family: 'nexa_boldregular',arial,helvetica;
+    font-size: 13px;
+    height: 22px;
+    line-height: 24px;
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+ 
+/* --------------- FECHAS ------------------ */
+ 
+.iconoFechas{
+  background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -575px transparent;
+    cursor: pointer;
+    height: 55px;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: absolute;
+    width: 42px;
+} 
+
+.iconoFechasFases{
+    background: url("../../img/imgCalendario/spriteCalen.png") no-repeat scroll -18px -575px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 55px;
+    margin-left: 0px;
+    margin-top: 5px;
+    position: absolute;
+    width: 42px;
+} 
+
+
+.todos-los-equipos .fila ul.popup-partidos2{
+ background: url("../../img/imgCalendario/spriteGeneral.png") no-repeat scroll 0 -534px rgba(0, 0, 0, 0);
+    height: 70px;
+    margin-left: 29px;
+    margin-top: -57px;
+    position: absolute;
+    width: 125px;
+    z-index: 100000;
+        display: none;
+} 
+
+
+ 
+.todos-los-equipos .fila ul.popup-partidos{
+  background: url("../../img/imgCalendario/spriteGeneral.png") no-repeat scroll 0 -450px rgba(0, 0, 0, 0);
+  height: 70px;
+    margin-left: 29px;
+    margin-top: -10px;
+    position: absolute;
+    width: 125px;
+    z-index: 100000;
+    display: none;
+} 
+
+.todos-los-equipos .fila ul.popup-partidos li.horarios,.todos-los-equipos .fila ul.popup-partidos2 li.horarios{
+   color: #000000;
+    font-family: 'sansationregular';
+    font-size: 14px;
+    margin-left: 4px;
+    margin-top: 6px;
+    text-align: center;
+    width: 116px;
+}
+
+.todos-los-equipos .fila ul.popup-partidos li.btnSede,.todos-los-equipos .fila ul.popup-partidos2 li.btnSede{
+ background-color: #FF9A36;
+    color: #FFFFFF;
+    height: 20px;
+    line-height: 22px;
+    margin-left: 9px;
+    margin-top: 4px;
+    text-align: center;
+    width: 106px;
+    cursor: pointer;
+      font-family: 'nexa_boldregular',arial,helvetica;
+    font-size: 13px;
+}
+
+.todos-los-equipos .fila ul.popup-partidos li.btnSede:after,.todos-los-equipos .fila ul.popup-partidos2 li.btnSede:after{
+content:"  >";
+}
+ 
+.todos-los-equiposFechas{
+height:366px;
+}
+ 
+.fondomenuFechas{
+width: 1024px;
+height:366px;
+}
+ 
+.fondomenuFechas ul{
+list-style: none;
+margin: 0;
+margin:auto;
+padding: 0;
+}
+ 
+.fondomenuFechas ul h2{
+ color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    height: 30px;
+    margin-top: -50px;
+    position: absolute;
+    width: 30px;
+}
+ 
+.fondomenuFechas ul h4{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    height: 30px;
+    line-height: 13px;
+    margin-top: -25px;
+    position: relative;
+    text-indent: -6px;
+    width: 33px;
+}
+
+.fondomenuFechas li h3.octavos{
+ background: url("../../img/imgCalendario/llavesTexto.png") no-repeat scroll 0 12px #FFFFFF;
+    height: 86px;
+    margin-bottom: 25px;
+    margin-left: 1px;
+    margin-top: -3px;
+    width: 28px;
+}
+
+.fondomenuFechas li h3.cuartos{
+ background: url("../../img/imgCalendario/llavesTexto.png") no-repeat scroll 0 -85px #FFFFFF;
+    height: 86px;
+    margin-bottom: 25px;
+    margin-left: 1px;
+    margin-top: -3px;
+    width: 28px;
+}
+ 
+.fondomenuFechas li h3.semifinal{
+  background: url("../../img/imgCalendario/llavesTexto.png") no-repeat scroll 0 -175px #FFFFFF;
+    height: 86px;
+    margin-bottom: 25px;
+    margin-left: 1px;
+    margin-top: -3px;
+    width: 28px;
+}
+
+.fondomenuFechas li h3.tercerLugar{
+  background: url("../../img/imgCalendario/llavesTexto.png") no-repeat scroll 0 -274px #FFFFFF;
+    height: 116px;
+    margin-bottom: 25px;
+    margin-left: 1px;
+    margin-top: -3px;
+    width: 28px;
+}
+ .fondomenuFechas li h3.final{
+  background: url("../../img/imgCalendario/llavesTexto.png") no-repeat scroll 0 -390px #FFFFFF;
+    height: 116px;
+    margin-bottom: 25px;
+    margin-left: 1px;
+    margin-top: -3px;
+    width: 27px;
+}
+   
+ 
+.bloque{
+  background-color: #60A2AD;
+    cursor: pointer;
+    height: 48px;
+    margin-bottom: 25px;
+    margin-top: -6px;
+    padding-bottom: 29px;
+    padding-top: 1px;
+    width: 30px;
+}
+.bloque span{
+color:white;
+}
+
+.bloque span.llaves2{
+ color: white;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    height: 24px;
+    line-height: 22px;
+    margin-top: 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 27px;
+}
+
+.bloqueSinJugar{
+  background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    cursor: pointer;
+    height: 41px;
+    margin-bottom: 25px;
+    margin-top: -5px;
+    padding-bottom: 33px;
+    padding-top: 1px;
+    width: 28px;
+}
+
+
+.bloqueSinJugar span{
+  color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    height: 15px;
+    line-height: 43px;
+    margin-bottom: 17px;
+    margin-top: 9px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 27px;
+}
+
+
+
+.bloqueSinJugar span.llaves{
+ color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    height: 15px;
+    line-height: 43px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 27px;
+}
+
+.bloqueSinJugar span.llaves2{
+    color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    height: 24px;
+    line-height: 43px;
+    margin-top: 1px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 27px;
+}
+.bloqueSinJugar span.llaves2:after{
+   color:black;
+    content: "G";
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    margin-top: -56px;
+}
+
+
+
+.numeroUp{
+ background: none repeat scroll 0 0 #60A2AD;
+    border-radius: 80px;
+    color: #FFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    line-height: 22px;
+    margin-left: 5px;
+    margin-top: -6px;
+    padding-left: 4px;
+    padding-right: 11px;
+    position: absolute;
+    text-align: center;
+    width: 3px;
+}
+ 
+.numeroDown{
+	 background: none repeat scroll 0 0 #60A2AD;
+  border-radius: 80px 80px 80px 80px;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 11px;
+    line-height: 20px;
+    margin: -4px auto auto;
+    padding-left: 4px;
+    padding-right: 11px;
+    text-align: center;
+    width: 3px;
+}   
+
+.goles1{
+    background-color: #FF9A36;
+    color: #FFFFFF;
+    display: none;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-top: -1px;
+    position: absolute;
+    width: 33px;
+    z-index: 10000;
+}
+.goles2{
+    background-color: #FF9A36;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    height: 40px;
+    line-height: 35px;
+    margin-left: 30px;
+    margin-top: -36px;
+    position: absolute;
+    width: 33px;
+    z-index: 10000;
+      display:none;
+}  
+
+.fondomenuFechas ul li {
+   background-color: #E2E2E2;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 385px;
+    line-height: 30px;
+    margin-left: 1px;
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+.fondomenuFechas ul li.hoy{
+     border: 2px solid #FF9A36;
+    height: 381px;
+    background-color:#FF9A36;
+}
+
+.fondomenuFechas ul li.hoy:after{
+  background-color: #FF9A36;
+    color: #FFFFFF;
+    content: "HOY";
+    display: block;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    height: 21px;
+    line-height: 16px;
+    margin-left: -2px;
+    margin-top: 37px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    width: 34px;
+}	
+
+.fondomenuFechas ul li.hoy h4{   	
+    background-color: #FF9A36;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    height: 28px;
+    margin-left: -2px;
+    margin-top: -25px;
+    position: relative;
+    text-indent: -3px;
+    width: 34px;
+}
+
+.fondomenuFechas ul li.descanso h4{   	
+ color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    height: 35px;
+    margin-left: -1px;
+    margin-top: -25px;
+    position: relative;
+    text-indent: -3px;
+    width: 34px;
+}
+
+ 
+.fondomenuFechas ul li.descanso.hoy{
+     border: 2px solid #FF9A36;
+    height: 381px;
+    background: url("../../img/imgCalendario/descansoHoy.png") no-repeat scroll left #FF9A36;
+}
+	
+.fondomenuFechas ul li.descanso.hoy h4{   	
+  background-color: #FF9A36;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    height: 35px;
+    margin-left: -2px;
+    margin-top: -25px;
+    position: relative;
+    text-indent: -3px;
+    width: 34px;
+}
+
+.fondomenuFechas ul li.descanso.hoy:after{
+  background-color: #FF9A36;
+    color: #FFFFFF;
+    content: "HOY";
+    display: block;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    height: 21px;
+    line-height: 16px;
+    margin-left: -2px;
+    margin-top: 37px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    width: 34px;
+}
+.fondomenuFechas ul li.descanso{
+background: url("../../img/imgCalendario/descanso.png") no-repeat scroll left top transparent;
+}
+
+.pais-pFechas{
+
+  color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    height: 15px;
+    line-height: 43px;
+    margin-bottom: 15px;
+    margin-top: 13px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 27px;
+}
+ 
+ 
+/* ---------- SEDES ------------*/
+ article.sede{
+ 	display:none;
+ }
+ article.sede section.saoPaulo,article.sede section.rio,article.sede section.natal,article.sede section.fortaleza,article.sede section.manaos,article.sede section.brasilia,article.sede section.recife,article.sede section.salvador,article.sede section.cuiaba,article.sede section.portoAlegre,article.sede section.curitiba,article.sede section.beloHorizonte{
+display:none;
+  }
+ 
+.sedeSalir{
+ background-color: #FD9844;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-family: 'nexa_lightregular',arial,helvetica;
+    font-size: 36px;
+    height: 40px;
+    line-height: 49px;
+    margin-top: 1px;
+    position: relative;
+    right: 53px;
+    text-align: center;
+    width: 40px;
+}
+ 
+ 
+.sedeFondo{
+ background-color: #FFFFFF;
+    border: 1px solid;
+    border-color:#FD9844;
+    height: 410px;
+    margin-top: 0px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    padding-top: 13px;
+    width: 950px;
+ }    
+.mapa{
+ height: 300px;
+    margin-top: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 392px;
+}
+ 
+.estadio{
+  height: 270px;
+    margin-left: 406px;
+    margin-top: 35px;
+    width: 500px;
+}
+ 
+.estadio h6{
+    color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 15px;
+    margin-left: 0;
+    margin-top: -21px;
+    position: absolute;
+}
+ 
+ 
+ 
+.estadio p{
+     font-family: 'nexa_lightregular',arial,helvetica;
+    font-size: 13px;
+    color:black;
+    margin-top:70px;
+}
+ 
+.estadioFoto{
+    margin-top: 0;
+    width:500px;
+	overflow:hidden;
+	height:140px;
+	margin-bottom:10px;
+}
+ 
+ 
+.estadio ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.estadio ul li{
+   color: #000000;
+    display: block;
+    float: left;
+    font-family: 'nexa_lightregular',arial,helvetica;
+    font-size: 13px;
+    margin-left: 15px;
+    text-align: left;
+    text-decoration: none;
+    width: 220px;
+}
+ 
+.franjaPartidos{
+   margin-top: 20px;
+    width: 940px;
+}
+ 
+.franjaPartidos h6{
+   color: #000000;
+    font-family: 'nexa_boldregular',arial,helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+ 
+ 
+ 
+.franjaPartidos ul{
+   background-color: #D3D3D3;
+    float: left;
+    height: 60px;
+    list-style: none outside none;
+    margin: 0 6px 0 0;
+    padding: 0;
+    width: 130px;
+}
+.franjaPartidos ul li{
+    float: left;
+    height: 60px;
+}
+ 
+.franjaPartidos li p{
+ color: #000000;
+    display: block;
+    float: left;
+    font-family: 'nexa_boldregular',arial,helvetica;
+    font-size: 15px;
+    height: 49px;
+    line-height: 46px;
+    margin-left: -8px;
+    padding-right: 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+}
+ 
+.franjaPartidos ul li span{
+	 background: url("../../img/imgCalendario/sprite-banderas.png") no-repeat transparent;
+    color: #000000;
+    display: block;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 13px;
+    height: 34px;
+    line-height: 82px;
+    padding-left: 6px;
+    text-align: center;
+    text-decoration: none;
+     width: 48px;
+}
+
+ 
+.franjaPartidos ul li span:first-child{
+  margin-right: 6px;
+}
+ 
+ 
+.franjaPartidos ul li h5{
+color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    margin-left: -1px;
+    margin-top: -13px;
+}
+ 
+ 
+/* ----------------------   SECCIONES  */
+ 
+
+.partidos,.resultados,.sede{
+   display:none;
+    overflow: hidden;
+}
+
+.sede{
+    z-index:100;
+}
+
+.fechas{
+    display:block;
+}
+
+.tablas{
+    display:none;
+}
+
+.miPronostico{
+    display:none;
+}
+
+/*Menu calendario*/
+
+a.menuCalen.active
+{
+    background-color:#E58628;
+}
+
+
+/* GRUPO INDIVIDUAL */
+
+.grupoSolo{
+	width: 940px;
+	height:350px;
+	background-color: #E2E2E2;
+	display:none;
+	margin-left:0px;
+}
+
+.letraA{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -50px rgba(0, 0, 0, 0);
+    display: block;
+    height: 55px;
+    margin-left: 441px;
+    margin-top: 23px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraB{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -100px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+   margin-left: 441px;
+    margin-top: 28px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraC{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -150px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+    margin-top: 33px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraD{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -190px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+      margin-top: 27px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraE{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -240px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+      margin-top: 33px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraF{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -280px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+      margin-top: 27px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraG{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -330px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+      margin-top: 29px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+.letraH{
+    background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -377px rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    margin-left: 441px;
+       margin-top: 33px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+}
+
+
+.grupoSoloTitulo{
+    display: block;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 430px;
+    color:white;
+    line-height: 30px;
+    text-align:center;
+    text-transform: uppercase;
+    font-family: 'octin_sports_rgregular';  
+}
+
+.grupoSoloTitulo.grupoA{
+  background-color: #F4B25B;
+}
+
+.grupoSoloTitulo.grupoB{
+  background-color: #6da7bc;
+}
+
+.grupoSoloTitulo.grupoC{
+  background-color: #79bc7c;
+}
+
+.grupoSoloTitulo.grupoD{
+  background-color:#e8d885;
+}
+
+.grupoSoloTitulo.grupoE{
+  background-color: #e8d885;
+}
+
+.grupoSoloTitulo.grupoF{
+  background-color: #aaaa9d;
+}
+
+
+.grupoSoloTitulo.grupoG{
+  background-color: #6da7bc;
+}
+
+.grupoSoloTitulo.grupoH{
+  background-color: #F4B25B;
+}
+
+
+.grupoSoloFila{
+ color: #000000;
+    height: 35px;
+    margin-top: -38px;
+    width: 430px;
+}
+
+.grupoSolo .partidos{
+    display: block;
+    height: 280px;
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    width: 430px;
+}
+
+.grupoSolo .tablas{
+ display: block;
+    height: 280px;
+    margin-left: 481px;
+    margin-top: 51px;
+    position: absolute;
+    width: 430px;
+}
+
+.pais-p{
+ display: block;
+    height: 20px;
+    margin-left: 22px;
+    margin-top: 0;
+    position: absolute;
+    width: 40px;
+}
+
+
+.tablaSolo.ga {
+    background: #F4B25B;
+    z-index:3;
+}
+
+.tablaSolo.ga .fila {
+   background-color: #E2E2E2;
+    height: 43px;
+    margin-bottom: -7px;
+    margin-left: 0;
+    margin-top: 3px;
+    width: 430px;
+}
+
+.tablaSolo.ga .filaBlanco {
+   background-color: #FFFFFF;
+    height: 35px;
+    margin-left: 0;
+    margin-top: 41px;
+    position: relative;
+    width: 430px;
+}
+
+
+
+.tablaSolo.ga .fila ul.primera-parte,.tablaSolo.ga .filaBlanco ul.primera-parte {
+  height: 35px;
+    margin-left: 215px;
+    padding: 0;
+    position: absolute;
+    width: 209px;
+}
+
+.tablaSolo.ga .fila li.horariosTablas,.tablaSolo.ga .filaBlanco li.horariosTablas {
+   margin-left: 50px;
+    list-style: none outside none;
+}
+
+
+
+.grupoSoloFila .todos-los-equipos .tablaSolo.ga .fila li.horariosTablas p,.grupoSoloFila .todos-los-equipos .tablaSolo.ga .filaBlanco li.horariosTablas p {
+ height: 35px;
+    margin-left: 18px;
+    width: 360px; 
+}
+
+.tablaSolo.ga .fila li.horariosTablas p span {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 35px;
+    line-height: 29px;
+    margin-top: -2px;
+    padding: 4px 2px;
+    text-align: center;
+    width: 35px;
+}
+
+.convenciones{
+	height: 50px;	
+}	
+.convenciones li{
+ color: #3D3D3D;
+    display: block;
+    float: left;
+    font-family: 'sansationregular';
+    font-size: 12px;
+    height: 21px;
+    line-height: 30px;
+    margin-left: 1px;
+    text-align: left;
+    text-decoration: none;
+    width: 142px;
+}
+
+.tablaSolo.ga .fila li.horariosTablas p span:last-child{
+  border:none
+ }
+
+.tablaSolo.ga .filaBlanco li.horariosTablas p span {
+  border-right: 1px solid #FFFFFF;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 21px;
+    line-height: 26px;
+    padding: 4px 2px;
+    text-align: center;
+    width: 35px;
+}
+
+.puesto{
+    color: #000000;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+    height: 35px;
+    line-height: 34px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+}
+
+
+
+.tablaSolo.ga .fila ul.primera-parte li,.tablaSolo.ga .filaBlanco ul.primera-parte li  {
+color: #666666;
+display: block;
+float: left;
+font-size: 11px;
+height: 30px;
+line-height: 35px;
+margin-left: 10px;
+text-align: center;
+text-decoration: none;
+width: 119px;
+font-family: 'sansationregular';
+font-weight: bold;
+}
+
+.tablaSolo.ga .fila ul.primera-parte li:last-child,.tablaSolo.ga .filaBlanco ul.primera-parte li:last-child {
+   width: 70px;
+}
+
+.tablaSolo.ga .tabla-completa .fila .tabla-pais1,.tablaSolo.ga .tabla-completa .filaBlanco .tabla-pais1{
+ background-color: rgba(0, 0, 0, 0);
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    line-height: 22px;
+    margin: 5px 0 0 -3px;
+    text-transform: uppercase;
+    width: 68px;
+    height: auto;
+}
+
+
+.tablaSolo.ga .tabla-completa .fila .tabla-pais2,.tablaSolo.ga .tabla-completa .filaBlanco .tabla-pais2{
+  background-color: rgba(0, 0, 0, 0);
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    line-height: 22px;
+    margin: 5px 0 0 -15px;
+    text-transform: uppercase;
+    width: 68px;
+    height: auto;
+}
+
+
+.tablaSolo.ga .tabla-completa .tabla-pais1 li,.tablaSolo.ga .tabla-completa .tabla-pais2 li {
+  background-color: rgba(0, 0, 0, 0);
+    margin-top: -9px;
+    position: absolute;
+    text-indent: 35px;
+    width: 70px;
+}
+
+.tablaSolo.ga .tabla-completa {
+  background-color:#E2E2E2;
+}
+
+
+.tablaSolo.ga .tabla-completa .marcador {
+   margin-left: -10px;
+    text-indent: 35px;
+    width: 80px;
+}
+
+.todos-los-equipos .tablaSolo.ga .tabla-completa .marcador li{
+    background-color: rgba(0, 0, 0, 0);
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+    margin: 0 0 0 -5px;
+}
+
+.todos-los-equipos .tablaSolo.ga .tabla-completa .marcador li p {
+   background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    height: 35px;
+    line-height: 34px;
+    margin-left: 1px;
+    margin-top: -4px;
+    text-decoration: none;
+    text-indent: 0;
+    width: 35px;
+}
+.todos-los-equipos .contenido .tabla-completa .fila ul.primera-parte{
+	background-color:transparent;
+}
+.todos-los-equipos .contenido .tabla-completa .filaBlanco ul.primera-parte{
+	  background-color: rgba(0, 0, 0, 0);
+    margin-top: -25px;
+    position: relative;
+}
+
+.grupoSoloFila .todos-los-equipos ul{
+	background-color: transparent;
+}
+
+.grupoSolo .tablas .tablaSolo.ga ul.tabla-pais1{
+	  margin-left: 20px;
+}
+
+.controlGrupoSolo{
+    display: none;
+    height: 45px;
+    margin-left: 950px;
+    margin-top: -4px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+    cursor:pointer;
+                opacity:0.5;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+.controlCalen{
+    display: none;
+    height: 45px;
+    margin-left:1024px;
+    margin-top: -4px;
+    position: absolute;
+    width: 60px;
+    z-index: 10000;
+    cursor:pointer;
+        opacity:0.5;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+.controlGrupoSolo.atras{
+	 background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -645px rgba(0, 0, 0, 0);
+	 margin-top:-35px;
+}
+
+.controlCalen.reset{
+ background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -645px rgba(0, 0, 0, 0);
+    margin-top: -33px;
+}
+.controlGrupoSolo.letraA,.controlCalen.letraA{
+	 background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -55px rgba(0, 0, 0, 0);
+}
+
+
+.controlGrupoSolo.letraB,.controlCalen.letraB{
+ background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -99px rgba(0, 0, 0, 0);
+    margin-top: 40px;
+}
+
+.controlGrupoSolo.letraC,.controlCalen.letraC{
+ background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -150px rgba(0, 0, 0, 0);
+    margin-top: 91px;
+}
+
+.controlGrupoSolo.letraD,.controlCalen.letraD{
+background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -190px rgba(0, 0, 0, 0);
+    margin-top: 130px;
+}
+
+.controlGrupoSolo.letraE,.controlCalen.letraE{
+   background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -238px rgba(0, 0, 0, 0);
+    margin-top: 178px;
+}
+
+.controlGrupoSolo.letraF,.controlCalen.letraF{
+  background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -280px rgba(0, 0, 0, 0);
+    margin-top: 221px;
+}
+
+.controlGrupoSolo.letraG,.controlCalen.letraG{
+   background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -330px rgba(0, 0, 0, 0);
+    margin-top: 270px;
+}
+
+.controlGrupoSolo.letraH,.controlCalen.letraH{
+  background: url("../../img/imgCalendario/spriteGeneral.png") repeat-x scroll 0 -370px rgba(0, 0, 0, 0);
+    margin-top: 311px;
+}
+
+
+/*  --------------CALENDARIO MOVIL -----------------*/
+
+.espacio{
+margin-top: 130px;	
+}
+
+.contenCalendario{
+background-color: #CCCCCC;
+    border: 1px solid #808080;
+    height: auto;
+    min-height: 80px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+
+.contenCalendario.hoy{
+	background-color: #FF9A36;
+}
+.contenCalendario.hoy .cajaFecha:after {
+ color: #FFFFFF;
+    content: "HOY";
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    margin-left: 68px;
+   margin-top: 33px;
+    position: absolute;
+}
+
+.contenCalendario.descanso{
+	background: url(../../img/imgCalendario/fondoDescanso.gif) no-repeat left top;
+	height:80px;
+}
+
+.contenCalendario.descanso.hoy{
+	background: url(../../img/imgCalendario/fondoDescansoHoy.gif) no-repeat left top;
+	height:80px;
+}
+
+.contenCalendario.descanso.hoy .cajaFecha:after {
+ color: #FFFFFF;
+    content: "HOY";
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    margin-left: 68px;
+   margin-top: 33px;
+    position: absolute;
+}
+
+.cajaFecha{
+    height: 95px;
+    position: absolute;
+    width: 60px;
+}	
+.contenCalendario li{
+	list-style:none;
+}
+
+.contenCalendario li.fasesTitulo{
+	height:30px;
+    margin-left: 70px;
+    color:grey;
+    font-family: 'sansationbold';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.contenCalendario li.partidosCalendario{
+    height: 40px;
+    margin-left: 60px;
+}
+
+.contenCalendario li.partidosCalendario{
+    height: 40px;
+       margin-left: 65px;
+}
+
+.contenCalendario.descanso .fechaCalendario{
+	    height: 65px;
+    margin-top: 7px;
+    position: absolute;
+    width: 60px;
+    -webkit-border-top-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
+-moz-border-radius-topright: 27px;
+-moz-border-radius-bottomright: 27px;
+border-top-right-radius: 27px;
+border-bottom-right-radius: 27px;
+background-color: white;
+
+    -moz-box-shadow: 2px 0px 4px  grey;
+	-webkit-box-shadow: 2px 0px 4px  grey;
+	box-shadow: 2px 0px 4px  grey;
+
+}
+
+.btnTodosGrupos{
+ background-color: #FF9A36;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 50px;
+    left: 0;
+    line-height: 3;
+    list-style: none outside none;
+    margin: 0 auto 0 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.fechaCalendario{
+	    height: 65px;
+    margin-top:7px;
+    position: absolute;
+    width: 60px;
+    -webkit-border-top-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
+-moz-border-radius-topright: 27px;
+-moz-border-radius-bottomright: 27px;
+border-top-right-radius: 27px;
+border-bottom-right-radius: 27px;
+background-color: white;
+
+    -moz-box-shadow: 2px 0px 4px  grey;
+	-webkit-box-shadow: 2px 0px 4px  grey;
+	box-shadow: 2px 0px 4px  grey;
+
+}
+
+.fechaCalendario h4{
+ color: #808080;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    margin-top: 8px;
+    position: absolute;
+    text-indent: 7px;
+}	
+
+.fechaCalendario h1{
+   color: #FF9A36;
+    font-family: 'octin_sports_rgregular';
+    font-size: 36px;
+    margin-top: 22px;
+    position: absolute;
+    text-indent: 7px;
+       text-align: center;
+}	
+
+/* BOTONES INFERIORES */
+
+.botonesInferiores{
+  background-color:#FF9A36;
+    bottom:0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+	 box-shadow: 2px 0 4px #808080;
+	 left:0%;
+	 transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s
+}
+
+
+.botonesInferiores.active{
+	left: 85%;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/*transform: translate(85%, 0);
+	-webkit-transform: translate(85%, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+
+
+.botonesInferiores a:first-child{
+border:none;	
+	
+}
+
+.botonesInferiores a:nth-child(2){
+display:none;
+}
+
+
+.botonesInferiores a{
+	/*** PAra 2 botones */
+ /* background-color: #FF9A36;
+    border-left: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    float: left;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 50px;
+    line-height: 3;
+    list-style: none outside none;
+    text-align: center;
+    width: 49%;
+    text-decoration:none; */
+   
+   /* para 1 boton*/
+  background-color: #FF9A36;
+border-left: 1px solid #FFFFFF;
+color: #FFFFFF;
+float: left;
+font-family: 'octin_sports_rgregular';
+font-size: 16px;
+height: 50px;
+line-height: 3;
+list-style: none outside none;
+text-align: center;
+width: 100%;
+text-decoration: none;
+margin: 0 auto;
+}
+
+.btnVerGrupos {
+background-color: #FF9A36;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    bottom: 48px;
+    box-shadow: 2px 0 4px #808080;
+    color:white;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 45px;
+   margin: 0 auto 0 30%;
+     padding-top: 20px;
+    position: fixed;
+    text-align: center;
+    text-indent: 2px;
+    width: 140px;
+    z-index: 9999;
+    text-decoration:none;
+    left: 0;
+    	 transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s
+}
+
+
+.btnVerGrupos.active{
+	left: 85%;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/*transform: translate(85%, 0);
+	-webkit-transform: translate(85%, 0);
+
+	transition: transform 350ms ease;
+	-webkit-transition: -webkit-transform 350ms ease;*/
+}
+
+
+.btnVerGrupos.posiciones {
+    bottom: 38px;
+    line-height: 20px;
+}

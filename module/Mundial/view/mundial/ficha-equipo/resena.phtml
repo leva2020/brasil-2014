@@ -1,0 +1,27 @@
+<div class="container_otras_gal">
+    <div class="tit">
+        <h3>Reseña de Equipo</h3>
+    </div>
+</div>	
+<div class="bloqueCamisetaEscudo">
+    <img alt="<?php print $resena['escudo']['titulo']; ?>" title="<?php print $resena['escudo']['titulo']; ?>" src="<?php print $resena['escudo']['imagen_baja']; ?>"/>
+    <img alt="<?php print $resena['escudo']['titulo']; ?>" title="<?php print $resena['escudo']['titulo']; ?>" src="<?php print $resena['camiseta']['imagen_baja']; ?>"/>
+</div>
+<div>
+    <p id="desc-resena" class="resenaEquipo active">
+        <?php
+        print $resena['descripcion'];
+        ?>        
+    </p>
+    <?php
+    if (strlen($resena['descripcion']) > 200) :
+        ?><a class="btnFigura" onclick="mostrarResena();">Ver más</a><?php
+    endif;
+    ?>
+</div>
+<script>
+    function mostrarResena() {
+        jQuery('#desc-resena').removeClass('active');
+        jQuery('.btnFigura').css('display','none');
+    }
+</script>

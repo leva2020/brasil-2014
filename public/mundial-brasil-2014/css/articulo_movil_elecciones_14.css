@@ -1,0 +1,770 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::::
+Tema: Home Elecciones 2014
+Sufijo: ele14
+Front-end: Byron Garcia
+Area: Nuevos Medios
+::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*-------------------------------------------------------------------   [ Fonts  ]   -----*/
+@font-face {
+    font-family: 'latolight';
+    src: url('fonts/lato-lig-webfont.eot');
+    src: url('fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-lig-webfont.woff') format('woff'),
+         url('fonts/lato-lig-webfont.ttf') format('truetype'),
+         url('fonts/lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('fonts/lato-bol-webfont.eot');
+    src: url('fonts/lato-bol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-bol-webfont.woff') format('woff'),
+         url('fonts/lato-bol-webfont.ttf') format('truetype'),
+         url('fonts/lato-bol-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.eot');
+    src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('fonts/librebaskerville-regular-webfont.eot');
+    src: url('fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*-------------------------------------------------------------------   [ Globales  ]   -----*/
+body{
+	background:url('../images/bg_ele14.jpg');
+}
+/*------------------------------------------::::::::::::::::::::::::::::::::::::::::::::::::::::[       Estructura     ]   :::::::::::::::::*/
+.contenedor-ele14{
+	margin:0 auto;
+	max-width:960px;
+	text-align: center;
+	width:99%
+}
+/*-------------------------------------------------------------------   [ Header  ]   -----*/
+.cabecera-ele14{
+	padding:0;
+	height:140px;
+	color:#fff;
+}
+.redes-ele14{
+	display:block;
+	padding:0.5em 0;
+	text-align:left;
+	width:100%;
+}
+.redes-ele14 a{
+	display:inline-block;
+	width:30px;
+}
+.redes-ele14 .btnFac{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -7px;
+}
+.redes-ele14 .btnFac:hover{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -37px;
+}
+.redes-ele14 .btnTwi{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -68px;
+}
+.redes-ele14 .btnTwi:hover{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -99px;
+}
+.redes-ele14 .btnGoo{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -125px;
+}
+.redes-ele14 .btnGoo:hover{
+	background:url('../images/sprites4_Aele14.png') no-repeat -5px -155px;
+}
+.redes-ele14 .btnEma{
+	background:url('../images/sprites4_Aele14.png') no-repeat -1px -185px;
+}
+.redes-ele14 .btnEma:hover{
+	background:url('../images/sprites4_Aele14.png') no-repeat -1px -210px;
+}
+.especial-ele14{
+	color: #959393;
+	float:left;
+	font-family:'latolight';
+}
+.ltiempo-ele14{background:url('../images/sprites_ele14.png') no-repeat -20px -292px;
+		display:inline-block;
+		vertical-align:top;
+		float:left;
+		width:134px;
+		height:30px
+
+}
+.logredes-ele14 {float:right;}
+.logredes-ele14 a{
+	background:url('../images/sprites_ele14.png') no-repeat;
+	padding:10px 18px;
+	margin:0;
+}
+a.lface-ele14{background-position:0 0;}
+a.ltwitter-ele14{background-position:-34px 0;}
+a.lgplus-ele14{background-position:-68px 0;}
+a.lemail-ele14{background-position:-105px 0;}
+/*-------------------------------------------------------------------   [ Posicion 1  ]   -----*/
+.ruta-ele14 {
+	margin-bottom:1em;
+}
+.ruta-ele14 a{
+	color:#565351;
+	font-family: 'latobold';
+	font-size:0.78em;
+	margin:0 1em  0;
+}
+.ruta-ele14 a.active{
+	background: #272727;
+	color:#fff;
+	padding:0.2em 1em;
+}
+.pos1-ele14 {
+	width:100%
+}
+.pos1-ele14 .titular1-ele14{
+	background: rgba(255,255,255,0.5);
+	display:inline-block;
+	text-align:center;
+	padding-right:1em;
+	vertical-align:top;
+	width:90%;
+}
+.pos1-ele14 .titular1-ele14 h1{
+	color: #383838;
+	font-family: 'libre_baskervilleregular';
+	font-size:1.6em;
+	margin:1em 0;
+	text-align:left;
+}
+.pos1-ele14 .titular1-ele14 h2{
+	color: #383838;
+	font-family: 'latolight';
+	font-size:1.1em;
+	text-align:left;
+}
+.pos1-ele14 .titular1-ele14 span{
+	color: #383838;
+	display:block;
+	font-family:'latobold';
+	font-size:0.7em;
+	margin:0 0 0.5em;
+	text-align:left;
+}
+.pos1-ele14 figure, .ver2-ele14 figure{
+	display: inline-block;
+	vertical-align:top;
+}
+.pos1-ele14 img, .ver2-ele14 img{
+	display:block;
+	width:100%;
+	margin:0;
+}
+.pos1-ele14 figcaption, .ver2-ele14 figcaption{
+	background:#272727;
+	color:#cacaca;
+	font-size:0.8em;
+	font-family: 'latolight';
+	padding:0.5em;
+	margin:0;
+}
+.ver2-ele14 h2{
+	color: #383838;
+	font-family: 'latolight';
+	font-size:1.1em;
+}
+.ver3-ele14 figure{
+	background: #c12d60;
+	display:block;
+	height:226px;
+	margin-bottom:1em;
+}
+.ver3-ele14 img{
+	display:block;
+	height:226px;
+	width:100%;
+	margin:0;
+}
+.ver3-ele14 figcaption{
+	background:rgba(255,255,255,0.8) url('../images/btnVid-ele14.jpg') no-repeat  20px 10px;
+	color:#000;
+	cursor:pointer;
+	font-size:1.2em;
+	font-family: 'libre_baskervilleregular';
+	padding:0.5em 0.5em 0.5em 5em;
+	position:relative;
+	bottom:70px;
+	margin:0;
+	height:50px;
+}
+/*-------------------------------------------------------------------   [ Columna 1  ]   -----*/
+.col1-ele14{
+	border:1px solid #ccc;
+	display:inline-block;
+	height:auto;
+	vertical-align:top;
+	width:85%;
+	text-align:left;
+	padding:1em;
+}
+.col1-ele14 p{
+	color:#171715;
+	font-family: 'latolight';
+	font-size: 1em;
+	font-weight: normal;
+	line-height:1.2em;
+	margin:1em 0 2em;
+	padding: 0 1em 0 0;
+	text-align:left;
+
+}
+.col1-ele14 article .redes-ele14{
+	border-left:1px solid #c4beb8;
+	display:block;
+	position:relative;
+	text-align:right;
+	top:0;
+	padding:0 1em;
+	width:53px
+}
+.col1-ele14 article .redes-ele14 a{
+	color:#393939;
+	display:block;
+	margin:0 0 0.5em;
+}
+/*-------------------------------------------------------------------   [ Temas Relacionados  ]   -----*/
+.temRela-ele14{
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	font-size:0.8em;
+	padding:0.5em 0;
+}
+.temRela-ele14 a{
+	color:#6a6567;
+	margin:0 1em;
+}
+.temRela-ele14 a:hover{
+	background: #272727;
+	color:#fff;
+
+}
+/*-------------------------------------------------------------------   [ Noticias Relacionadas  ]   -----*/
+.notRel-ele14{
+	background:rgba(255,255,255,0.5);
+	text-align: center;
+	margin:2em 0 2em;
+	padding:0 0 1em;
+}
+.notRel-ele14 h2{
+	background:#272727;
+	color:#fff;
+	font-size:1em;
+	font-weight:normal;
+	height:17px;
+	line-height:35px;
+	margin:0 0 2em;
+	padding:0 5em 1em 1em;
+	width:220px;
+}
+.boxRel-ele14{
+	background:#fff;
+	display:inline-block;
+	height:180px;
+	text-align:left;
+	margin:0.5em 0.5em 1em;
+	vertical-align:top;
+	width:180px;
+}
+.boxRel-ele14 figcaption{
+	background:rgba(0,0,0,0.5);
+	bottom:100px;
+	display:block;
+	height:80px;
+	padding:0.5em;
+	position:relative;
+}
+.boxRel-ele14 figcaption a{color:#fff;font-family: 'libre_baskervilleregular';}
+.boxRel-ele14 figcaption a:hover{text-decoration:underline;}
+/*-------------------------------------------------------------------   [ Pauta Facil  ]   -----*/
+.pub1-ele14{
+	height:auto;
+	margin:1em 0;
+}
+/*-------------------------------------------------------------------   [ Comentarios ]   -----*/
+.coment-ele14{
+	color: #535353;
+}
+.boxCom-ele14{
+	border-top:1px solid #ff9f1b;
+	background:rgba(255,255,255,0.5);
+	margin:1em 0;
+}
+.boxCom-ele14 h3{
+	background:#272727;
+	color:#fff;
+	display:inline-block;
+	font-size:1em;
+	font-weight:normal;
+	height:33px;
+	line-height:33px;
+	margin:0;
+	padding:0 0 0 4em;
+	vertical-align:top;
+	width:355px;
+}
+.boxCom-ele14 .ordena-ele14{
+	background: #dbdbdb;
+	color:#757575;
+	display:inline-block;
+	font-size:0.7em;
+	height:33px;
+	line-height:33px;
+	text-align:center;
+	vertical-align:top;
+	width:212px;
+}
+.boxCom-ele14 .ordena-ele14 a{
+	background: #dbdbdb;
+	color:#757575;
+	font-size:1em;
+}
+.alert1-ele14{
+	background: #edefee;
+	display:block;
+	font-size:0.9em;
+	height:45px;
+	line-height:40px;
+	padding:0 1em;
+	}
+.boxFac-ele14, .logCom{
+	border-right:1px solid #ababab;
+	display:inline-block;
+	height:145px;
+	text-align:center;
+	padding-top:100px;
+	vertical-align:top;
+	width:318px;
+}
+.boxFac-ele14 span, .logCom span{
+	display:block;
+	font-size:0.8em;
+	margin:0.2em 0 0.5em;
+}
+.btnfac{
+	background: #004e8f;
+	color:#fff;
+	display:inline-block;
+	font-size:0.7em;
+	height:48px;
+	line-height:50px;
+	padding:0 0 0 2em;
+	width:200px;
+}
+.logCom{
+	border:none;
+	height:210px;
+	padding:1em 0;
+	width:310px;
+}
+.logCom form input:first-child,.logCom form input{
+	background: #ededee;
+	border:1px solid #b8b8b7;
+	color:#6d6d6d;
+	display:inline-block;
+	font-size:0.8em;
+	font-weight: normal;
+	margin-bottom:0.7em;
+	padding:0.5em;
+	width:222px;
+}
+.logCom form input{
+	vertical-align:top;
+	width:122px;
+}
+a.btnMos, a.btnIng{
+	background: #cfcfcf;
+	color:#6d6d6d;
+	display:inline-block;
+	font-size:0.8em;
+	height:30px;
+	line-height:32px;
+	text-align:right;
+	padding-right:1em;
+	vertical-align:top;
+	width:82px;
+}
+a.btnIng{
+	background: #ededee;
+	margin:0.5em 0 1em;
+	padding:0.5em 0;
+	text-align:center;
+	width:220px;
+}
+.alert2 span{display:inline-block;}
+.alert2 a{
+	color:#8d8d8d;
+	display:inline-block;
+	font-size:0.8em;
+	text-decoration:underline;
+}
+/*-------------------------------------------------------------------   [ Mensajes  ]   -----*/
+.mensaj-ele14{
+	margin:1em 0;
+	padding:0;
+}
+.mensaj-ele14 li{
+	background:rgba(255,255,255,0.5);
+	margin:1em 0;
+	padding:1em;
+}
+.mensaj-ele14 li .id-ele14{
+	color: #ff9f00;
+	font-family: 'libre_baskervilleregular';
+	font-size:1.2em;
+}
+.mensaj-ele14 li .fecMen-ele14{
+	display:block;
+	font-family: 'latolight';
+	font-size:0.8em;
+}
+.mensaj-ele14 li p{
+	border-bottom:1px solid #c6c2bd;
+	font-size:1em;
+	line-height:1.5em;
+	padding-bottom: 1em;
+	width:587px;
+}
+.btnRes{
+	background: #353535;
+	color:#fff;
+	display:block;
+	font-family: 'latolight';
+	font-size:0.8em;
+	float:right;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	width:100px;
+}
+.btnRes:hover{
+	color:#ffa11c;
+}
+.votar-ele14{
+	font-size:0.73em;
+}
+.votar-ele14 a{
+	color:#676663;
+	padding:0.5em 0.5em  0.5em 2em;
+}
+.votar-ele14 a.btn1{background:url('../images/sprites3_Aele14.jpg') no-repeat;}
+.votar-ele14 a.btn2{background:url('../images/sprites3_Aele14.jpg') no-repeat 0 -30px;}
+.votar-ele14 a.btn3{background:url('../images/sprites3_Aele14.jpg') no-repeat 0 -60px;}
+.votar-ele14 span{
+	float:right;
+	padding:0 0.5em;
+}
+.votar-ele14 span a{
+	margin:0 0.5em;
+}
+.resMen-ele14{
+	border:1px solid #c5c1bc;
+	margin:1em 1em 1em 4em;
+	padding:1em;
+	width:490px;
+}
+li .resMen-ele14 p{
+	border:none;
+	padding:0;
+	width:auto;
+}
+/*-------------------------------------------------------------------   [ Columna 2  ]   -----*/
+.col2-ele14{
+	display:inline-block;
+	height:500px;
+	vertical-align:top;
+	width:300px;
+}
+.col2-ele14 figure{
+	background: #e6e6e6;
+	padding:0 0 1.2em;
+	margin:0
+}
+.col2-ele14 figure h5{
+	color: #5a5a5a;
+	display:block;
+	font-size:0.7em;
+	font-weight: normal;
+	padding:0.5em;
+	margin:0
+}
+/*-------------------------------------------------------------------   [ Servicios Electorales  ]   -----*/
+.serviElectorales-ele14{
+	background:rgba(255,255,255,0.5);
+	margin:2em 0;
+	width:300px;
+	margin:2em auto;
+}
+.serviElectorales-ele14 h2{
+	background:#292929;
+	border-top: 4px solid #5c5950;
+	color:#fff;
+	font-size:0.9em;
+	font-weight: normal;
+	text-align:left;
+	padding:1em;
+	margin:0;
+}
+.serviElectorales-ele14 span{
+	display:block;
+	font-size:0.8em;
+	line-height:1.30em;
+	text-align:left;
+	margin-left: 2em;
+	padding:0 3em;
+}
+.serviElectorales-ele14 .box-ele14{
+	padding-top:120px;
+	height:120px;
+	background:url('../images/sprites_Aele14.png') no-repeat 87px 18px;
+	text-align:center;
+}
+.serviElectorales-ele14 .box2{
+	background:url('../images/sprites_Aele14.png') no-repeat -120px 28px;
+}
+.serviElectorales-ele14 .box3{
+	background:url('../images/sprites_Aele14.png') no-repeat -325px 28px;
+}
+.serviElectorales-ele14 .box-ele14 h3{
+	font-family: 'latobold';
+	font-weight: normal;
+	font-size:1em;
+}
+.serviElectorales-ele14 .box-ele14 a{
+	background: #f29f10;
+	color:#fff;
+	font-family: 'latolight';
+	font-size:0.8em;
+	padding:0.5em 1em;
+	position:relative;
+	top:25px;
+}
+.serviElectorales-ele14 .box-ele14 a:hover{
+	background: #353535;
+	color:#ff9f1b;
+}
+.serviElectorales-ele14 .compartir-ele14{
+	background:#0f0f0f;
+	display:block;
+	height:157px;
+	width:36px;
+	margin:50px 0 0 300px;
+	padding: 0.2em 0.3em 0;
+	position:absolute;
+}
+.serviElectorales-ele14 .compartir-ele14 a{
+	display:block;
+	height:34px;
+	margin:0.2em 0;
+	width:35px;
+}
+.btnFac{background:#fff url('../images/sprites2_Aele14.png') no-repeat -5px -5px;}
+.btnFac:hover{background:#fff url('../images/sprites2_Aele14.png') no-repeat -48px -5px;}
+.btnTwi{background:#fff url('../images/sprites2_Aele14.png') no-repeat -5px -42px;}
+.btnTwi:hover{background:#fff url('../images/sprites2_Aele14.png') no-repeat -48px -42px;}
+.btnGoo{background:#fff url('../images/sprites2_Aele14.png') no-repeat -5px -80px;}
+.btnGoo:hover{background:#fff url('../images/sprites2_Aele14.png') no-repeat -48px -80px;}
+.btnEma{background:#fff url('../images/sprites2_Aele14.png') no-repeat -5px -117px;}
+.btnEma:hover{background:#fff url('../images/sprites2_Aele14.png') no-repeat -48px -117px;}
+/*-------------------------------------------------------------------   [ Botones  ]   -----*/
+a.btn1-ele14{
+	background: #000;
+	color:#fff;
+	display:block;
+	font-family: 'robotobold';
+	font-size:14.4px;
+	height:54px;
+	line-height:54px;
+	padding:0 10px;
+	margin:0
+}
+a.btn1-ele14:hover{
+	background: #007f9c;
+}
+a.btn2-ele14{
+	background: #000;
+	color:#fff;
+	display:block;
+	font-family: 'Open Sans';
+	font-size:0.8em;
+	height:54px;
+	line-height:54px;
+	padding:0 10px;
+	margin:0
+}
+.pol1{
+	display:block;
+	cursor:none;
+	width:180px
+}
+/*-------------------------------------------------------------------   [ Footer  ]   -----*/
+.pie-ele14{
+	background: #485058;
+	padding:1em;
+	margin:0;
+	widows: 90%;
+}
+/*-------------------------------------------------------------------   [ Imagenes  ]   -----*/
+
+/*-------------------------------------------------------------------   [ Parrafos  ]   -----*/
+.parr1-ele14{
+	color:#374347;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+	line-height:1.5em;
+	text-align:left;
+	padding:0.5em;
+}
+/*-------------------------------------------------------------------   [ Slider  ]   -----*/
+.slider {
+	height: 315px;
+}
+.slider h2{
+	background: #292929 url('../images/icoder.png') no-repeat 90% center;
+	border-top:5px solid #5c5950;
+	color: #ffffff;
+	font-family:'latolight';
+	font-size:1em;
+	font-weight:normal;
+	padding:0.8em;
+	margin:0;
+	z-index:4000;
+}
+.noti-mod12b{
+		background:rgba(0,0,0,0.7);
+		color:#fff;
+		padding:0.5em 0;
+		position:relative;
+		bottom:55px;
+	}
+	.noti-mod12b p{
+		margin:0;
+		padding:0 0.5em;
+		font-family:'libre_baskervilleregular';
+		text-align:left;
+	}
+
+
+/* ompartir Redes */
+.iconos {
+	background: url('../images/sprite-iconos.png') no-repeat left top;
+	display: block;
+	float: left;
+	width: 22px;
+	height: 24px;
+}
+.icono a {
+	background: url('../images/sprite-iconos.png') no-repeat left top;
+	display: block;
+	float: right;
+	width: 22px;
+	height: 24px;
+}
+.iconos.flecha-redes {
+	background-position: -4px -651px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+	float: right;
+	margin: 15px 5px 0;
+}
+.iconos.btn-facebook {
+	background-position: -4px -365px;
+	width: 25px;
+	cursor: pointer;
+}
+.iconos.btn-twitter {
+	background-position: -4px -419px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-google{
+	background-position: -4px -483px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-correo {
+	background-position: -4px -551px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-presidencia {
+	background-position: -4px -583px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+}
+.iconos.flecha-redes {
+	background-position: -4px -651px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+	float: right;
+	margin: 15px 5px 0;
+}
+.menu ul li.icono.flecha {
+	float: right;
+}
+.icono.flecha a {
+	background-position: 7px -647px;
+	width: 47px;
+	height: 46px;
+	border-left: 1px solid #a5a5a5;
+}
+.iconos-redes {
+	 float:right;
+	 margin: 23px 0 0 0;
+	 display: none;
+}
+.iconos-compartir {
+	overflow: hidden;
+	clear: both;
+}
+.iconos.flecha-redes.art, .iconos-redes.art {
+	float: left;
+}
+.iconos.flecha-redes.art {
+	margin: 5px 0 10px 0;
+}
+.iconos-redes.art {
+	margin: 11px 4px;
+	border-left: 1px solid #c8caca;
+	padding: 0 10px;
+}
+.iconos-redes.art ul {
+	float: left;
+}

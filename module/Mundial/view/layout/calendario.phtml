@@ -1,0 +1,19 @@
+<?php print $this->doctype();?>
+<html lang="es" class="no-js">
+    
+    <head>
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')?>
+        <meta charset="utf-8">
+        <?php $canonical = $_SERVER['REQUEST_URI']; ?>
+        <link rel="canonical" href="http://www.eltiempo.com<?php print $canonical;?>" />
+        <?php print $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => '/favicon.ico'));?>
+        
+        <link rel="apple-touch-icon" href = "/images/57x57.png" />
+        <link rel="apple-touch-icon" sizes = "76x76" href="/images/76x76.png" />
+        <link rel="apple-touch-icon" sizes = "120x120" href="/images/120x120.png" />
+        <link rel="apple-touch-icon" sizes = "152x152" href="/images/152x152.png" />
+        <?php
+        print $this->content;
+    ?>
+</html>
+ 

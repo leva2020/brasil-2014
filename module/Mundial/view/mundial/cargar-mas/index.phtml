@@ -1,0 +1,243 @@
+<?php
+if ($procede == 'redes-sociales-notas1' || $procede == 'redes-sociales-notas2' || $procede == 'redes-sociales-notas3'):
+    if ($contador == 0):
+        $j = 0;
+        $numNotas = 5;
+        $aux = 1;
+    else:
+        $aux = 0;
+        $j = $contador * 4 + 1;
+        $numNotas = 4;
+    endif;
+    $totalNotas = count($notas);
+elseif ($procede == 'home_colombia' || $procede == 'home_curiosidades' || $procede == 'home_mundo' || $procede == 'home_multimedia' || $procede == 'videos' || $procede == 'fotos'):
+    if ($contador == 0):
+        $j = 0;
+        $numNotas = 4;
+        $aux = 1;
+    else:
+        $aux = 0;
+        $j = $contador * 3 + 1;
+        $numNotas = 3;
+    endif;
+    $totalNotas = count($notas);
+elseif ($procede == 'home_opinion'):
+    if ($contador == 0):
+        $j = 0;
+        $numNotas = 3;
+        $aux = 1;
+    else:
+        $aux = 0;
+        $j = $contador * 3;
+        $numNotas = 3;
+    endif;
+    $totalNotas = count($notas);
+elseif ($procede == 'opinion'):
+    if ($contador == 0):
+        $j = 1;
+        $numNotas = 2;
+        $aux = 0;
+    else:
+        $aux = 0;
+        $j = $contador * 3;
+        $numNotas = 3;
+    endif;
+    $totalNotas = count($notas);
+elseif ($procede == 'ficha-equipo'):
+    if ($contador == 0):
+        $j = 0;
+        $numNotas = 3;
+        $aux = 0;
+    else:
+        $aux = 0;
+        $j = $contador * 3;
+        $numNotas = 3;
+    endif;
+    $totalNotas = count($notas);
+elseif ($procede == 'curiosidades' || $procede == 'seleccion-colombia' || $procede == 'selecciones-del-mundo'):
+    if ($contador == 0):
+        $j = 0;
+        $numNotas = 4;
+        $aux = 0;
+    else:
+        $aux = 0;
+        $j = $contador * 4;
+        $numNotas = 4;
+    endif;
+    $totalNotas = count($notas);
+endif;
+if ($procede == 'redes-sociales-notas1' || $procede == 'redes-sociales-notas2' || $procede == 'redes-sociales-notas3'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            if ($i == 0):
+                ?>
+                <figure class="col1p">
+                    <?php if ($notas[$i]['multimedia']): ?>
+                        <?php if ($notas[$i]['multimedia']['formato'] == 'IMAGEN'): ?>
+                            <a href="<?php print $notas[$i]['articulo']['url']; ?>"><img alt="<?php print $notas[$i]['multimedia']['titulo']; ?>" title="<?php print $notas[$i]['multimedia']['titulo']; ?>" src="<?php print $notas[$i]['multimedia']['imagen_baja']; ?>" /></a>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </figure>
+                <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                <?php
+            else:
+            ?>
+            <figure class="col1">
+                <?php if ($notas[$i]['multimedia']): ?>
+                    <?php if ($notas[$i]['multimedia']['formato'] == 'IMAGEN'): ?>
+                        <a href="<?php print $notas[$i]['articulo']['url']; ?>"><img alt="<?php print $notas[$i]['multimedia']['titulo']; ?>" title="<?php print $notas[$i]['multimedia']['titulo']; ?>" src="<?php print $notas[$i]['multimedia']['imagen_baja']; ?>" /></a>
+                    <?php endif; ?>
+                <?php endif; ?>
+                <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+            </figure>
+            <?php
+            endif;
+        endif;
+    endfor;
+elseif ($procede == 'home_colombia' || $procede == 'home_curiosidades' || $procede == 'home_mundo' || $procede == 'home_opinion'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            ?>
+            <article>
+                <?php if ($notas[$i]['imagen']): ?>
+                    <figure>
+                        <a href="<?php print $notas[$i]['articulo']['url']; ?>"><img alt="<?php print $notas[$i]['imagen']['titulo']; ?>" title="<?php print $notas[$i]['imagen']['titulo']; ?>" src="<?php print $notas[$i]['imagen']['imagen_baja']; ?>" /></a>
+                    </figure>
+                <?php endif; ?>
+                <figcaption>
+                    <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                    <p><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['sumario']; ?></a></p>
+                </figcaption>
+            </article>
+            <?php
+        endif;
+    endfor;
+elseif ($procede == 'home_multimedia'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            ?>
+            <article>
+                <?php if ($notas[$i]['imagen_baja']): ?>
+                    <figure>
+                        <a href="<?php print $notas[$i]['url']; ?>"><img alt="<?php print $notas[$i]['titulo']; ?>" title="<?php print $notas[$i]['titulo']; ?>" src="<?php print $notas[$i]['imagen_baja']; ?>" /></a>
+                    </figure>
+                <?php endif; ?>
+                <figcaption>
+                    <h2><a href="<?php print $notas[$i]['url']; ?>"><?php print $notas[$i]['titulo']; ?></a></h2>
+                    <p><a href="<?php print $notas[$i]['url']; ?>"><?php print $notas[$i]['sumario']; ?></a></p>
+                </figcaption>
+            </article>
+            <?php
+        endif;
+    endfor;
+elseif ($procede == 'ficha-equipo'):
+    $procede = $procede . '_' . $equipo;
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            ?>
+            <article>
+                <figure>
+                    <?php if ($notas[$i]['multimedia']): ?>                    
+                        <a href="<?php //print $notas[$i]['articulo']['url'];   ?>"><img alt="<?php //print $notas[$i]['imagen']['titulo'];   ?>" title="<?php //print $notas[$i]['imagen']['titulo'];   ?>" src="<?php //print $notas[$i]['imagen']['imagen_baja'];   ?>" /></a>
+                    <?php endif; ?>
+                    <figcaption>
+                        <h4>Noviembre 15 de 2013</h4>
+                        <h3>MUNDIAL 2014</h3>
+                        <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                    </figcaption>
+                </figure>
+            </article>
+            <?php
+        endif;
+    endfor;
+elseif ($procede == 'opinion'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            ?>
+            <article>
+                <?php if ($notas[$i]['multimedia']): ?>
+                    <figure>
+                        <a href="<?php //print $notas[$i]['articulo']['url'];   ?>"><img alt="<?php //print $notas[$i]['imagen']['titulo'];   ?>" title="<?php //print $notas[$i]['imagen']['titulo'];   ?>" src="<?php //print $notas[$i]['imagen']['imagen_baja'];   ?>" /></a>
+                    </figure>
+                <?php endif; ?>
+                <figcaption>
+                    <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                    <p><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['sumario']; ?></a></p>
+                </figcaption>
+            </article>
+            <?php
+        endif;
+    endfor;
+elseif ($procede == 'videos' || $procede == 'fotos'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            $imagen = '';
+            if ($notas[$i]['imagen']):
+                $imagen = $notas[$i]['imagen']['imagen_baja'];
+            endif;
+            ?>
+            <article>
+                <figure>
+                    <a href="<?php print $notas[$i]['info']['url']; ?>">
+                        <?php if ($imagen): ?>
+                            <img src="<?php print $imagen; ?>">
+                        <?php endif; ?>
+                    </a>
+                    <figcaption><h2><a href="<?php print $notas[$i]['info']['url']; ?>"><?php print $notas[$i]['info']['titulo']; ?></a></h2></figcaption>
+                </figure>
+            </article>    
+            <?php
+        endif;
+    endfor;
+elseif ($procede == 'curiosidades' || $procede == 'seleccion-colombia' || $procede == 'selecciones-del-mundo'):
+    for ($i = $j; $i < $totalNotas; $i++):
+        if ($i < $j + $numNotas):
+            ?>
+            <article class="row1">
+                <?php if ($notas[$i]['multimedia']): ?>
+                    <a href="<?php print $notas[$i]['articulo']['url']; ?>"><img alt="<?php print $notas[$i]['multimedia']['titulo']; ?>" title="<?php print $notas[$i]['multimedia']['titulo']; ?>" src="<?php print $notas[$i]['multimedia']['imagen_baja']; ?>" /></a> 
+                    <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                <?php else: ?>
+                    <h2><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['titulo']; ?></a></h2>
+                    <p><a href="<?php print $notas[$i]['articulo']['url']; ?>"><?php print $notas[$i]['articulo']['sumario']; ?></a></p>
+                <?php endif; ?>
+            </article>
+            <?php
+        endif;
+    endfor;
+endif;
+if ($procede == 'home_colombia' || $procede == 'home_curiosidades' || $procede == 'home_mundo' || $procede == 'home_multimedia' || $procede == 'home_opinion'):
+    /**    Se descomenta para activar las secciones   * */
+    /*
+      $enlace = '';
+      if($procede == 'home_colombia'):$enlace = '/brazil-2014-dev/noticias/seleccion-colombia'; elseif($procede == 'home_curiosidades'):$enlace = '/brazil-2014-dev/curiosidades'; elseif($procede == 'home_mundo'):$enlace = '/brazil-2014-dev/noticias/selecciones-del-mundo'; elseif($procede == 'home_multimedia'):$enlace = '/brazil-2014-dev/multimedia'; elseif($procede == 'home_opinion'):$enlace = '/brazil-2014-dev/opinion'; endif;
+      ?>
+      <div class="cargar_mas"><a href="<?php print $enlace;?>">Ver más </a></div>
+      <?php
+     * 
+     */
+
+    /** Se comenta cuando se activen las secciones   */
+    $k = $j + 4 + $aux;
+    if ($i > $k && $aux == 1):
+        $z = 1;
+        ?>
+        <div class="cargar_mas"><a id="cargar_mas_<?php print $seccion . '_' . $contador; ?>" onclick="cargarMasNotas('<?php print $seccion; ?>', '<?php print $procede; ?>')" >Cargar más </a></div>
+        <?php
+    endif;
+
+elseif ($procede == 'curiosidades' || $procede == 'seleccion-colombia' || $procede == 'selecciones-del-mundo'):
+    $k = $j + 4 + $aux;
+    if ($i > $k):
+        ?>
+        <div class="cargar_mas"><a id="cargar_mas_<?php print $seccion . '_' . $contador; ?>" onclick="cargarMasNotas('<?php print $seccion; ?>', '<?php print $procede; ?>')" >Cargar más </a></div>
+        <?php
+    endif;
+else:
+    $k = $j + 3 + $aux;
+    if ($i > $k):
+        ?>
+        <div class="cargar_mas"><a id="cargar_mas_<?php print $seccion . '_' . $contador; ?>" onclick="cargarMasNotas('<?php print $seccion; ?>', '<?php print $procede; ?>')" >Cargar más </a></div>
+        <?php
+    endif;
+endif;

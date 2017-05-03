@@ -1,0 +1,59 @@
+<?php
+/*
+<?php print $this->pauta('9702', 'pauta');?>
+
+<section class="modulo colombia" id="colombia">
+    <?php print $this->partial('elecciones/index/calendario');?>
+</section>
+
+<section class="despliegue_video">
+    <article class="video-destacado">
+        <a href="#" class="btn_play"></a>
+	<h2><?php print $titulo;?></h2>
+	<p><?php print $sumario;?></p>
+        <?php print $this->renderVideo($codigo, $imgVideo, $titulo, $claseDiv = 'contenedor_player_video', $vista = 'render-video', $claseFigure = 'imagen-despliegue-video');?>
+        <section class="toolsArticulo">
+            <!-- inicio redes -->
+            <?php print $this->redesSociales($video, 'redes-sociales-multimedia');?>
+            <!-- fin redes -->
+        </section>
+    </article>
+</section>
+<div class="otros_videos">
+    <h2>otras videos del especial</h2>
+    
+    <?php print $this->partial('elecciones/cargar-mas-notas/cargar-mas-notas', array('seccion' => 'multimedia', 'procede' => 'video'));?>
+    <!--
+    <article>
+        <figure> <a href="#" class="ui-link"><img src="images/foto_video_movil.jpg" alt=""></a> </figure>
+        <h3>Así lo dio a conocer el copresidente de la Alianza Verde, el concejal</h3>
+    </article>
+    <a class="cargarMas" href="#">Cargar más</a>-->
+</div>
+ * */
+
+//print '<pre>'; var_dump($video); print('</pre>');
+?>
+
+<?php print $this->pauta('9703', '432769');?>
+
+<div class="secciones">
+    <div class="overlay"></div>
+    <section class="container_gal">
+            <h2><?php print $titulo; ?></h2>
+            <p><?php print $sumario; ?></p>
+            <div id="main" role="main">
+                <section>
+                    <?php print $this->renderVideo('render-video', $video, 'container_video', 'despliegue');?>
+                </section>
+            </div>
+    </section>
+     <?php print $this->redesSociales($video, 'multimedia');?>
+    <section class="container_otras_gal">
+        <div class="tit">
+            <h3>Videos</h3>
+        </div>
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => 'videos', 'procede' => 'videos',));?>
+    </section>
+</div>
+ 

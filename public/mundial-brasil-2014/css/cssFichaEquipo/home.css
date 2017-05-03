@@ -1,0 +1,1990 @@
+.secciones.fix{
+	padding: 80px 0 0;
+}
+/*GALERIA PPAL*/
+
+.gal-ppal{
+	border-bottom: 1px solid #eaeaea;
+	padding: 0;
+}
+#main {overflow: hidden;
+		width: 100%;
+}
+
+.flexslider .slides li{
+	position: relative;
+}
+.flexslider .slides p{
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	color: #FFF;
+	font-family: 'nexa_boldregular';
+	font-size: 15px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+/* --Clearfix */
+.cf:before,
+.cf:after {content:""; display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+
+.slider { margin: 0!important;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+/* Loading
+***********************/
+.loading #container {opacity: 0;}
+.loading:before  { content: 'LOADING'; display: block; margin: 100px 0 0; text-align: center; color: #fff; font-weight: bold; font-size: 60px; opacity: 0.3; }
+body {width: 100%; float: left; opacity: 1; -webkit-transition: opacity 1s ease;}
+
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 960px) {
+	.gal-ppal {padding: 4px 0px;}
+}
+@media screen and (max-width: 768px) {
+	.gal-ppal{padding: 4px 0px;}
+}
+
+
+
+
+/* CALENDARIO */
+
+.calendario{
+	margin: 10px 0;
+}
+.calendario a{
+	background: #8dc423;
+	display: block;
+	color: #FFF;
+	font-family: 'nexa_lightregular';
+	font-size: 15px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* SECCIONES */
+
+.modulo{
+margin: 0 0 0px;
+position: relative;
+text-align: center;
+width: 100%;
+z-index: 0;
+}
+
+.ac-container{
+	margin: 0;
+}
+.ac-container label{
+font-family: 'octin_sports_rgregular';
+padding: 2px 20px;
+position: relative;
+z-index: 20;
+display: block;
+height: 31px;
+cursor: pointer;
+color: #000;
+line-height: 33px;
+font-size: 18px;
+background: #ececec;
+text-transform: uppercase;
+}
+
+.ac-container label:hover{
+	background: #ececec;
+}
+.ac-container label:before{
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 26px;
+	left: 8px;
+	top: 7px;
+}
+.ac-container label:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 80px;
+	top: 7px;
+	background: transparent url(../../img/imgFichaEquipo/sprite.png) no-repeat 0 -426px;
+}
+
+.ac-container input{
+	display: none;
+}
+.ac-container .ac-small{
+	margin-top: 0px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+/*.ac-container input:checked ~ .ac-small{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+.ac-container input:checked ~ .ac-small{
+	height: auto;
+	margin: 0px auto 0;
+	width: 92%;
+	margin-top:-13px;
+}*/
+
+.ac-small.abierto {
+height: auto;
+width: 90%;
+margin: 0 auto;
+margin-top: -12px;
+}
+
+
+.ac-container article{
+	margin: 10px 0;
+	overflow: hidden;
+	padding: 10px;
+}
+.ac-container article figure{
+	float: left;
+	margin: 0 8px 12px 0;
+	position: relative;
+	width: 60%;
+}
+.ac-container article img{
+	float: left;
+	width: 100%;
+}
+.ac-container article h2{
+	color: #363636;
+	font-family: 'nexa_boldregular';
+	font-size: 16px;
+	text-align: left;
+}
+.ac-container article p{
+	color: #363636;
+	clear: both;
+	font-family: 'sansationregular';
+	font-size: 14px;
+	text-align: left;
+}
+
+.ac-container a{
+	font-family: 'octin_sports_rgregular';
+	padding: 2px 20px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 26px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 30px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+
+
+.ac-container h2{
+color: #363636;
+font-family: 'sansation';
+font-size: 17px;
+text-align: left;
+padding-top: 0px;
+padding-bottom: 10px;
+line-height: 22px;
+margin: 0 auto;
+width: 90%;
+}
+
+.ac-container p{
+color: #393939;
+font-family: 'Sansation';
+font-size: 16px;
+line-height: 23px;
+text-align: left;
+width: 90%;
+margin: 0 auto;
+}
+
+.container_foto{
+margin:auto;
+margin:0;
+}
+
+.container_foto img{
+margin: 0 auto;
+width: 90%;
+padding: 15px;
+}
+
+
+
+
+/* grupoa */
+
+.modulo.grupoa .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin:0 auto;
+}
+
+.modulo.grupoa .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupoa .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupoa .ac-container label.up:after{
+    background-position: 0 -341px;
+}
+
+.modulo.grupoa .ac-container article figure{
+background: #f1f1f1;
+margin: 0 auto;
+width: 90%;
+margin-top: 30px;
+}
+.modulo.grupoa .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupoa .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}	
+
+/* grupob */
+
+.modulo.grupob .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	margin: -1px auto 0;
+	 width: 82%;
+}
+
+.modulo.grupob .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupob .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupob .ac-container label.up:after{
+    background-position: 0 -341px;
+}
+
+.modulo.grupob .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupob .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupob .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}	
+
+
+/* grupoc */
+
+.modulo.grupoc .ac-container .ac-small{
+	border-bottom: 1px solid #eaeaea;
+}
+.modulo.grupoc .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	margin: -1px auto 0;
+	 width: 82%;
+}
+
+.modulo.grupoc .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupoc .ac-container label:before{
+		background-position: 0 -395px;
+}
+.modulo.grupoc .ac-container label.up:after{
+	    background-position: 0 -341px;
+}
+.modulo.grupoc .ac-container article figure{
+	margin: 0 0 5%;
+	position: relative;
+	width: 100%;
+}
+.modulo.grupoc .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupoc .ac-container article h2{
+	color: #000;
+	font-family: 'nexa_boldregular';
+	font-size: 15px;
+	text-align: center;
+}
+.ico-video{
+	background: url(../../img/imgFichaEquipo/ico-video.png) no-repeat left top;
+	display: block;
+	height: 52px;
+	left: 45%;
+	position: absolute;
+	top: 40%;
+	width: 43px;
+}
+.ico-foto{
+	background: url(../../img/imgFichaEquipo/ico-foto.png) no-repeat left top;
+	display: block;
+	height: 41px;
+	left: 5%;
+	position: absolute;
+	top: 0;
+	width: 37px;
+}
+
+
+/* grupod */
+.modulo.grupod .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin: -2px auto 0;
+}
+
+.modulo.grupod .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupod .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupod .ac-container label.up:after{
+	    background-position: 0 -341px;
+}
+
+.modulo.grupod .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupod .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupod .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}
+
+/* grupoe */
+.modulo.grupoe .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin: -1px auto 0;
+}
+
+.modulo.grupoe .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupoe .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupoe .ac-container label.up:after{
+    background-position: 0 -341px;
+}
+
+.modulo.grupoe .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupoe .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupoe .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}	
+
+/*------*/
+
+
+
+
+/* GRUPO F */
+
+.modulo.grupof .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin: -1px auto 0;
+}
+
+.modulo.grupof .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupof .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupof .ac-container label.up:after{
+	    background-position: 0 -341px;
+}
+
+.modulo.grupof .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupof .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupof .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}
+
+/* GRUPO g */
+
+.modulo.grupog .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin: -1px auto 0;
+}
+
+.modulo.grupog .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupog .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupog .ac-container label.up:after{
+	    background-position: 0 -341px;
+}
+
+.modulo.grupog .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupog .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupog .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}
+
+
+/* GRUPO H */
+
+.modulo.grupoh .ac-container label{
+	background: #f5f5f5;
+	color: #5182C1;
+	border-color:#5182C1;
+	border-style:solid;
+	border-width:thin;
+	 width: 82%;
+	margin: -1px auto 0;
+}
+
+.modulo.grupoh .ac-container label.up{
+	background: #5182C1;
+	color:white;
+}
+
+.modulo.grupoh .ac-container label:before{
+	background-position: 0 -395px;
+}
+.modulo.grupoh .ac-container label.up:after{
+	    background-position: 0 -341px;
+}
+
+.modulo.grupoh .ac-container article figure{
+	margin: 0 5% 10px;
+	width: 90%;
+}
+.modulo.grupoh .ac-container article figure p{
+	  background: none repeat scroll 0 0 rgba(150, 187, 84, 0.9);
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: 'octin_sports_rgregular';
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    z-index: 10000;
+}
+.modulo.grupoh .ac-container article h2{
+	color: #327c00;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	text-align: center;
+}
+
+
+/*----- CARGAR MAS --------*/
+
+.modulo.mundo .cargar_mas{
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -366px #009AFF;
+}
+
+.modulo.colombia .cargar_mas {
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -305px #FFEA00;
+}
+.modulo.colombia .cargar_mas a {
+	color:black;
+}
+
+.modulo.opinion .cargar_mas {
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -366px #85BC4A;
+}
+
+.modulo.multimedia .cargar_mas {
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -366px #FF413B;
+}
+
+.modulo.redes .cargar_mas {
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -366px #F18800;
+}
+
+.modulo.curiosidades .cargar_mas {
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -366px #FF8030;
+}
+
+
+/*----------------------*/
+
+
+/* MENU FICHA */
+
+.menu_ficha{
+	height: 46px;
+	z-index:10000;
+}
+.pais{
+float: left;
+margin: 0 auto;
+position: relative;
+margin-bottom: 5px;
+width: 100%;
+margin-top: 20px;
+}
+
+.pais h2{
+color: black;
+padding-top: 25px;
+position: relative;
+font-family: 'octin_sports_rgregular';
+font-size: 20px;
+text-align: center;
+width: 50%;
+line-height: 0px;
+float: left;
+}
+
+.menu_ficha > div.equipos{
+width: 90%;
+margin: 0 auto;
+}
+
+
+
+
+.pais .bandera{
+display: block;
+height: 30px;
+margin: 0 auto;
+padding: 0;
+width: 40px;
+float: left;
+margin-left: 5%;
+margin-top: 5px;
+}
+
+
+.pais .bandera.Bra {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat 0px -189px;
+}
+.pais .bandera.Mex {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -130px -220px;
+}
+
+.pais .bandera.Cro{
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -45px -94px;
+}
+
+.pais .bandera.Cam {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -89px 0px;
+}
+
+.pais .bandera.Esp {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -44px -220px;
+}
+
+.pais .bandera.Chi {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -44px -60px;
+}
+
+.pais .bandera.Hol {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -88px -30px;
+}
+
+.pais .bandera.Aus{
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat 0px -157px;
+}
+
+.pais .bandera.Col{
+	background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat 7px 3px;
+}
+
+.pais .bandera.Cdm {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -130px -92px;
+}
+
+.pais .bandera.Gre {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -88px -158px;
+}
+.pais .bandera.Jap {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -131px -32px;
+border: 1px solid #CCC;
+}
+.pais .bandera.Uru {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -132px -158px;
+}
+
+.pais .bandera.Ing {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -87px -66px;
+}
+
+.pais .bandera.Cri{
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat 0px -220px;
+}
+
+.pais .bandera.Ita {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -130px 0px;
+}
+
+.pais .bandera.Sui {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -90px -220px;
+}
+.pais .bandera.Ecu {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -44px -189px;
+}
+.pais .bandera.Fra {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -2px -92px;
+}
+
+.pais .bandera.Hon {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -130px -123px;
+}
+
+.pais .bandera.Arg {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -1px -32px;
+}
+.pais .bandera.Irn {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -43px -122px;
+}
+
+.pais .bandera.Bos {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -43px -32px;
+}
+
+.pais .bandera.Nig {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -87px -96px;
+}
+
+.pais .bandera.Ale {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -87px -127px;
+}
+.pais .bandera.Gha {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -89px 3px;
+}
+
+.pais .bandera.Por {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -89px -187px;
+}
+
+.pais .bandera.Eua {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat 0px -60px;
+}
+
+.pais .bandera.Bel {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -44px 0px;
+}
+
+.pais .bandera.Rus {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -130px -188px;
+}
+
+.pais .bandera.Agl {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -2px -122px;
+}
+
+.pais .bandera.Cor {
+background: url(../../img/imgFichaEquipo/sprites_bm14_back.png) no-repeat -44px -157px;
+}
+
+
+.pais h3{
+	color: #1e1e1e;
+	float: left;
+	font-family: 'octin_sports_rgregular';
+	font-size: 30px;
+	margin: 8px 0 0 15px;
+}
+
+.equipos{
+	margin: 3px 0 0 20px;
+	position: relative;
+}
+.equipos > a{
+background: url("../../img/imgFichaEquipo/sprite_gal.png") no-repeat scroll 99px -598px #5182C1;
+color: #FFFFFF;
+display: block;
+font-family: 'octin_sports_rgregular';
+font-size: 19px;
+height: 25px;
+padding: 7px 18px 13px 13px;
+width: 95px;
+margin: 0 auto;
+z-index: 9999;
+}
+.equipos > a:hover{
+	background-color: #999;
+}
+.equipos .drop_equipos{
+background: none repeat scroll 0 0 #5182C1;
+display: none;
+margin: 0 auto;
+padding: 4px;
+position: absolute;
+width: 100%;
+z-index: 10000;
+}
+
+.equipos .drop_equipos.activo{
+display: block;
+z-index: 99999;
+margin: 0 auto;
+width: 100%;
+}
+
+.equipos .drop_equipos ul li h3 {
+color: #3084C3;
+font-family: 'octin_sports_rgregular';
+font-size: 18px;
+}
+
+.equipos .drop_equipos ul li a h3{
+color: #535353;
+display: block;
+font-family: 'sansationregular';
+font-size: 16px;
+height: 17px;
+padding: 5px 0 0 30px;
+width: auto;
+}
+
+
+
+.equipos .drop_equipos ul li a h3.Bra{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -110px;
+}
+.equipos .drop_equipos ul li a h3.Mex{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -670px;
+}
+
+.equipos .drop_equipos ul li a h3.Cro{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -214px;
+}
+
+.equipos .drop_equipos ul li a h3.Cam{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -548px;
+}
+
+.equipos .drop_equipos ul li a h3.Esp{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -297px;
+}
+
+.equipos .drop_equipos ul li a h3.Chi{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -192px;
+}
+
+.equipos .drop_equipos ul li a h3.Hol{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -340px;
+}
+
+
+.equipos .drop_equipos ul li a h3.Aus{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -92px;
+}
+
+.equipos .drop_equipos ul li a h3.Col{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px 3px;
+}
+
+.equipos .drop_equipos ul li a h3.Cdm{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -571px;
+}
+
+.equipos .drop_equipos ul li a h3.Gre{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -433px;
+}
+
+.equipos .drop_equipos ul li a h3.Jap{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -525px;
+}
+
+.equipos .drop_equipos ul li a h3.Uru{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -620px;
+}
+
+.equipos .drop_equipos ul li a h3.Ing{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -362px;
+}
+
+.equipos .drop_equipos ul li a h3.Cri{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -130px;
+}
+
+.equipos .drop_equipos ul li a h3.Ita{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -502px;
+}
+
+.equipos .drop_equipos ul li a h3.Sui{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -482px;
+}
+.equipos .drop_equipos ul li a h3.Ecu{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -276px;
+}
+.equipos .drop_equipos ul li a h3.Fra{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -33px;
+}
+
+.equipos .drop_equipos ul li a h3.Hon{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -595px;
+}
+
+.equipos .drop_equipos ul li a h3.Arg{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -51px;
+}
+
+.equipos .drop_equipos ul li a h3.Irn{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -233px;
+}
+
+.equipos .drop_equipos ul li a h3.Bos{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -170px;
+}
+
+.equipos .drop_equipos ul li a h3.Nig{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -386px;
+}
+
+.equipos .drop_equipos ul li a h3.Ale{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -410px;
+}
+
+.equipos .drop_equipos ul li a h3.Gha{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -318px;
+}
+
+.equipos .drop_equipos ul li a h3.Por{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -456px;
+}
+
+.equipos .drop_equipos ul li a h3.Eua{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -15px;
+}
+
+.equipos .drop_equipos ul li a h3.Bel{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -150px;
+}
+
+.equipos .drop_equipos ul li a h3.Rus{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -339px;
+}
+
+.equipos .drop_equipos ul li a h3.Agl{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -70px;
+}
+
+.equipos .drop_equipos ul li a h3.Cor{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 0px -253px;
+}
+
+
+.equipos .drop_equipos ul:first-child{
+	margin-top: 0px;
+}
+
+.equipos .drop_equipos ul{
+background: none repeat scroll 0 0 #F5F5F5;
+float: left;
+padding: 8px;
+width: 94%;
+margin: 0 auto;
+margin-top: 5px;
+}
+
+.equipos .drop_equipos ul li a{
+color: #535353;
+display: block;
+font-family: 'sansationregular';
+font-size: 15px;
+height: 27px;
+padding: 13px 0 0 10px;
+line-height: 10px;
+text-indent: 9px;
+}
+.equipos .drop_equipos ul li a:hover{
+	color: #5182c1;
+}
+
+/* videos y fotos */ 
+.container_videosFotos{
+margin: 0px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.container_videosFotos .tit{
+	background: url(../../img/imgFichaEquipo/line.png) repeat-x left 13px;
+	display: block;
+	height: 28px;
+	 margin-bottom: 10px;
+}
+.container_videosFotos .tit h3{
+background: none repeat scroll 0 0 #FFFFFF;
+color: #ff3f38;
+display: block;
+font-family: 'octin_sports_rgregular';
+font-size: 18px;
+padding: 8px;
+width: 160px;
+}
+.container_videosFotos article{
+	background: #f6f6f6;
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 10px;
+}
+.container_videosFotos article figure{
+	margin: 0;
+}
+.container_videosFotos article a{
+	float: left;
+	margin: 0 10px 0 0;
+}
+.container_videosFotos article img{
+	width:90px;
+	height:90px;
+}
+.container_videosFotos article p{
+	color: #393939;
+	font-family: 'sansationbold';
+	font-size: 16px;
+	font-weight:bold;
+	margin-top:10px;
+}
+.container_videosFotos article h4{
+	color: #606060;
+	font-family: 'sansationbold';
+	font-size: 14px;
+	font-weight:bold;
+}
+.container_videosFotos article h3{
+	color: #606060;
+	font-family: 'sansationbold';
+	font-size: 14px;
+	font-weight:lighter;
+}
+.container_videosFotos article:hover p{
+	color: #2983C5;
+}
+
+
+
+
+/* OTRAS GALERIAS */
+
+.container_otras_gal{
+	margin: 10px;
+margin-top: 30px;
+}
+.container_otras_gal .tit{
+	   background: url("../../img/imgFichaEquipo/line_blue.png") repeat-x scroll left 13px rgba(0, 0, 0, 0);
+    display: block;
+    height: 28px;
+    margin-bottom: 10px;
+}
+.container_otras_gal .tit h3{
+background: none repeat scroll 0 0 #FFFFFF;
+color: #2983C5;
+display: block;
+font-family: 'octin_sports_rgregular';
+font-size: 18px;
+padding: 8px;
+width: 230px;
+}
+.container_otras_gal article{
+	background: #f6f6f6;
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 10px;
+}
+.container_otras_gal article figure{
+	margin: 0;
+}
+.container_otras_gal article a{
+	float: left;
+	margin: 0 10px 0 0;
+}
+.container_otras_gal article img{
+width: 130px;
+height: 90px;
+}
+.container_otras_gal article h2{
+	color: #393939;
+	font-family: 'sansationbold';
+	font-size: 16px;
+	font-weight:bold;
+	margin-top:10px;
+}
+.container_otras_gal article h4{
+color: #606060;
+font-family: 'sansation';
+font-size: 14px;
+font-weight: normal;
+}
+.container_otras_gal article h3{
+color: #606060;
+font-family: 'sansation';
+font-size: 14px;
+font-weight: normal;
+}
+.container_otras_gal article:hover p{
+	color: #2983C5;
+}
+
+.cargar_mas:hover{
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -302px #ededed;
+	
+}
+.cargar_mas{
+	background: #d1d1d1;
+	height: 40px;
+	background: url(../../img/imgFichaEquipo/sprite.png) no-repeat right -302px #d1d1d1;
+}
+.cargar_mas:hover a{
+	color: #646464;	
+}
+.cargar_mas a{
+		color: #606060;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 15px;
+	padding: 12px 0 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+.cargar_mas a:after{
+	/*content: "\e764";*/
+	font-family: 'icons_mundial';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 0.5;
+	height: 18px;
+	position: absolute;
+	right: 25%;
+	top: 10px;
+	width: 24px;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 768px) {
+	.social .compartir ul li{
+		padding: 7px 64px;
+	}
+	.social .compartir ul li p, .social .compartir ul li a{
+		text-align: center;
+	}
+
+	.cargar_mas a:after{
+		right: 40%;
+	}
+}
+
+
+/* TABLA DE GRUPOS */
+
+.tabla_clasificacion{
+margin: 0 auto;
+margin-top: 30px;
+}
+.tabla_clasificacion .tit_tabla{
+	background: #5182c1 url(../../img/imgFichaEquipo/line_white.jpg) no-repeat 198px 18px;
+	display: block;
+	height: 36px;
+	  width: 95%;
+	  margin:0;
+	  margin:auto;
+}
+.tabla_clasificacion .tit_tabla h3{
+	background: #5182c1;
+	color: #FFF;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	float: left;
+	padding: 10px;
+}
+.tabla_clasificacion .container_tabla{
+ background: none repeat scroll 0 0 #F5F5F5;
+    margin: auto;
+    overflow: hidden;
+        padding: 0;
+   width: 94.5%;
+	 border-color: #5182C1;
+    border-style: solid;
+    border-width: thin;
+}
+.tabla_clasificacion .container_tabla > h3{
+	color: #393939;
+	font-family: 'sansationregular';
+	font-size: 15px;
+	  margin: 10px;
+}
+.filtro_grupo{
+	height: 27px;
+	margin: 10px 0 0;
+	position:relative;
+}
+.filtro_grupo p{
+    background: url("../../img/imgFichaEquipo/sprite.png") no-repeat scroll 220px -330px #5182C1;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 16px;
+    height: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+.filtro_grupo ul{
+	float: left;
+}
+.filtro_grupo ul li{
+	background: #FFF;
+	border:1px solid #5182c1;
+	float: left;
+	height: 25px;
+	padding: 0px;
+	position: relative;
+	width: 50px;
+}
+.filtro_grupo ul li a{
+	color: #393939;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 15px;
+	padding: 5px 0;
+	text-align: center;
+}
+.filtro_grupo ul li span{
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #5182c1;
+	bottom: -8px;
+	display: none;
+	height: 0;
+	position: absolute;
+	right: 2px;
+	width: 0;
+}
+.filtro_grupo ul li:hover, .filtro_grupo ul li.active{background: #5182c1;}
+.filtro_grupo ul li:hover a, .filtro_grupo ul li.active a{color: #FFF;}
+.filtro_grupo ul li:hover span, .filtro_grupo ul li.active span{display: block;}
+
+.menuTablaClas{
+    background-color:#D1D1D1;
+    height: 40px;
+}
+
+.menuTablaClas a{
+   color: #393939;
+   font-family: 'sansationregular';
+   font-size: 15px;
+   margin: 0 0 0 10px;
+}
+
+/* CONTENIDO DE LA TABLA */
+
+.content_tabla{
+	background: #cfcfcf;
+}
+/*
+.content_tabla.grupo_a{display: block;}
+.content_tabla.grupo_b{display: none;}
+.content_tabla.grupo_c{display: none;}
+.content_tabla.grupo_d{display: none;}
+.content_tabla.grupo_e{display: none;}
+.content_tabla.grupo_f{display: none;}
+.content_tabla.grupo_g{display: none;}
+.content_tabla.grupo_h{display: none;}
+*/
+
+.content_tabla ul li{
+	float: left;
+	width: 34px;
+}
+.content_tabla ul li p{
+	color: #1c1c1c;
+	font-family: 'sansationregular';
+	font-size: 15px;
+	text-align: center;
+}
+
+
+
+/* TITULOS DE DATOS */
+
+.content_tabla ul.tit_datos{
+	overflow: hidden;
+	margin-top:12px;
+	height:35px;
+}
+.content_tabla ul.tit_datos li{
+	border-left: 1px solid #cfcfcf;
+	height: 25px;
+	padding-right:10px;
+	padding-top:5px;
+}
+.content_tabla ul.tit_datos li:first-child{
+	border-left: none;
+	width: 85px;
+
+}
+.content_tabla ul.tit_datos li:first-child p{
+padding: 5px;
+text-align: left;
+}
+.content_tabla ul.tit_datos li.puntos{
+	width: 50px;
+}
+.content_tabla ul.tit_datos li p{
+	padding: 5px 0;
+}
+
+/* DATOS */
+
+.content_tabla ul.datos{
+	background: #f5f5f5;
+	margin: 0 0 14px;
+	overflow: hidden;
+}
+.content_tabla ul.datos li{
+border-left: 1px solid #cfcfcf;
+height: 35px;
+width: 46px;
+}
+.content_tabla ul.datos li:first-child{
+	background: #5182c1;
+	border-left: none;
+	width: 42px;
+}
+.content_tabla ul.datos li:first-child p{
+	color: #FFF;
+}
+.content_tabla ul.datos li.pais{
+	border-left: none;
+	width: 128px;
+}
+.content_tabla ul.datos li.pais p{
+	background: url(../../img/imgFichaEquipo/sprite-banderas-2.png) no-repeat 10px 10px;
+	padding: 10px 0 0 50px;
+	text-align: left;
+}
+.content_tabla ul.datos li.puntos{
+	width: 60px;
+}
+.content_tabla ul.datos li p{
+	padding: 10px 0;
+}
+
+.content_tabla ul.datos.selected{background: #5182c1;}
+.content_tabla ul.datos.selected li p{color: #FFF;}
+
+/* PAISES */
+
+.content_tabla ul.datos li.pais.esp p{background-position: 10px 10px;}
+.content_tabla ul.datos li.pais.ita p{background-position: 10px -35px;}
+.content_tabla ul.datos li.pais.col p{background-position: 10px -80px;}
+.content_tabla ul.datos li.pais.mex p{background-position: 10px -125px;}
+
+
+/* CONVENCIONES */
+
+.ac-small .convenciones{
+background: none repeat scroll 0 0 #CFCFCF;
+height: 55px;
+margin-top: -14px;
+padding: 0;
+width: 100%;
+}
+.ac-small .convenciones h3{
+	color: #151515;
+	font-family: 'octin_sports_rgregular';
+	font-size: 16px;
+	margin: 0 0 10px;
+}
+.ac-small .convenciones ul{
+width: 90%;
+height: 30px;
+margin: 0 auto;
+}
+.ac-small .convenciones ul li{
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+
+.ac-small .convenciones ul li p{
+color: #1C1C1C;
+display: block;
+float: left;
+font-family: 'sansationregular';
+font-size: 12px;
+height: 20px;
+line-height: 31px;
+margin-left: 0;
+padding-bottom: 0 !important;
+padding-left: 10px;
+padding-right: 10px !important;
+padding-top: 0 !important;
+text-align: left;
+text-decoration: none;
+width: auto;
+float: left;
+}
+.ac-small.convenciones ul li p span{
+	font-family: 'sansationbold';
+	margin: 0 5px 0 0;
+}
+
+/*  Nomina oficial equipo*/
+.menuNomina{
+ background: url("../../img/imgFichaEquipo/sprite_gal.png") no-repeat scroll left -901px #F5F5F5;
+    color: #000000;
+    font-family: 'sansationregular';
+    font-size: 14px;
+    height: 40px;
+    line-height: 41px;
+    margin-left: -70px;
+   margin-top: -10px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+}
+
+.menuNomina.active{
+	 color:white;
+	 background: url("../../img/imgFichaEquipo/sprite_gal.png") no-repeat scroll left -846px #F5F5F5;
+}
+
+#tabs ul li{
+ font-family: 'sansationregular';
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;	
+}
+
+#tabs ul li.active{
+   background:url("../../img/imgFichaEquipo/sprite.png") no-repeat scroll 125px -450px #2b82c5;
+}
+
+.contenidoNomina li{
+  color: #393939;
+    font-family: 'sansationregular';
+    font-size: 14px;
+    list-style: none outside none;
+    margin-bottom: 20px;
+    position: relative;
+    width: 150px;
+}
+
+.contenidoNomina{
+    height: auto;
+    margin-left: 144px;
+    margin-top: 15px;
+    position: absolute;
+    width: 150px;
+ }   
+    
+    
+/*  MIni Ficha equipo*/
+
+
+.bloqueCamisetaEscudo {
+height: auto;
+position: relative;
+width: 100%;
+overflow: hidden;
+margin: 0 auto;
+}
+
+
+.bloqueCamisetaEscudo img {
+border-color: #D0D0D0;
+border-style: solid;
+border-width: thin;
+display: block;
+float: left;
+width: 40%;
+margin: 10px;
+margin-left: 15px;
+}
+
+p.resenaEquipo{
+background: none repeat scroll 0 0 #F5F5F5;
+margin-left: 10px;
+position: relative;
+width: 80%;
+height: auto;
+overflow: hidden;
+color: #393939;
+font-family: 'sansationregular';
+font-size: 18px;
+padding: 20px;
+line-height: 23px;
+}
+
+p.resenaEquipo.active {
+height: 168px;
+overflow: hidden;
+}
+
+
+.bloquePalmares{
+height: auto;
+margin-left: 10px;
+position: relative;
+width: 95%;
+overflow: hidden;
+}
+
+.bloquePalmares img {
+border-color: #D0D0D0;
+border-style: solid;
+border-width: thin;
+display: block;
+float: left;
+width: 99%;
+margin: 0 auto;
+}
+
+.bloqueDirectorTecnico{
+height: auto;
+margin-left: 10px;
+overflow: hidden;
+position: relative;
+width: 90%;
+}
+
+
+.bloqueDirectorTecnico img{
+display: block;
+float: left;
+margin-left: 5px;
+width: 40%;
+
+}
+
+.bloqueDirectorTecnico h1{
+background: none repeat scroll 0 0;
+color: #2983C5;
+display: block;
+font-family: 'octin_sports_rgregular';
+height: auto;
+margin-left: 0;
+overflow: hidden;
+width: 50%;
+padding-top: 10px;
+font-size: 18px;
+text-align: center;
+float: right;
+}
+
+.bloqueDirectorTecnico p{
+background: none repeat scroll 0 0;
+color: #393939;
+font-family: 'sansationregular';
+font-size: 17px;
+height: auto;
+position: relative;
+width: 45%;
+padding: 10px 10px 10px;
+float: right;
+line-height: 23px;
+}
+
+
+.bloqueMejoresGoles{
+height: auto;
+margin-left: 0;
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+
+
+.bloqueMejoresGoles img{
+display: block;
+height: auto;
+width: 100%;
+margin: 0 auto;
+}
+
+
+.bloqueFigura{
+height: auto;
+margin-left: 10px;
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+
+.bloqueFigura img{
+display: block;
+float: left;
+width: 40%;
+position: absolute;
+}
+
+.bloqueFigura h1{
+    background: none repeat scroll 0 0 none;
+    color: #2983C5;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 14px;
+    height: auto;
+    margin-left: 131px;
+    margin-top: 40px;
+    overflow: hidden;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    width: 165px;
+}
+
+.bloqueFigura p.active{
+height: 165px;
+overflow: hidden;
+}
+
+.bloqueFigura p{
+color: #393939;
+font-family: 'sansationregular';
+font-size: 17px;
+height: auto;
+margin-left: 132px;
+margin-top: 20px;
+position: relative;
+width: 50%;
+line-height: 23px;
+float: right;
+margin-bottom: 30px;
+}
+
+
+.btnFigura{
+background-color: #5182C1;
+color: #FFFFFF;
+cursor: pointer;
+display: block;
+font-family: 'octin_sports_rgregular';
+font-size: 14px;
+height: 15px;
+margin: 19px auto auto;
+padding: 10px;
+text-align: center;
+width: 130px;
+line-height: 14px;
+margin-top: 340px;
+position: absolute;
+margin-left: 160px;
+}
+
+/*/ TABS JUGADOR */
+
+
+#fondomenu  {
+height: 30px;
+width: 90%;
+}
+
+#fondomenu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#fondomenu ul li a {
+  background: url("../../img/imgFichaEquipo/sprite_gal.png") no-repeat scroll 0 -725px #FFFFFF;
+   font-family: 'sansationregular';
+    font-size: 14px;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-size: 13px;
+    height: 50px;
+    line-height: 30px;
+    margin-left: 13px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 44px;
+}
+
+#fondomenu ul li a.active {
+  background: url("../../img/imgFichaEquipo/sprite_gal.png") no-repeat scroll 0 -791px #FFFFFF;
+}
+
+#fondomenu  h1 {
+color: #2983C5;
+display: block;
+font-family: 'octin_sports_rgregular';
+font-size: 18px;
+height: auto;
+margin-top: 45px;
+padding-top: 10px;
+text-align: center;
+width: 55%;
+}
+
+#fondomenu h2 {
+color: #000000;
+display: block;
+font-family: 'sansationregular';
+font-size: 18px;
+height: auto;
+margin-top: 40px;
+overflow: hidden;
+padding-top: 10px;
+position: relative;
+text-align: left;
+width: 50%;
+float: right;
+}
+
+
+
+.menuJugador{
+background-color:red;
+width: 120px;
+height: 30px;
+margin-left: 1px;
+float: left;
+text-align: center;
+line-height: 30px;
+font-size: 13px;
+color: white;
+text-decoration: none;
+display: block;
+}
+
+
+
+
+.menuJugador.active{
+	color:white;
+	background:url("../../img/imgFichaEquipo/sprite.png") no-repeat scroll 125px -450px #2b82c5;
+}
+
+
+#tabsJugador ul {
+background-color:green;
+width: 485px;
+height: 30px;
+
+}
+
+
+
+#tabsJugador ul li{
+ font-family: 'sansationregular';
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;	
+}
+
+#tabsJugador ul li.active{
+   background:url("../../img/imgFichaEquipo/sprite.png") no-repeat scroll 125px -450px #2b82c5;
+}
+
+.contenidoJugador li{
+color: #393939;
+    font-family: 'sansationregular';
+    font-size: 14px;
+    list-style: none outside none;
+    position: relative;
+    width: 200px;
+	 max-width: 200px;
+	 margin-top:20px;
+}
+
+.contenidoJugador{
+position:absolute;
+  width: 200px;
+	 max-width: 200px;
+	    margin-left: 150px;
+}
+
+
+.botonesNomina >div{
+	display:none;
+}
+
+.botonesNomina.active >div{
+	display:block;
+}
+
+
+/* SOCIAL */
+	
+.social{
+margin: 0 auto;
+position: relative;
+width: 90%;
+overflow: hidden;
+}
+
+.social .compartirTit{
+	color: #656565;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 10px;
+    height: 12px;
+    padding: 4px 0 0 20px;
+    text-decoration: none;
+    line-height: 18px;
+}
+
+.social .comentarios_titulo{
+	background: #dfdfdf;
+	height: 38px;
+	margin: 5px 0;
+}
+.social .comentarios_titulo a{
+	color: #000000;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+	text-align:left;
+	padding: 8px 20px 5px;
+	text-decoration:none;
+}
+
+
+.social .comentarios{
+	background: #eaeaea;
+	height: auto;
+	margin: 2px 0;
+}
+
+.social .comentarios p{
+	color: #000;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 14px;
+	padding: 12px 0 0;
+	text-align:center;
+	text-decoration: none;
+	margin:10px;
+}
+
+.social .comentarios a{
+	color: #656565;
+    display: block;
+    font-family: 'octin_sports_rgregular';
+    font-size: 18px;
+	text-align:center;
+	padding: 8px 20px 5px;
+	text-decoration:none;
+}
+.social .compartir{
+background: #eaeaea;
+height: 30px;
+margin-top: 50px;
+}
+.social .compartir ul li{
+	border-left: 1px solid #FFF;
+	float: left;
+		padding: 7px 6px;
+	background-color: #EAEAEA;
+}
+.social .compartir ul li:first-child{
+	border:none;
+}
+.social .compartir ul li p{
+	color: #656565;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 10px;
+	height: 12px;
+	padding: 4px 0 0;
+}
+.social .compartir ul li a{
+	background: url(../../img/imgFichaEquipo/sprite_gal_movil.png) no-repeat left -188px;
+	color: #656565;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 10px;
+	height: 12px;
+	padding: 4px 0 0 20px;
+	text-decoration: none;
+}
+.social .compartir ul li a.twitter{
+	background-position: 0 -224px;
+}
+.social .compartir ul li a.correo{
+	background-position: 0 -260px;
+}
+
+

@@ -1,0 +1,29 @@
+<div id="video_despliegue_<?php print $idVideo; ?>" class="<?php print $claseDiv; ?>" style='height: 200px;'>
+    <?php
+    if($imgVideo):
+        ?>
+        <figure class="<?php print $claseDiv; ?>">
+            <a onclick='renderVideo("<?php print $idVideo; ?>", "video_despliegue_<?php print $idVideo; ?>","true");' href='javascript:void(0);'>
+                <img src='<?php print $imgVideo; ?>' alt='<?php print $titulo; ?>' title='<?php print $titulo; ?>'/>
+                <figcaption><?php print $titulo; ?></figcaption>
+            </a>
+        </figure>
+        <?php
+    else:
+        ?>
+        <?php /*
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                renderVideo('<?php print $idVideo ?> ','video_despliegue_<?php print $idVideo ?>', '8d4ab2106823498889a7eb5d7370e0ce');
+            });
+        </script>
+        */ ?>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                OO.ready(function() { OO.Player.create('video_despliegue_<?php print $idVideo ?>', '<?php print $idVideo ?>'); });
+            });
+        </script>
+        <?php
+    endif;
+    ?>
+</div>

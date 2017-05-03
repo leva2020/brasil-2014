@@ -1,0 +1,123 @@
+<div id="articulos_cargar_mas_<?php print $seccion; ?>" class="ac-small"></div>
+<script>
+    $(document).ready(function() {
+        $('#articulos_cargar_mas_<?php print $seccion; ?>').load('/brazil-2014-dev/cargar-mas/0/<?php print $procede; ?>');
+    });
+    
+    var contador = 0;
+    var contador_1 = 0;
+    var contador_2 = 0;
+    var contador_3 = 0;
+    var contador_4 = 0;
+    var seccion = '<?php echo $seccion;?>';
+    function cargarMasNotas(seccion, procede){  
+        if(seccion == 'redes-sociales-notas1' || seccion == 'redes-sociales-notas2' || seccion == 'redes-sociales-notas3' || seccion == 'home_colombia' || seccion == 'videos' || seccion == 'fotos' || seccion == 'opinion' || seccion == 'curiosidades' || seccion == 'seleccion-colombia' || seccion == 'selecciones-del-mundo'){
+            contador++;
+            auxNotas = contador * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/' + contador + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+seccion).append(data);
+            });
+
+            ocultaVerMas = contador - 1;
+            ocultaVerMasAux = contador+1;
+            //console.log(ocultaVerMas+' * '+ocultaVerMasAux);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas).parent().css( "display", "none" );
+        }
+        else if(seccion == 'home_curiosidades'){
+            contador_1++;
+            auxNotas_1 = contador_1 * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/'+ contador_1 + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+seccion).append(data);
+            });
+
+            ocultaVerMas_1 = contador_1 - 1;
+            ocultaVerMasAux_1 = contador_1+1;
+            //console.log(ocultaVerMas+' * '+ocultaVerMasAux);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_1).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_1).parent().css( "display", "none" );
+        }
+        else if(seccion == 'home_mundo'){
+            contador_2++;
+            auxNotas_2 = contador_2 * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/' + contador_2 + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+seccion).append(data);
+            });
+
+            ocultaVerMas_2 = contador_2 - 1;
+            ocultaVerMasAux_2 = contador_2+1;
+            //console.log(ocultaVerMas_2+' * '+ocultaVerMasAux_2);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_2).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_2).parent().css( "display", "none" );
+        }
+        else if(seccion == 'home_multimedia'){
+            contador_3++;
+            auxNotas_3 = contador_3 * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/'+ contador_3 + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+seccion).append(data);
+            });
+
+            ocultaVerMas_3 = contador_3 - 1;
+            ocultaVerMasAux_3 = contador_3+1;
+            //console.log(ocultaVerMas_3+' * '+ocultaVerMasAux_3);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_3).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_3).parent().css( "display", "none" );
+        }
+        else if(seccion == 'home_opinion'){
+            contador_4++;
+            auxNotas_4 = contador_4 * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/'+ contador_4 + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+seccion).append(data);
+            });
+
+            ocultaVerMas_4 = contador_4 - 1;
+            ocultaVerMasAux_4 = contador_4+1;
+            //console.log(ocultaVerMas_3+' * '+ocultaVerMasAux_3);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_4).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_4).parent().css( "display", "none" );
+        }
+        else if(seccion == 'ficha-equipo'){
+            contador_1++;
+            auxNotas_1 = contador_1 * 3;
+            $('#cargar_mas_notas_'+seccion).css( "display", "block" );
+
+            $.ajax({
+                url: '/brazil-2014-dev/cargar-mas/'+ contador_1 + '/' + procede,
+                context: document.body
+            }).done(function(data) {
+                $('#articulos_cargar_mas_'+procede).append(data);
+            });
+
+            ocultaVerMas_1 = contador_1 - 1;
+            ocultaVerMasAux_1 = contador_1+1;
+            //console.log(ocultaVerMas+' * '+ocultaVerMasAux);
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_1).css( "display", "none" );
+            $('#cargar_mas_' + seccion + '_' + ocultaVerMas_1).parent().css( "display", "none" );
+        }
+    }
+</script>

@@ -1,0 +1,22 @@
+<div id="video_carousel_<?php print $idVideo; ?>" name="<?php print $imgVideo; ?>" class="<?php print $claseDiv; ?>">
+    <?php
+    if($imgVideo):
+        ?>
+        <figure>
+            <a onclick='renderVideo("<?php print $idVideo; ?>", "video_carousel_<?php print $idVideo; ?>","true", "8d4ab2106823498889a7eb5d7370e0ce");' href='javascript:void(0);'>
+                <img src="<?php print $imgVideo; ?>" alt="<?php print $titulo;?>" title="<?php print $titulo; ?>" />
+            </a>
+        </figure>
+        <?php
+    else:
+        ?>
+        <?php /*<div id="contiene_video_nota_<?php print $idVideo; ?>" class="contiene-video-nota-interna"></div>*/?>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                renderVideo('<?php print $idVideo ?> ','video_carousel_<?php print $idVideo ?>','false', '8d4ab2106823498889a7eb5d7370e0ce');
+            });
+        </script>
+        <?php
+    endif;
+    ?>
+</div>

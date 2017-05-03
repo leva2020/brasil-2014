@@ -1,0 +1,65 @@
+<?php
+print $this->partial('elecciones/cargar-mas-notas/cargar-mas-notas', array('seccion' => $seccion, 'procede' => 'home',));
+/*
+<div id="articulos_cargar_mas"></div>
+<script>
+$(document).ready(function() {
+        $('#articulos_cargar_mas').load('/cargar-mas-notas/0');
+    });
+</script>
+
+
+$numNotas = count($noticias);
+if($numNotas>3):
+    $numNotas = 3;
+endif;
+$numNotas_2 = count($noticias);
+if(count($noticias)>6):
+    $numNotas_2 = 6;
+endif;
+?>
+<div id="articulos-<?php print $id_div; ?>">
+    <?php
+    for($i=0; $i<$numNotas; $i++):
+        ?>
+        <article>
+            <div class="articulos">
+                <h2><a href="<?php print $noticias[$i]['articulo']['url'];?>"><?php print $noticias[$i]['articulo']['titulo']; ?></a></h2>
+                <?php if($noticias[$i]['imagen']):?>
+                    <a href="<?php print $noticias[$i]['articulo']['url'];?>"><figure><img title="<?php print $noticias[$i]['imagen']['titulo']; ?>" alt="<?php print $noticias[$i]['imagen']['titulo']; ?>" src="<?php print $noticias[$i]['imagen']['imagen_baja']; ?>"></figure></a>
+                <?php endif;?>
+                <p><?php print $noticias[$i]['articulo']['sumario']; ?></p>
+            </div>
+        </article>
+        <?php
+    endfor;
+    ?>
+</div>
+<?php if($numNotas>2):?>
+    <a id="cargar_mas_<?php print $id_div; ?>" class="cargar">CARGAR MÁS</a>
+<?php endif;?>
+
+<script>
+    jQuery(document).ready(function(){
+        jQuery('#cargar_mas_<?php print $id_div; ?>').click(function(){
+            jQuery('#cargar_mas_<?php print $id_div; ?>').css('display','none');
+                <?php
+                for($i=3; $i<$numNotas_2; $i++):
+                    if($noticias[$i]['imagen']):
+                        ?>
+                            jQuery('#articulos-<?php print $id_div; ?>').append("<article><div class='articulos'><h2><a href=''><?php print (html_entity_decode(trim($noticias[$i]['articulo']['titulo']))); ?></a></h2><a href=''><figure><img title='<?php print $noticias[$i]['imagen']['titulo']; ?>' alt='<?php print $noticias[$i]['imagen']['titulo']; ?>' src='<?php print $noticias[$i]['imagen']['imagen_baja']; ?>'></figure></a><p><?php print (html_entity_decode(trim($noticias[$i]['articulo']['sumario']))); ?></p></div></article>");
+                        <?php
+                    else:
+                        ?>
+                            jQuery('#articulos-<?php print $id_div; ?>').append("<article><div class='articulos'><h2><a href=''><?php print (html_entity_decode(trim($noticias[$i]['articulo']['titulo']))); ?></a></h2><p><?php print (html_entity_decode(trim($noticias[$i]['articulo']['sumario']))); ?></p></div></article>");
+                        <?php
+                    endif;
+                endfor;
+                ?>
+            });   
+      });
+</script>
+ * 
+ * */
+
+?>

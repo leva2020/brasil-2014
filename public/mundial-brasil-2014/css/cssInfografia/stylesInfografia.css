@@ -1,0 +1,644 @@
+/*- < Resect > -------------------------------------------------------------------*/
+body, h1, figcaption, ul, li, a, figure {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+/*- Tipografía -------------------------------------------------------------------*/
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_free_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_free_light-webfont.eot');
+    src: url('../fonts/nexa_free_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_free_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_free_light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_free_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'octin_sports_rgregular';
+    src: url('../fonts/octin_sports_rg-webfont.eot');
+    src: url('../fonts/octin_sports_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/octin_sports_rg-webfont.woff') format('woff'),
+         url('../fonts/octin_sports_rg-webfont.ttf') format('truetype'),
+         url('../fonts/octin_sports_rg-webfont.svg#octin_sports_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Octin Sports';
+    src: url('../fonts/fonts/Octin Sports-webfont.eot');
+    src: url('../fonts/fonts/Octin Sports-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fonts/Octin Sports-webfont.woff') format('woff'),
+         url('../fonts/fonts/Octin Sports-webfont.ttf') format('truetype'),
+         url('../fonts/fonts/Octin Sports-webfont.svg#din-boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationbold';
+    src: url('../fonts/sansation-bold-webfont.eot');
+    src: url('../fonts/sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-bold-webfont.woff') format('woff'),
+         url('../fonts/sansation-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-bold-webfont.svg#sansationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansationbold_italic';
+    src: url('../fonts/sansation-bolditalic-webfont.eot');
+    src: url('../fonts/sansation-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/sansation-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-bolditalic-webfont.svg#sansationbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationitalic';
+    src: url('../fonts/sansation-italic-webfont.eot');
+    src: url('../fonts/sansation-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-italic-webfont.woff') format('woff'),
+         url('../fonts/sansation-italic-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-italic-webfont.svg#sansationitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansation_lightlight';
+    src: url('../fonts/sansation-light-webfont.eot');
+    src: url('../fonts/sansation-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-light-webfont.woff') format('woff'),
+         url('../fonts/sansation-light-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-light-webfont.svg#sansation_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansation_lightlight_italic';
+    src: url('../fonts/sansation-lightitalic-webfont.eot');
+    src: url('../fonts/sansation-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/sansation-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-lightitalic-webfont.svg#sansation_lightlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationregular';
+    src: url('../fonts/sansation-regular-webfont.eot');
+    src: url('../fonts/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation-regular-webfont.woff') format('woff'),
+         url('../fonts/sansation-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 600px & ) {
+       h1 {
+           font-size: 1.5em;
+           margin: 0 0 0.6em;
+       }
+       h2 {
+           font-size: 1.2em;
+           margin: 0.8em 0;
+       }
+       h3, h4, h5 ,h6 {
+           font-size: 1em;
+           margin: 1em 0;
+       }
+       #contenedor-M14{
+         width: 50%;
+         margin: 7px 0px 7px 32px;
+       }
+}
+
+
+
+/*- < Etiquetas > -----------------------------------------------------------------!!
+	[ Estructura ]  ---------------------------------------------------------------*/
+
+/*- # ID  ------------------------------------------------------------------------!!
+	[ Estructura ]  --------------------------------------------------------------*/
+#contenedor-M14 {
+background: none repeat scroll 0 0 #FFFFFF;
+display: inline-block;
+height: auto;
+margin: 0 auto;
+padding: 0px;
+text-align: center;
+width: 90%;
+}
+#row1-M14{
+	background:#fff;
+	display: block;
+	float:left;
+	height:100%;
+	text-align:left;
+	padding-bottom:30px;
+	width:100%;
+}
+#row1-M14 h1.ti1-M14,#row1-M14 h2.ti1-M14{
+background: none repeat scroll 0 0 #FFFFFF;
+color: #202020;
+font-family: 'Sansation';
+font-size: 21px;
+margin-top: 70px;
+padding: 15px;
+position: relative;
+width: 100%;
+line-height: 24px;
+}
+#pie-M14{
+	background:#f8f8f8;
+	display:block;
+	text-align:center;
+	width:77%;
+}
+/*- . Clases  --------------------------------------------------------------------!!
+	[ Contenido ] ----------------------------------------------------------------*/
+.bloqface-M14{
+	background:#fff;
+	border-bottom:1px solid #e7e7e7;
+	border-top:1px solid #e7e7e7;
+	height:38px;
+}
+/*----------------------------
+	 Bloq Comentarios Redes Sociales
+---------------------------------*/
+.bloqrsocial-M14{
+background: none repeat scroll 0 0 #EDEDED;
+border: 1px solid #E7E7E7;
+color: #646464;
+font-family: 'Octin Sports';
+font-size: 10px;
+height: 80px;
+width: 100%;
+margin-top: 20px;
+margin-left: 5%;
+}
+.bloqrsocial-M14 h2,.bloqrsocial-M14 h3{
+	font-size:15px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	margin:0;
+}
+.bloqrsocial-M14 a.btnR1{
+   background: url("../../img/imgArticulo/spritesRedes_m14.png") no-repeat scroll 268px 0 #5182C1;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Octin Sports';
+    font-size: 14px;
+    font-weight: normal;
+    height: 19px;
+    padding: 14px 10px;
+    text-align: left;
+}
+.bloqrsocial-M14 div.redes {
+	padding: 5px 0 0 9px;
+	height: 29px;
+	text-align:left;
+}
+
+.bloqrsocial-M14 div.redes ul {
+margin-left: 20px;
+}
+
+.bloqrsocial-M14 div.redes a{
+background: url('../../img/imgArticulo/spritesRedes_m14.png') no-repeat 0px 0px;
+border-left: 1px solid #fff;
+color: #646464;
+display: inline-block;
+font-family: 'Octin Sports';
+text-align: center;
+padding: 8px 2px 8px 31px;
+width: auto;
+margin-right: 0px;
+margin-left: 23px;
+}
+.bloqrsocial-M14 div.redes a.btnR2{
+	background-position:7px -43px;
+}
+.bloqrsocial-M14 div.redes a.btnR3{
+	background-position:7px -73px;
+}
+.bloqrsocial-M14 div.redes a.btnR4{
+	background-position:7px -101px;
+}
+.img-M14{
+height: auto;
+margin: 10px 0 0;
+padding: 0;
+text-align: center;
+width: 110%;
+}
+.img-M14 img{
+height: auto;
+width: 100%;
+}
+.tImg-M14{
+background: none repeat scroll 0 0 #000000;
+    bottom: 47px;
+    color: #FFFFFF;
+    font-family: 'Sansation';
+    font-size: 14px;
+    font-weight: 500;
+    height: auto;
+    opacity: 0.8;
+    padding: 5px 20px;
+    position: relative;
+    text-align: left;
+    width: 260px;
+}
+.parrafos-M14 p{
+color: #393939;
+font-family: 'Sansation';
+font-size: 16px;
+line-height: 21px;
+text-align: left;
+width: 100%;
+padding: 15px;
+padding-top: 0px;
+}
+/*----------------------------
+	 Bloq Mas Noticias
+---------------------------------*/
+.masnoticia-M14{
+	background:#fff;
+	height:auto;
+	margin:20px 0;
+	padding:0px;
+	width:300px;
+}
+.masnoticia-M14 h2,.masnoticia-M14 h3{
+	color:#0099ff;
+	font-family:'Octin Sports';
+	font-size:12px;
+	margin:0;
+
+}
+.masnoticia-M14 .row1{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #7FCCFF;
+    height: 80px;
+    margin: 6px 0;
+    padding: 10px 0;
+    width:100%;
+}
+.masnoticia-M14 img{
+	float:left;
+	height:81px;
+	width:81px;
+}
+.masnoticia-M14 .row1 p{
+color: #606060;
+    float: right;
+    font-family: 'Sansation';
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 18px;
+    margin: 0;
+    padding-left: 10px;
+    width: 205px;
+}
+
+.masnoticia-M14 .row1 h2{
+  color: #606060;
+    float: right;
+    font-family: 'Sansation';
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 18px;
+    margin-top: -6px;
+    padding-left: 12px;
+    width: 205px;
+}
+/*----------------------------
+	Bloq Login Comentarios
+-----------------------------*/
+.logincoment-M14{
+  background: none repeat scroll 0 0 #E9EAE9;
+    color: #000000;
+    font-family: 'Sansation';
+    font-size: 14px;
+    height: 242px;
+    width:100%;
+}
+.logincoment-M14 h5{
+	background:#cbcbcb;
+	color:#202020;
+	font-family:'Octin Sports';
+	font-size:15px;
+	text-align:right;
+	padding:7px 4px;
+	margin:0;
+}
+.logincoment-M14 a.btnC1{
+	color:#202020;
+	font-family:'Arial';
+	font-size:15px;
+	font-weight:bold;
+	padding:7px
+}
+.logincoment-M14 a.btnC2{
+	background:#2983c5;
+	color:#fff;
+	display:block;
+	font-family:'Octin Sports';
+	font-size:15px;
+	font-weight:normal;
+	padding:10px 20px;
+	margin:4px 0 0 45px;
+	width:60px
+}
+.logincoment-M14 .col1{
+	border-right:1px solid #cbcbcb;
+	float:left;
+	height:190px;
+	padding:0 10px;
+	width:155px;
+	margin:10px 0;
+}
+.logincoment-M14 .col2{
+	float:right;
+	padding:50px 10px 10px 10px;
+	width:104px
+}
+.logincoment-M14 input{
+	background:#cbcbcb;
+	border:0;
+	border-radius:5px;
+	display:block;
+	font-weight:bold;
+	height:27px;
+	margin:10px 0  20px 0;
+	width:150px
+}
+.logincoment-M14 a.btnC3{
+	background:#cbcbcb;
+	color:#2983c5;
+	display:block;
+	font-family:'Octin Sports';
+	font-size:15px;
+	font-weight:normal;
+	padding:7px;
+	margin-top:15px
+
+}
+
+/*----------------------------
+	Bloq Comentarios
+-----------------------------*/
+.comentarios-M14{
+background: url("../../img/imgInfografia/line_M14.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 445px;
+    margin: 0;
+    padding: 7px 0;
+    width:100%;
+}
+.comentarios-M14 h2,.comentarios-M14 h3{
+	background:#e0e0e0;
+	color:#000;
+	font-family:'Octin Sports';
+	font-size:15px;
+	padding:4px 10px;
+	margin:0
+}
+.comentarios-M14 .row1{
+	background:#eaeaea;
+	height:50px;
+	margin-bottom:15px;
+	padding:0
+}
+.comentarios-M14 .row1 p{
+	color:#000000;
+	font-family:'Sansation';
+	font-size:14px;
+	float:left;
+	padding:4px 10px;
+	margin:0
+}
+.comentarios-M14 .row1 .btn1, .btn2{
+	background-color:#a5a5a5;
+	color:#fff;
+	display: inline-block;
+	font-family:'Octin Sports';
+	font-size:15px;
+	text-align:center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	padding:10px;
+	height: 18px;
+	width:117px;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+.comentarios-M14 .row1 .btn2{
+	margin-top:12px
+}
+.comentarios-M14 .row1 .btn1:hover, .btn2:hover{
+	background-color:#f4f4f4;
+	color:#5182c1;
+}
+.comentarios-M14 #tiComentarios-M14{
+	background:#dfdfdf url('../../img/imgInfografia/sprites_m14.png') no-repeat 180px 0px;
+	cursor:pointer;
+	font-family:'Octin Sports';
+	font-size:15px;
+	height:12px;
+	padding:7px 10px;
+	margin-bottom:5px
+}
+.textrow2{
+	background:#e0e0e0;
+	font-family:'Sansation';
+	text-align:center;
+	padding:20px
+}
+.comentarios-M14 .row2{
+	background:#f4f4f4;
+	height:auto;
+	margin:0px;
+	padding:10px 16px 1px 16px;
+}
+.mostrard .res2{
+	background:#cbcbcb;
+}
+.comentarios-M14 .row2 .id-M14{
+	color:#5182c1;
+	font-family:'Octin Sports';
+	font-size:31px;
+	float:left;
+	margin:0 11px 0 0;
+	padding:0
+}
+.comentarios-M14 .row2 .usuario-M14{
+	color:#5182c1;
+	font-family:'Octin Sports';
+	font-size:12px;
+	margin-top:5px
+}
+.comentarios-M14 .row2  .dic-M14{
+	font-family:'Sansation';
+	font-size:12px
+}
+.comentarios-M14 .row2 .timeComentario-M14{
+	font-family:'Sansation';
+	font-size:12px;
+	font-weight:bold;
+	float:right;
+	position:relative;
+	bottom:28px
+}
+.comentarios-M14 .row2 p{
+	color:#000;
+	line-height::;px;
+	font-family:'Sansation';
+	font-size:14px;
+}
+.comentarios-M14 .comentMenu-M14{
+	background:#dfdfdf;
+	font-family:'Sansation';
+	font-size:12px;
+	height:10px;
+	text-align:center;
+	padding:10px
+}
+.comentarios-M14 .comentMenu-M14 a{
+	background:url('../../img/imgInfografia/sprites_m14.png') no-repeat;
+	display:inline;
+	padding:7px 15px;
+	margin:0 20px;
+}
+.comentarios-M14 .comentMenu-M14 a.btn1{
+	background-position:0px -36px;
+}
+.comentarios-M14 .comentMenu-M14 a.btn2{
+	background-position:0px -60px;
+}
+.comentarios-M14 .comentMenu-M14 a.btn3{
+	background-position:0px -93px;
+}
+.comentarios-M14 .comentMenu-M14 a.btn4{
+	background-position:0px -122px;
+}
+/*----------------------------
+	Bloq Twitter
+-----------------------------*/
+.twitter-M14{
+	height:auto;
+	margin:13px 0;
+}
+/*----------------------------
+	Bloq Facebook
+-----------------------------*/
+.facebook-M14{
+	height:auto;
+	margin:13px 0;
+}
+/*----------------------------
+	Publicidad
+-----------------------------*/
+.publ1-M14{
+	background:#cccccc;
+	height:53px;
+	width:487px;
+	margin:20px 0 30px 0;
+}
+.publ1-M14 h5, .publ2-M14 h5{
+	background:#eaeaea;
+	color:#7a7a7a;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:normal;
+	line-height:17px;
+	height:17px;
+	padding:3px 8px;
+	margin:0;
+	text-align:center;
+}
+.publ2-M14{
+	height:auto;
+	overflow:hidden;
+	width:300px;
+	position: relative;
+	margin-top: 50px;
+}
+.publ2-M14 img{
+	height:auto;
+	overflow:hidden;
+	width:300px;
+	position: relative;
+}
+/*----------------------------
+	Resaltadores
+-----------------------------*/
+.fecha-M14, .dir-M14{
+	color:#606060;
+	display:block;
+	font-family:'Sansation';
+	font-size:11px
+}
+.dir-M14{
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.ti2-M14{
+	color:#fff;
+	font-family:'Sansation';
+	font-size:12px
+}
+.ti4-M14{
+	color:#606060;
+	font-family:'Nexa Bold';
+	font-size:14px
+}
+a.resal-M14{
+	color:#fff;
+	background:#0099ff;
+	padding:3px
+
+}
+.m14-1{
+	color:#000;
+	font-family:'Sansation';
+	font-size:17px;
+	font-weight: 'bold';
+}
+.m14-2{
+	color:#5182c1
+}
+
+
+
+
+
+
+

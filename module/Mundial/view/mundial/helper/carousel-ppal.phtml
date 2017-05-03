@@ -1,0 +1,63 @@
+<div id="main" role="main">
+    <section class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <?php
+                foreach ($notas as $info):
+                    if ($info['multimedia']['formato'] == 'IMAGEN'):
+                        ?>
+                        <li>
+                            <a href="<?php print $info['articulo']['url']; ?>"><figure><img src="<?php print $info['multimedia']['imagen_baja'] ?>" alt="<?php print $info['multimedia']['titulo'] ?>" title="<?php print $info['multimedia']['titulo'] ?>" /></figure></a>
+                        <figcaption>
+                            <h2><?php print $info['articulo']['titulo']; ?></h2>
+                        </figcaption>
+                        </li>
+                        <?php
+                    elseif ($info['multimedia']['formato'] == 'VIDEO'):
+                        ?>
+                        <li>
+                            <?php print $this->renderVideo('carousel-videos', $info['multimedia'], 'carousel-videos'); ?>
+                            <figcaption>
+                                <div class="content_gal icono-play-video-despliegue"></div>
+                                <h2><?php print $info['articulo']['titulo']; ?></h2>
+                            </figcaption>
+                        </li>
+                        <?php
+                    endif;
+                endforeach;
+                ?>
+                <script type="text/javascript">
+                    //$(window).load(function() {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        directionNav: false,
+                        slideshow: false,
+                        touch: true,
+                        after: function(slider) {
+                            atributos = $('.flex-active-slide div');
+                            idDiv = atributos.attr('id');
+                            if (idDiv) {
+                                imagen = atributos.attr('name');
+                                idVideo = idDiv.replace('video_carousel_', "");
+                                //console.log('vida cacorra '+idVideo);
+                                eliminaVideoCarousel(idDiv, imagen, idVideo);
+                                //destroyPlayer(idVideo,idDiv);
+                            } else {
+                                idDiv = idDivActual;
+                                imagen = atributos.attr('name');
+                                idVideo = idDiv.replace('video_carousel_', "");
+                                //console.log('vida cacorra '+idVideo);
+                                eliminaVideoCarousel(idDiv, imagen, idVideo);
+                            }
+                        }
+                    });
+                    //});
+                </script>
+            </ul>
+        </div>
+    </section>
+</div>
+</section>
+
+
+

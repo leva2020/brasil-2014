@@ -1,0 +1,69 @@
+<?php echo $this->doctype();?>
+<html lang="es" class="no-js">
+    <head>
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')?>
+        <meta charset="utf-8">
+        <?php $canonical = $_SERVER['REQUEST_URI']; ?>
+        <link rel="canonical" href="http://www.eltiempo.com<?php print $canonical;?>" />
+        <?php echo $this->headTitle()->setSeparator(' - ')->setAutoEscape(false); ?>      
+        <?php 
+            print $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => '/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/fonts/stylesheet.css')
+                        ->prependStylesheet($this->basePath() . '/css/cssHome/flexslider.css')
+                        ->prependStylesheet($this->basePath() . '/css/cssHome/reset.css');
+        ?>
+
+         <script type="text/javascript">
+            sas_tmstp=Math.round(Math.random()*10000000000);sas_masterflag=1;
+            function sasmobile(sas_pageid,sas_formatid,sas_target) {
+             if (sas_masterflag==1) {sas_masterflag=0;sas_master='M';} else {sas_master='S';};
+             document.write('<scr'+'ipt src="http://ads.eltiempo.com/call2/pubmj/'+sas_pageid+'/'+sas_formatid+'/'+sas_master+'/'+sas_tmstp+'/'+escape(sas_target)+'?"></scr'+'ipt>');
+            }function sascc(sas_imageid,sas_pageid) {
+            img=new Image();
+            img.src='http://ads.eltiempo.com/call/clicpixel/'+sas_imageid+'/'+sas_pageid+'/'+sas_tmstp+'?';
+            }
+        </script>
+
+        <link rel="apple-touch-icon" href = "/mundial-brasil-2014/img/mundial57x57.png" />
+        <link rel="apple-touch-icon" sizes = "76x76" href="/mundial-brasil-2014/img/mundial76x76.png" />
+        <link rel="apple-touch-icon" sizes = "120x120" href="/mundial-brasil-2014/img/mundial120x120.png" />
+        <link rel="apple-touch-icon" sizes = "152x152" href="/mundial-brasil-2014/img/mundial150x150.png" />
+
+        <?php
+            print $this->headScript()
+                ->prependFile($this->basePath() . '/js/jsHome/mundial-mobile.js')
+                ->prependFile($this->basePath() . '/js/jsHome/jquery.flexslider.js')
+                ->prependFile($this->basePath() . '/js/jsHome/modernizr.js')
+                ->prependFile($this->basePath() . '/js/jquery_v_1.9.1.js');
+        ?>
+        <script src='http://player.ooyala.com/v3/8b9ddbb2bb504e658a5ba07ea351da80'></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <?php print $this->header(); ?>
+                <?php print $this->content; ?>
+                <?php print $this->footer(); ?>
+            </div>
+            <?php print $this->menu();?>
+        </div>
+            
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                    var posicion = $(window).scrollTop();
+                    if(posicion>=80){
+                            $('header').addClass('fijo');
+                            $('.top-bar ul li').addClass('fijo');
+                            $('.secciones').addClass('fix');
+                    }
+                    else{
+                            $('header').removeClass('fijo');
+                            $('.top-bar ul li').removeClass('fijo');
+                            $('.secciones').removeClass('fix');
+                    }
+            });
+        </script>
+        <?php print $this->datosOmniture();?>
+    </body>
+</html>

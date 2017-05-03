@@ -1,0 +1,7 @@
+<div id="video_despliegue_<?php print $idVideo; ?>" class="<?php print $claseDiv; ?>" style='height: 200px;'>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            OO.ready(function() { OO.Player.create('video_despliegue_<?php print $idVideo ?>', '<?php print $idVideo ?>'); });
+        });
+    </script>
+</div>

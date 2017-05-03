@@ -1,0 +1,15 @@
+<article>
+        <div class="articulos">
+        <h2><a href="<?php print $noticias['articulo']['url'];?>"><?php print $noticias['articulo']['titulo'];?></a></h2>
+        <p><?php print $noticias['articulo']['sumario'];?></p>
+        <?php //print '<pre>'; var_dump($noticias); print '<pre>';?>
+        <?php if($noticias['relacionados']):?>
+            <a href="<?php print $noticias['articulo']['url'];?>"><figure><img src="<?php print $noticias['relacionados'][0]['imagen_baja'];?>" alt="<?php print $noticias['relacionados'][0]['titulo'];?>" title="<?php print $noticias['relacionados'][0]['titulo'];?>"></figure></a>
+        <?php endif;?>
+        <?php 
+        if($noticias['articulo']['parametro_redes']):
+            print $this->redesSociales($noticias['articulo']);
+        endif;
+        ?>
+        </div>
+</article>

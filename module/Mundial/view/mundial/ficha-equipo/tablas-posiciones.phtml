@@ -1,0 +1,44 @@
+<?php
+$i = 1;
+foreach ($posiciones as $grupo):
+    $nombre = strtolower($grupo['nombre']);
+    $equipos = $grupo['equipos'];
+    $grupoActivo = '';
+    if ($grupoAct == $nombre):
+        $grupoActivo = 'abierto';
+    endif;
+    ?>
+    <section class = "modulo grupo<?php print $nombre; ?>">
+        <div class = "ac-container">
+            <div>
+                <input id = "ac-<?php print $i; ?>" name = "accordion-<?php print $i; ?>" type = "checkbox" />
+                <label for = "ac-<?php print $i; ?>">GRUPO <?php print $grupo['nombre']; ?></label>
+
+                <div id="grupo-<?php print $i ?>" class="ac-small <?php print $grupoActivo; ?>">
+                    <div class="content_tabla grupo_<?php print $nombre; ?>">
+                        <ul class="tit_datos">
+                            <li><p>Posición</p></li>
+                            <li><p>PJ</p></li>
+                            <li><p>GD</p></li>
+                            <li><p>PG</p></li>   
+                            <li class="puntos"><p>Puntos</p></li>
+                        </ul>
+                        <?php print $this->posiciones($equipos, $equipo); ?>
+                    </div>
+                    <div class="convenciones">
+                        <ul>
+                            <li>
+                                <p><b>PJ: </b>Partidos jugados</p>
+                                <p><b>PG: </b>Partidos ganados</p>
+                                <p><b>GD: </b>Gol diferencia</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <?php
+    $i++;
+endforeach;
+?>

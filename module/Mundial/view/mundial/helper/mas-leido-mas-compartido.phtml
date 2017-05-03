@@ -1,0 +1,52 @@
+<section class="modulo-lo-mas modulo">
+    <ul class="nav-tab" data-role="navbar">
+        <li><h3><a id="btn-mas-leido" class="ui-btn-active btnMasLeido">MÁS LEÍDO</a></h3></li>
+        <li><h3><a id="btn-mas-compartido" class="btnMasCompartido">MÁS COMPARTIDO</a></h3></li>
+    </ul>
+    <div class="contenido-lo-mas">
+        <section id="contiene-leido" class="leido">
+            <ul class="lista-lo-mas">
+                <?php foreach($leidas as $leida):?>
+                    <li>
+                        <h3>
+                            <div class="foto_mas_leida"><img src="<?php print $leida['imagen']['imagen_baja']; ?>" width="70" height="70"></div>
+                            <a class="lo_mas_destacado" href="<?php print $leida['articulo']['url']; ?>">
+                                <?php print $leida['articulo']['titulo']; ?>
+                            </a>
+                        </h3>
+                        <p><?php print $leida['articulo']['sumario']; ?></p>
+                    </li>
+                <?php endforeach;?>
+            </ul>
+        </section> 
+        <section id="contiene-compartido" class="compartido" style="display:none;"> 
+            <ul class="lista-lo-mas">
+                <?php foreach($compartidas as $compartida):?>
+                    <li>
+                        <h3>
+                            <div class="foto_mas_leida"><img src="<?php print $compartida['imagen']['imagen_baja']; ?>" width="70" height="70"></div>
+                            <a class="lo_mas_destacado" href="<?php print $compartida['articulo']['url']; ?>">
+                            <?php print $compartida['articulo']['titulo']; ?>
+                            </a>
+                        </h3>
+                        <p><?php print $compartida['articulo']['sumario']; ?></p>
+                    </li>
+                <?php endforeach;?>
+        </section>
+    </div>
+</section>
+
+<script>
+    jQuery('#btn-mas-leido').click(function(){
+        jQuery('#contiene-compartido').css('display','none');
+        jQuery('#contiene-leido').css('display','block');
+        jQuery('#btn-mas-leido').addClass('ui-btn-active');
+        jQuery('#btn-mas-compartido').removeClass('ui-btn-active');
+    });
+    jQuery('#btn-mas-compartido').click(function(){
+        jQuery('#contiene-compartido').css('display','block');
+        jQuery('#contiene-leido').css('display','none');
+        jQuery('#btn-mas-leido').removeClass('ui-btn-active');
+        jQuery('#btn-mas-compartido').addClass('ui-btn-active');
+    });
+</script>

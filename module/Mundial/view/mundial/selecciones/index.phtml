@@ -1,0 +1,44 @@
+<div class="secciones mundo">
+    <div class="overlay"></div>
+
+    <aside class="pauta"><p>Publicidad</p><div></div></aside>
+
+
+    <section class="contHomeSeccion mundo">
+        <div class="tit_homeSeccion mundo">
+            <h3 class="tituloHomeSeccion">Selecciones del mundo</h3>
+        </div>
+        <?php print $this->redesSociales($compartir, 'redes-sociales-multimedia');?>	
+        <?php
+            $i=0;
+            foreach($notas as $nota):
+                print $this->notasPpalSecciones($nota,$i);
+                $i++;
+            endforeach;
+        ?>
+    </section>
+
+
+    <section class="masnoticia-M14 mundo">
+        <div class="titulo-top mundo">
+            <h3>Todo sobre selecciones del mundo</h3>
+        </div>
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => 'selecciones-del-mundo', 'procede' => 'selecciones-del-mundo',)); ?>					
+    </section>
+
+
+    <section class="masnoticia-M14 curiosidades">
+       <div class="titulo-top">
+            <h3>lo más visto</h3>
+        </div>
+        <?php 
+            for($i=0; $i<$maximoVistas; $i++):
+                print $this->notas($vistas[$i], 'row1');
+            endfor;
+        ?>				
+    </section>
+
+
+    <?php print $this->otrosTemas($otrosTemas, 'colombia', 'Equipos del mundo');?>
+
+</div>

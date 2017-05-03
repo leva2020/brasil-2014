@@ -1,0 +1,42 @@
+<div class="secciones curiosidades">
+    <div class="overlay"></div>
+
+    <?php print $this->pauta('9703', '432761', 'pauta'); ?>
+
+
+    <section class="contHomeSeccion curiosidades">
+        <div class="tit_homeSeccion curiosidades">
+            <h3 class="tituloHomeSeccion">Curiosidades</h3>
+        </div>
+        <?php print $this->redesSociales($compartir, 'redes-sociales-multimedia');?>
+        <?php
+            $i=0;
+            foreach($notas as $nota):
+                print $this->notasPpalSecciones($nota,$i);
+                $i++;
+            endforeach;
+        ?>
+    </section>
+
+    <section class="masnoticia-M14 curiosidades">
+        <div class="titulo-top curiosidades">
+            <h3>Todo sobre curiosidades</h3>
+        </div>
+        <?php print $this->partial('mundial/cargar-mas/cargar-mas', array('seccion' => 'curiosidades', 'procede' => 'curiosidades',)); ?>					
+    </section>
+
+
+    <section class="masnoticia-M14 curiosidades">
+        <div class="titulo-top">
+            <h3>lo más visto</h3>
+        </div>
+        <?php 
+            for($i=0; $i<$maximoVistas; $i++):
+                print $this->notas($vistas[$i], 'row1');
+            endfor;
+        ?>					
+    </section>
+    
+    <?php print $this->otrosTemas($otrosTemas, 'colombia', 'Curiosidades');?>
+
+</div>

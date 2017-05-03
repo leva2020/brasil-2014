@@ -1,0 +1,633 @@
+.secciones.fix{
+	padding: 80px 0 0;
+}
+/*GALERIA PPAL*/
+
+.gal-ppal, .gal-fotos{
+	border-bottom: 1px solid #eaeaea;
+	margin: 10px 0;
+	padding: 0;
+}
+.gal-fotos {
+	border: none;
+	background: none;
+	height: 206px;
+}
+#main {overflow: hidden;}
+
+.flexslider .slides li{
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+.flexslider .slides li figure{
+	margin: 0;
+	width: 75%;
+	padding: 0;
+}
+.flexslider .slides p{
+	bottom: 0;
+	color: #000;
+	font-family: 'robotobold';
+	font-size: 15px;
+	padding: 10px 5px;
+	text-align: center;
+	width:100%;
+
+}
+.flexslider.video .slides li{
+	position: relative;
+	margin: 0 10px;
+	
+}
+.flexslider.video .slides li figure{
+	margin: 0;
+}
+.flexslider.video .slides p{
+	bottom: 0;
+	color: #000;
+	font-family: 'robotobold';
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	width: 93.6%;
+}
+.flexslider.video .slides p{
+	background: rgba(0, 0, 0, 0.8);
+	bottom: 0;
+	color: #FFF;
+	font-family: 'libre_baskervilleregular';
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	width: 92.6%;
+	position: absolute;
+	margin: 16px 0 0px 0;
+}
+
+/* --Clearfix */
+.cf:before,
+.cf:after {content:""; display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+
+.slider { margin: 0!important;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+/* Loading
+***********************/
+.loading #container {opacity: 0;}
+.loading:before  { content: 'LOADING'; display: block; margin: 100px 0 0; text-align: center; color: #fff; font-weight: bold; font-size: 60px; opacity: 0.3; }
+body {width: 100%; float: left; opacity: 1; -webkit-transition: opacity 1s ease;}
+
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 960px) {
+	.gal-ppal, .gal-fotos{
+		background: none;
+		height: 206px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.gal-ppal, .gal-fotos{
+		background: none;
+height: 206px;
+width: 88%;
+margin: 2px auto;
+	}
+}
+.flex-control-nav {
+	display: none;
+}
+.articulos figure img{
+	width: 100%;
+}
+.articulos figure {
+	margin: 0;
+}
+.articulos {
+	margin: 15px;
+	border-bottom: 1px solid #c8caca;
+	overflow: hidden;
+	padding-bottom: 22px;
+}
+.articulos h2 {
+	font-size: 1.5em;
+	color: #373737;
+	margin: 0 0 10px 0;
+}
+.articulos h2 a {
+	text-decoration: none;
+	color: #373737;
+	font-family: 'libre_baskervillebold';
+	line-height: 1.2;
+}
+.articulos h2 a:hover, .articulos h2 a:active { text-decoration: underline;} 
+.articulos p {
+	color: #000;
+	font-family: 'latoregular';
+	line-height: 1.2;
+	margin: 8px 0 12px 0;
+}
+.iconos.btn-facebook {
+	background-position: -4px -365px;
+	width: 25px;
+	cursor: pointer;
+}
+.iconos.btn-twitter {
+	background-position: -4px -419px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-presidencia {
+	background-position: -4px -583px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+}
+.iconos.flecha-redes {
+	background-position: -4px -651px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+	float: right;
+	margin: 15px 5px 0;
+}
+
+.iconos.btn-congreso {
+	background-position: -4px -622px;
+	width: 40px;
+	cursor: pointer;
+	height: 35px;
+}
+.iconos.btn-google{
+	background-position: -4px -483px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-correo {
+	background-position: -4px -551px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.deslizar {
+	background-position: -4px -960px;
+	width: 23px;
+	height: 43px;
+	float: right;
+}
+.iconos.buscar {
+	background-position: -4px -31px;
+}
+.iconos-redes {
+	 float:right;
+	 margin: 23px 0 0 0;
+	 display: none;
+}
+.iconos-compartir {
+	overflow: hidden;
+	clear: both;
+}
+.iconos.flecha-redes.art, .iconos-redes.art {
+	float: left;
+}
+.iconos.flecha-redes.art {
+	margin: 5px 0 10px 0;
+}
+.iconos-redes.art {
+	margin: 11px 4px;
+	border-left: 1px solid #c8caca;
+	padding: 0 10px;
+}
+.iconos-redes.art ul {
+	float: left;
+}
+
+/* SECCIONES */
+
+.modulo{
+	margin: 0 0 10px;
+position: relative;
+text-align: left;
+width: 100%;
+}
+.candidatos .ac-container {
+	background: none;
+}
+.candidatos .ac-container p {
+	margin: 10px;
+	font-family: 'latoregular';
+	float: left;
+	font-size: 0.9em;
+	width: 260px;
+	line-height: 1.2;
+}
+.ac-container{
+	margin: 0 auto;
+background: #FFF;
+overflow: hidden;
+padding: 10px;
+width: 90%;}
+
+.ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+background: #373737;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'latoregular';
+	font-size: 15px;
+	height: 31px;
+	line-height: 33px;
+	padding: 5px 20px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 20;
+	text-decoration: none;
+}
+
+.ac-container .noticias:before{
+	color: #FFF;
+	content: "\e764";
+	font-family: 'icons_mundial';
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 0.5;
+	height: 26px;
+	left: 2px;
+	position: absolute;
+	top: 5px;
+	width: 36px;
+	-webkit-font-smoothing: antialiased;
+	display: none;
+}
+.ac-container .noticias:after{
+	content: "\e764";
+	font-family: 'icons_mundial';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 0.5;
+	height: 18px;
+	position: absolute;
+	right: 8px;
+	top: 10px;
+	width: 24px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	writing-mode: tb-rl;
+	/*solo mientras se activa registraduria*/
+	display: none;
+}
+
+.ac-container input{
+	display: none;
+}
+.ac-container .ac-small{
+	margin-top: 0px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container input:checked ~ .ac-small{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+.ac-container input:checked ~ .ac-small{
+	border-top: 1px solid #CCC;
+	height: auto;
+	margin: 10px auto 0;
+	width: 92%;
+}
+.ac-container article{
+	overflow: hidden;
+	background: #FFF;
+}
+.ac-container article figure{
+	float: left;
+	margin: 0 8px 12px 0;
+	position: relative;
+	width: 26%;
+}
+.ac-container article img{
+	float: left;
+	width: 100%;
+}
+.ac-container article h2{
+	color: #363636;
+	font-family: 'libre_baskervillebold';
+	font-size: 20px;
+	text-align: left;
+}
+.ac-container article p{
+	color: #363636;
+	font-family: 'latoregular';
+	font-size: 14px;
+	text-align: left;
+	line-height: 1.3;
+}
+.ac-container .cargar {
+	background: #c7c7c7;
+	color: #373737;
+	font-family: 'latoregular';
+	padding: 10px;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 10px 10px 10px;
+	text-align: center;
+}
+.ac-container .cargar:active{ background: #373737;
+color: #fff;}
+/* PRESINDENCIALES */
+
+.modulo.presidenciales .ac-container .ac-small{
+	border-bottom: 1px solid #eaeaea;
+}
+.modulo.presidenciales .ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+	background: #373737;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'latoregular';
+}
+.modulo.presidenciales .ac-container .noticias:before{
+	content: "\1F30E";
+}
+.modulo.presidenciales .ac-container .noticias.up:after{
+	content: "\e767";
+}
+.modulo.presidenciales .ac-container article{
+	background: #FFF;
+}
+.modulo.presidenciales .ac-container article h2{
+	color: #FFF;
+}
+/* CONGRESO */
+
+.modulo.congreso .ac-container{
+	background: none;
+}
+
+.modulo.congreso .ac-container .ac-small{
+	border-bottom: 1px solid #eaeaea;
+}
+.modulo.congreso .ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+	background: #373737;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'latoregular';
+}
+.modulo.congreso .ac-container .noticias:before{
+	content: "\1F30E";
+}
+.modulo.congreso .ac-container .noticias.up:after{
+	content: "\e767";
+}
+.modulo.congreso .ac-container article{
+	background: none;
+}
+.modulo.congreso .ac-container article h2{
+	color: #FFF;
+}
+
+/* FOTOS */
+.modulo.fotos .ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+	background: #373737;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'latoregular';
+}
+/* ENCUESTAS */
+.modulo.encuestas .ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+	background: #373737;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'latoregular';
+}
+
+/* REGISTRADURIA */
+.modulo.registraduria .ac-container article {
+	padding: 0 40px;
+}
+.modulo.registraduria .ac-container article,
+.modulo.registraduria .ac-container {
+	background: none;
+width: 94%;
+margin: 0 auto
+
+}
+.modulo.registraduria .ac-container .noticias{
+	border-top: 3px solid #6f6d64;
+	background: #373737;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'latoregular';
+}
+.modulo.registraduria .ac-container img{
+	text-align: center;
+	margin: 20px 38px;
+	width: 65%;
+	display: block;
+}
+.modulo.registraduria .ac-container article p {
+	overflow: hidden;
+	clear: both;
+}
+.modulo.registraduria .btn-servicios {
+	background: #F6AE0F;
+	color: #FFF;
+	padding: 10px;
+	font-family: 'robotobold';
+	font-size: 15px;
+	text-decoration: none;
+	display: block;
+	width: 67%;
+	margin: 20px 26px;
+	text-align: center;
+}
+/* ACORDION */
+.colombia .ac-container label{
+	background: #ececec;
+	color: #000;
+	cursor: pointer;
+	display: block;
+	font-family: 'octin_sports_rgregular';
+	font-size: 15px;
+	height: 31px;
+	line-height: 33px;
+	padding: 2px 20px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 20;
+}
+
+.colombia .ac-container label:hover{
+	background: #ececec;
+}
+.colombia .ac-container label:after{
+	content: "\e764";
+	font-family: 'icons_mundial';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 0.5;
+	height: 18px;
+	position: absolute;
+	right: 8px;
+	top: 10px;
+	width: 24px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.colombia .ac-container input{
+	display: none;
+}
+.colombia .ac-container .ac-small{
+	margin-top: 0px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.colombia .ac-container input:checked ~ .ac-small{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+.colombia .ac-container input:checked ~ .ac-small{
+	border-top: 1px solid #CCC;
+	height: auto;
+	margin: 10px auto 0;
+	width: 92%;
+}
+/*encuesta*/
+
+.encuesta .ac-container .ac-encuesta{
+	margin-top: 0px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.encuesta .ac-container input:checked ~ .ac-encuesta{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+.encuesta .ac-container input:checked ~ .ac-encuesta{
+	border-top: none;
+	height: auto;
+	margin: 0 auto 0;
+	width: 92%;
+}
+.encuesta .ac-container input:checked ~ .ac-encuesta{
+	border-top: none;
+	height: auto;
+	margin: 0 auto 0;
+	width: 100%;
+}
+
+.encuesta .ac-container .ac-encuesta figure{
+	width: 100%;
+	margin:0;
+}
+
+.encuesta .ac-container label{
+	background: #373737;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'latoregular';
+	font-size: 15px;
+	height: 31px;
+	line-height: 33px;
+	padding: 2px 20px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 20;
+	border-top:3px solid #6F6D64;
+}
+
+.encuesta .ac-container label:after{
+	content: "\e764";
+	font-family: 'icons_mundial';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 0.5;
+	height: 18px;
+	position: absolute;
+	right: 8px;
+	top: 10px;
+	width: 24px;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+/* CARRUSEL PRESIDENTES */
+.gal-ppal .flexslider .slides img.juanManuelSantos{
+ background: url("../images/spriteCandidatos.png") no-repeat scroll 0 -210px rgba(0, 0, 0, 0);
+    border: medium none;
+    height: 102px;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.gal-ppal .flexslider .slides img.aidaAbellaEsquivel{
+  background: url("../images/spriteCandidatos.png") no-repeat scroll 0 1px rgba(0, 0, 0, 0);
+	    height: 102px;
+	    margin-left: 20px;
+	    width: 100px;
+}
+
+.gal-ppal .flexslider .slides img.oscaroZuluagaEscobar{
+  background: url("../images/spriteCandidatos.png") no-repeat scroll 0 -320px rgba(0, 0, 0, 0);
+	    height: 102px;
+	    margin-left: 20px;
+	    width: 100px;
+}
+
+.gal-ppal .flexslider .slides img.claraLopezObregon{
+  background: url("../images/spriteCandidatos.png") no-repeat scroll 0 -108px rgba(0, 0, 0, 0);
+	    height: 102px;
+	    margin-left: 20px;
+	    width: 100px;
+}
+.gal-ppal .flexslider .slides img.marthaLuciaRamirez{
+  background: url("../images/spriteCandidatos.png") no-repeat scroll 0 -430px rgba(0, 0, 0, 0);
+	    height: 102px;
+	    margin-left: 20px;
+	    width: 100px;
+}
+

@@ -1,0 +1,1581 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::::
+Tema: Pagina error 500
+Sufijo: ele14
+Front-end: Byron Garcia
+Area: Nuevos Medios
+::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*-------------------------------------------------------------------   [ Fonts  ]   -----*/
+/*Fonts*/
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-reg-webfont.eot');
+    src: url('../fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-reg-webfont.woff') format('woff'),
+         url('../fonts/lato-reg-webfont.ttf') format('truetype'),
+         url('../fonts/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url('../fonts/librebaskerville-bold-webfont.eot');
+    src: url('../fonts/librebaskerville-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/librebaskerville-bold-webfont.woff') format('woff'),
+         url('../fonts/librebaskerville-bold-webfont.ttf') format('truetype'),
+         url('../fonts/librebaskerville-bold-webfont.svg#libre_baskervillebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../fonts/librebaskerville-regular-webfont.eot');
+    src: url('../fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('../fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('../fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*End fonts*/
+/*-------------------------------------------------------------------   [ Globales  ]   -----*/
+body{
+	background:url('../images/bg_ele14.jpg');
+}
+/*------------------------------------------::::::::::::::::::::::::::::::::::::::::::::::::::::[       Estructura     ]   :::::::::::::::::*/
+.contenedor-ele14{
+	margin: 0 auto;
+	max-width: 1000px;
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	width: 1000px;
+	border-left: 1px solid #CECCCC;
+	border-right: 1px solid #CECCCC;
+}
+.contenedor-info {
+	width: 970px;
+	padding: 10px 15px;
+}
+/*-------------------------------------------------------------------   [ Header  ]   -----*/
+
+.menu1-ele14.header-light {
+	z-index: 9999;
+	height: 40px;
+	display: none;
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.82);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.82);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    width: 1000px;
+    display: block!important;
+}
+.header-light a.btn1-ele14 {
+	height: 40px;
+	line-height: 41px;
+	padding: 0 26px;
+}
+.contenedor-superior h1 img{
+	float: left;
+}
+.contenedor-superior .logo-eltiempo {
+	float: left;
+	margin: 56px 0 0 0;
+}
+.contenedor-superior {
+	width: auto;
+	height: 77px;
+}
+.cabecera-ele14{
+	padding:0;
+	height:140px;
+	color:#fff;
+}
+.contenedor-superior .btn-ingresar {
+	float: right;
+	margin: 8px 10px 5px;
+}
+.contenedor-superior .btn-ingresar a {
+	float: left;
+	text-transform: uppercase;
+	color: #7E7E7E;
+	background: #EFEEF0;
+	border: 1px solid #C2C2C2;
+	font-size: 12px;
+	padding: 4px 10px;
+	font-family: 'robotobold';
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+}
+.iconos {
+	background: url('../images/sprite-iconos.png') no-repeat left top;
+	display: block;
+	float: left;
+	width: 22px;
+	height: 24px;
+}
+.iconos.ingresar {
+	background-position: -3px -2px;
+	width: 22px;
+	height: 24px;
+}
+.iconos.buscar {
+	background-position: -4px -31px;
+}
+.iconos.ico-articulo {
+	background-position: -4px -885px;
+	height: 40px;
+	width: 40px;
+}
+.iconos.ico-galeria {
+	background-position: -4px -926px;
+	height: 40px;
+	width: 40px;
+}
+.iconos.ico-hora {
+	background-position: 0px -861px;
+}
+.iconos.btn-facebook {
+	background-position: -4px -336px;
+	width: 25px;
+	cursor: pointer;
+}
+.iconos.btn-facebook:hover {
+	background-position: -4px -365px;
+	width: 25px;
+	cursor: pointer;
+}
+.iconos.btn-twitter {
+	background-position: -4px -391px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-twitter:hover {
+	background-position: -4px -419px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-google {
+	background-position: -4px -449px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-presidencia {
+	background-position: -4px -583px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+}
+.iconos.flecha-redes {
+	background-position: -4px -651px;
+	width: 31px;
+	cursor: pointer;
+	height: 32px;
+	float: right;
+	margin: 15px 5px 0;
+}
+.iconos.flecha-redes.art, .iconos-redes.art {
+	float: left;
+}
+.iconos.flecha-redes.art {
+	margin: 4px 0;
+}
+.iconos-redes.art {
+	margin: 6px -40px;
+}
+.iconos-redes.art ul {
+	float: left;
+}
+.iconos.btn-congreso {
+	background-position: -4px -622px;
+	width: 40px;
+	cursor: pointer;
+	height: 35px;
+}
+.iconos.btn-google:hover {
+	background-position: -4px -483px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-correo {
+	background-position: -4px -520px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.btn-correo:hover {
+	background-position: -4px -551px;
+	width: 31px;
+	cursor: pointer;
+}
+.iconos.buscar {
+	background-position: -4px -31px;
+}
+.iconos-redes {
+	 float:right;
+	 margin: 23px 0 0 0;
+	 display: none;
+}
+.buscar {
+	display: block;
+	position: absolute;
+	margin: 0 0px 0 961px;
+	top: 51px;
+}
+.buscador input {
+	float: right;
+	width: 290px;
+	background: #FFF;
+	border: 1px solid #C2C2C2;
+	padding: 7px;
+	font-size: 12px;
+	font-family: 'robotoregular';
+	margin: 0 11px;
+}
+.redes-ele14{
+	display:block;
+	left:0;
+	float:right;
+	position:relative;
+	bottom:110px;
+	width:379px;
+}
+.especial-ele14{
+	color: #959393;
+	float:left;
+	font-family:'latolight';
+}
+.ltiempo-ele14{background:url('../images/sprites_ele14.png') no-repeat -20px -292px;
+		display:inline-block;
+		vertical-align:top;
+		float:left;
+		width:134px;
+		height:30px
+
+}
+.logredes-ele14 {
+	background: #2F2F2F;
+	position: fixed;
+	z-index: 3;
+	top: 450px;
+	padding: 8px 5px;
+	width: 39px;
+	margin-left: 395px;
+}
+.logredes-ele14 a{
+	background:url('../images/sprites_ele14.png') no-repeat;
+	padding: 10px 0px;
+	margin:0;
+	display: block;
+}
+a.lface-ele14 {
+	background-position: 1px -325px;
+	height: 18px;
+	width: 36px;
+}
+a.ltwitter-ele14 {
+	background-position: -35px -324px;
+	height: 18px;
+	height: 18px;
+	width: 36px;
+}
+a.lgplus-ele14 {
+	background-position: -70px -323px;
+	height: 18px;
+	width: 36px;
+}
+a.lemail-ele14 {
+	background-position: -104px -321px;
+	height: 18px;
+	width: 36px;
+}
+a.lface-ele14:hover {
+	background-position: 1px 0;
+	height: 18px;
+	width: 36px;
+}
+a.ltwitter-ele14:hover {
+	background-position: -35px 1px;
+	height: 18px;
+	height: 18px;
+	width: 36px;
+}
+a.lgplus-ele14:hover{
+	background-position: -73px 3px;
+	height: 18px;
+	width: 36px;
+}
+a.lemail-ele14:hover{
+	background-position: -110px 4px;
+	height: 18px;
+	width: 36px;
+}
+/*-------------------------------------------------------------------   [ Posiciones  ]   -----*/
+.fechElect-ele14{
+	background:#d1cfcf;
+	color:#fff;
+	height:219px;
+	text-align:left;
+	margin:0 auto 20px auto;
+	width:939px;
+}
+.fechElect-ele14 h2{
+	background:#000;
+	font-family: 'latobold';
+	font-size:16px;
+	font-weight: normal;
+	padding:5px;
+	margin:0;
+}
+.fechElect-ele14 h3{
+	font-family:'latolight';
+	font-size:16px;
+	font-weight: normal;
+	float: right;
+	position:relative;
+	bottom:43px;
+	padding:0;
+	left:38%;
+	margin:0;
+}
+/*-------------------------------------------------------------------   [ Slider 1  ]   -----*/
+.slider1-ele14{
+	border-top: 7px solid #6E6D64;
+	height: 467px;
+	text-align: left;
+	margin: 0 auto 20px auto;
+	width: 967px;
+	border-left: 1px solid #6E6D64;
+	border-right: 1px solid #6E6D64;
+	border-bottom: 1px solid #6E6D64;
+	overflow:hidden;
+}
+.bloq-ele14{
+	background: rgba(229, 227, 223, 0.5);
+	padding: 15px;
+	margin: 10px 9px;
+	width: 500px;
+	overflow: hidden;
+}
+.twitter-ele13{
+	background: url('../images/sprites_ele14.png') no-repeat -45px -70px;
+	display: inline-block;
+	line-height: 40px;
+	margin: 10px 10px 0 0;
+	padding-left: 30px;
+	border-right: 1px solid #6C9FD3;
+	height: 24px;
+	float: left;
+}
+.votar {
+	color: #6C9FD3;
+	font-size: 14px;
+	font-family: 'latoregular';
+	padding: 10px 0 0 0;
+	float: left;
+	display: block;
+	line-height: 42px;
+}
+.votar a{
+	color: #6C9FD3;
+}
+.bloq-ele14 h2 {
+    padding:0;
+    margin:0;
+    line-height: 25px;
+}
+.bloq-ele14 h2 a{
+    color: #000;
+    font-family: 'libre_baskervillebold';
+    font-size: 22px;
+    padding: 5px 0 5px 0;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+}
+.bloq-ele14.sabor-texto{
+	padding: 19px 30px;
+	width: 465px;
+}
+.bloq-ele14.sabor-texto h2 a {
+	font-size: 35px;
+	line-height: 35px;
+	border-top: 3px solid #3a3a3a;
+	margin: 62px 0 10px;
+	padding: 15px 0 0;
+}
+.bloq-ele14 h2 a:hover{
+    text-decoration:underline;
+}
+.bloq-ele14 p{
+    color:#3a3a3a;
+    font-family:'robotoregular';
+    padding:0;
+    margin:0
+}
+.bloq-ele14.sabor-texto p {
+	font-size: 20px;
+	padding: 0 0 73px 0;
+}
+.pos1-ele14{
+	padding:0;
+}
+.pos2-ele14{
+}
+/*-------------------------------------------------------------------   [ Navegación  ]   -----*/
+.logo-ele14{
+	position:relative;
+	left:411px;
+	top:-60px;
+	width:161px;
+	z-index:2
+}
+.menu1-ele14{
+	margin:0;
+	height: 33px;
+	background: #4B4B4B;
+}
+.nav2-ele14{
+	margin:0;
+	padding: 0;
+}
+.nav2-ele14 li{
+	display:inline-block;
+	border-right: 1px solid #868686;
+	float: left;
+}
+.nav2-ele14 li:last-child{
+	border: none;
+}
+.nav2-ele14 a{
+	margin: 0;
+}
+a.btn1-ele14.logo-light {
+	padding: 0;
+}
+/*-------------------------------------------------------------------   [ Botones  ]   -----*/
+a.btn1-ele14{
+	background: #3a3a3a;
+	color:#fff;
+	display:block;
+	font-family: 'robotobold';
+	-webkit-font-smoothing: antialiased;
+	font-size:13px;
+	height: 33px;
+	line-height: 35px;
+	padding: 0 38px;
+	margin:0;
+	font-weight: normal;
+}
+a.btn1-ele14.cambio-color{
+	background: #4b4b4b;
+}
+.social {
+	padding: 30px;
+}
+a.btn1-ele14:hover{
+	text-decoration: underline;
+}
+a.btn2-ele14{
+	background: #000;
+	color:#fff;
+	display:block;
+	font-family: 'Open Sans';
+	font-size:0.8em;
+	height:54px;
+	line-height:54px;
+	padding:0 10px;
+	margin:0
+}
+.pol1{
+	display:block;
+	cursor:none;
+	width:180px
+}
+/*-------------------------------------------------------------------   [ Imagenes  ]   -----*/
+
+/*-------------------------------------------------------------------   [ Parrafos  ]   -----*/
+.parr1-ele14{
+	color:#374347;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+	line-height:1.5em;
+	text-align:left;
+	padding:0.5em;
+}
+.contenedor-tabs {
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid #EBEAEA;
+	padding: 16px;
+	width: 936px;
+}
+.btn-noticias {
+	background: #3A3A3A;
+	color: #FFF;
+	border-top: 2px solid #6E6D64;
+	padding: 8px 21px;
+	font-family: 'latoregular';
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 0 0 18px 0;
+	width: 257px;
+	display: block;
+	font-weight: normal;
+}
+.btn-noticias:hover{
+	color: #e5ad2e;
+}
+.contenedor-tabs .content-noticias {
+	clear: both;
+	overflow: hidden;
+}
+.content-noticias .col-1 {
+	width: 300px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+.content-noticias .col-2 {
+	width: 300px;
+	float: left;
+}
+.content-noticias h2 {
+	font-family: 'libre_baskervillebold';
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	margin: 4px 0;
+	line-height: 22px;
+}
+.content-noticias h2 a{
+	color: #3a3a3a;
+}
+.content-noticias h2 a:hover{
+	text-decoration: underline;
+}
+.content-noticias p {
+	font-family: 'latoregular';
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	margin: 5px 0;
+	color: #000000;
+}
+.content-noticias .articulos {
+	border-bottom: 1px solid #C7C8C9;
+	overflow: hidden;
+	padding: 0 0 8px 0;
+	margin: 0 0 10px 0;
+}
+.content-noticias .articulos img {
+	float: left;
+	margin: 4px 10px 10px 0;
+}
+.content-noticias .articulos.sabor-short h2 {
+	font-size: 19px;
+	line-height: 22px;
+}
+.content-noticias .articulos.sabor-short.ultimo {
+	border: none;
+}
+.pauta {
+	margin: 20px 0;
+}
+.content-noticias .ver-mas {
+	background: #E4E4E4;
+	font-family: 'robotobold';
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	color: #3A3A3A;
+	padding: 10px;
+	font-size: 14px;
+}
+.content-noticias .ver-mas:hover{
+	text-decoration: underline;
+}
+.mod-candidatos-congreso {
+	background: url('../images/fondo-congreso.jpg') repeat top;
+	margin: 14px 0;
+}
+.mod-candidatos-congreso h2 {
+	background: #3A3A3A;
+	border-top: 2px solid #6E6D64;
+	color: #FFF;
+	font-size: 16px;
+	font-family: 'latoregular';
+	text-transform: uppercase;
+	padding: 7px 26px;
+}
+.mod-candidatos-congreso p {
+	color: #FFF;
+	font-family: 'latoregular';
+}
+.mod-candidatos-congreso .content-congreso {
+	padding: 10px 20px;
+	overflow: hidden;
+}
+.mod-candidatos-congreso .col1.senado {
+	float: left;
+	margin: 20px 10px 10px 100px;
+	width: 280px;
+}
+.mod-candidatos-congreso .col2.senado {
+	float: left;
+	margin: 20px 12px 10px 138px;
+	width: 280px;
+}
+.senado .icono-senado {
+	margin: 0 auto;
+	text-align: center;
+}
+.senado select {
+	background: #FFF;
+	border: none;
+	font-size: 16px;
+	width: 270px;
+	margin: 36px 0;
+	padding: 10px;
+	color: #777;
+	border-radius: 0;
+	height: 40px;
+}
+.senado .btn-buscar {
+	background: #777;
+	color: #FFF;
+	font-family: 'robotoregular';
+	padding: 10px 30px;
+	text-align: center;
+	margin: 0 59px 27px 63px;
+	font-size: 14px;
+	display: block;
+}
+.senado .btn-buscar:hover {
+	color: #e5ad2e;
+	background: #494949;
+}
+.servicios-electorales .3-col {
+	overflow: hidden;
+	clear: both;
+}
+.servicios-electorales .modulo-servicios {
+	float: left;
+	background: #FFF;
+	border-top: 2px solid #6E6D64;
+	width: 242px;
+	padding: 0 35px 13px 35px;
+	overflow: hidden;
+	display: block;
+	height: 356px;
+	margin: 0 15px 0 0;
+	position: relative;
+}
+.servicios-electorales .modulo-servicios img {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.servicios-electorales .modulo-servicios h2 {
+	text-align: center;
+	font-size: 17px;
+	font-family:'robotobold';
+	margin: 18px 0 20px 0;
+	font-weight: normal;
+}
+.servicios-electorales .modulo-servicios p {
+	font-family: 'latoregular';
+	font-size: 16px;
+}
+.servicios-electorales .modulo-servicios .btn-servicios {
+	background: #777;
+	color: #FFF;
+	font-family: 'latoregular';
+	text-align: center;
+	padding: 10px 15px;
+	margin: 0 2px;
+	position: absolute;
+	bottom: 27px;
+	width: 211px;
+	font-size: 14px;
+}
+.servicios-electorales .modulo-servicios .btn-servicios:hover{
+	color: #e5ad2e;
+	background: #494949;
+}
+.servicios-electorales .tres-col {
+	clear: both;
+	overflow: hidden;
+}
+.servicios-electorales .modulo-servicios.cuentas-claras {
+	margin: 0;
+}
+.fotos-videos-graficos .slider-fotos {
+	width: 964px;
+	overflow: hidden;
+	border: 1px solid #dbdbdb;
+	height: 326px;
+}
+.jcarousel-fotos .bloq-ele14 {
+	width: 280px;
+	background: none;
+	margin: 10px 4px;
+}
+.jcarousel-fotos .bloq-ele14 h2 a {
+	font-size: 18px;
+}
+.mod-twitter {
+	clear: both;
+}
+.mod-twitter .tweets {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+/*-------------------------------------------------------------------   [ Footer  ]   -----*/
+.pie-ele14{
+	background: #000;
+	padding: 0px 20px 10px 20px;
+	margin:0;
+	border-top: 2px solid #6e6d64;
+}
+.content-footer img {
+	float: left;
+}
+.content-footer {
+	font-family: 'latoregular';
+	padding: 18px 0 0px;
+}
+.content-footer .terminos-condiciones {
+	float: right;
+	color: #3990aa;
+	font-size: 14px;
+}
+.content-footer .terminos-condiciones:hover {
+	text-decoration: underline;
+}
+.content-footer h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 26px 0 0 0;
+	margin: 0;
+	line-height: 0;
+}
+.content-footer p {
+	font-size: 13px;
+	color: #FFF;
+}
+
+/* Result Senado */
+
+.mod-candidatos-congreso .result_senado{
+	display: none;
+	padding: 20px 30px;
+}
+.mod-candidatos-congreso .result_senado .breadcrum{
+	margin: 0 0 20px;
+	overflow: hidden;
+	padding: 0;
+}
+.mod-candidatos-congreso .result_senado .breadcrum li{
+	float: left;
+	margin: 0 5px 0 0;
+}
+.mod-candidatos-congreso .result_senado .breadcrum li a, .mod-candidatos-congreso .result_senado .breadcrum li span{
+	color: #FFF;
+	font-family: 'latoregular';
+}
+.mod-candidatos-congreso .result_senado .breadcrum li a:hover{
+	color: #999;
+}
+.mod-candidatos-congreso .result_senado .breadcrum li p{
+	background: #e4e4e4;
+	color: #3a3a3a;
+	margin: 0;
+	padding: 0 5px 2px;
+}
+.mod-candidatos-congreso .result_senado .lista_senado h3{
+	background: url(../images/sprite-iconos.png) no-repeat left -835px;
+	color: #FFF;
+	font-size: 16px;
+	font-family: 'latoregular';
+	font-weight: normal;
+	height: 24px;
+	margin: 1em 0 1em 40px;
+	padding: 0 0 0 35px;
+	text-transform: uppercase;
+}
+.mod-candidatos-congreso .result_senado .lista_senado ul{
+	background: #e2e2e1;
+	height: 252px;
+	margin: 0;
+	overflow-y:scroll;
+	padding: 12px 40px;
+	width: 796px;
+}
+.mod-candidatos-congreso .result_senado .lista_senado ul li{
+	float: left;
+	margin: 4px 0;
+	width: 50%;
+}
+.mod-candidatos-congreso .result_senado .lista_senado p{
+	color: #000;
+}
+.mod-candidatos-congreso .result_senado .lista_senado strong{
+	margin: 0 5px 0 0;
+}
+
+/* Result Cámara Depto */
+
+.mod-candidatos-congreso .result_camara_depto{
+	display: none;
+	padding: 10px;
+}
+.mod-candidatos-congreso .result_camara_depto .breadcrum{
+	margin: 0 0 20px;
+	overflow: hidden;
+	padding: 0;
+}
+.mod-candidatos-congreso .result_camara_depto .breadcrum li{
+	float: left;
+	margin: 0 5px 0 0;
+}
+.mod-candidatos-congreso .result_camara_depto .breadcrum li a, .mod-candidatos-congreso .result_camara_depto .breadcrum li span{
+	color: #FFF;
+	font-family: 'latoregular';
+}
+.mod-candidatos-congreso .result_camara_depto .breadcrum li a:hover{
+	color: #999;
+}
+.mod-candidatos-congreso .result_camara_depto .breadcrum li p{
+	background: #e4e4e4;
+	color: #3a3a3a;
+	margin: 0;
+	padding: 0 5px 2px;
+}
+/* Slide Partidos */
+.mod-candidatos-congreso .result_camara_depto .slider-partidos{
+	height: 346px;
+	overflow: hidden;
+	width: 892px;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos .jcarousel.partidos{
+	position: relative;
+	overflow: hidden;
+	height: 326px;
+	margin: 0;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos .jcarousel.partidos .list_partidos{
+	margin: 0;
+	width: 220px;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos ul li a{
+	display: block;
+	margin: 10px;
+	width: 90px;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos ul li a figure{
+	background: #ccc;
+	border-top: 2px solid #e5ad2e;
+	height: 90px;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos ul li a figure img{
+	filter: alpha (opacity=50);
+	opacity: 0.5;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos ul li a figure img:hover{
+	filter: alpha (opacity=100);
+	opacity: 1;
+}
+.mod-candidatos-congreso .result_camara_depto .slider-partidos ul li a p{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Result Cámara */
+
+.mod-candidatos-congreso .result_camara{
+	display: none;
+	padding: 10px 12px;
+}
+.mod-candidatos-congreso .result_camara .breadcrum{
+	margin: 0 0 20px;
+	overflow: hidden;
+	padding: 0;
+}
+.mod-candidatos-congreso .result_camara .breadcrum li{
+	float: left;
+	margin: 0 5px 0 0;
+}
+.mod-candidatos-congreso .result_camara .breadcrum li a, .mod-candidatos-congreso .result_camara .breadcrum li span{
+	color: #FFF;
+	font-family: 'latoregular';
+}
+.mod-candidatos-congreso .result_camara .breadcrum li a:hover{
+	color: #999;
+}
+.mod-candidatos-congreso .result_camara .breadcrum li p{
+	background: #e4e4e4;
+	color: #3a3a3a;
+	margin: 0;
+	padding: 0 5px 2px;
+}
+.mod-candidatos-congreso .result_camara .lista_camara h3{
+	background: url(../images/sprite-iconos.png) no-repeat left -835px;
+	color: #FFF;
+	font-size: 16px;
+	font-family: 'latoregular';
+	font-weight: normal;
+	height: 24px;
+	margin: 1em 0 1em 40px;
+	padding: 0 0 0 35px;
+	text-transform: uppercase;
+}
+.mod-candidatos-congreso .result_camara .lista_camara ul{
+	background: #e2e2e1;
+	height: 252px;
+	margin: 0;
+	overflow-y:scroll;
+	padding: 12px 40px;
+	width: 796px;
+}
+.mod-candidatos-congreso .result_camara .lista_camara ul li{
+	float: left;
+	margin: 4px 0;
+	width: 50%;
+}
+.mod-candidatos-congreso .result_camara .lista_camara p{
+	color: #000;
+}
+.mod-candidatos-congreso .result_camara .lista_camara strong{
+	margin: 0 5px 0 0;
+}
+
+.mod-candidatos-congreso .listado-senado-camara {
+	display: block;
+}
+.content-emergencia {
+	border: 1px solid #2f2f2f;
+	padding: 15px;
+	margin: 0 0 20px 0;
+}
+.tiempo-articulo {
+	font-size: 13px;
+	font-family:'robotoregular';
+	color: #6f6d6d;
+}
+time .tiempo-articulo {
+	text-align: left;
+	padding: 3px 0;
+	display: block;
+}
+.top-article {
+	text-align: left;
+}
+.content-emergencia h2 a {
+	font-family:'libre_baskervillebold';
+	font-size: 36px;
+	color: #000;
+}
+.content-emergencia h2 {
+	margin: 10px 0 4px 0;
+}
+.content-emergencia h2 a:hover {
+	text-decoration: underline;
+}
+.content-emergencia p {
+	font-family:'robotoregular';
+	font-size: 23px;
+	color: #000;
+	font-weight: normal;
+	margin: 2px 0 10px 0;
+}
+.content-emergencia .sub-text {
+	font-size: 16px;
+	color: #4b4b4b;
+}
+.content-emergencia .content-info-emer {
+	position: absolute;
+	margin: -125px 0;
+	width: 941px;
+}
+.content-emergencia .iconos-compartir.emer {
+	float: right;
+}
+.content-emergencia .flecha-redes.emergencia {
+	background: #19160F url('../images/sprite-iconos.png') no-repeat left top;
+	background-position: 1px -652px;
+	height: 35px;
+	width: 34px;
+	float: right;
+}
+.content-emergencia .lista-relacionados {
+	background: rgba(0, 0, 0, 0.61);
+	overflow: hidden;
+	width: 937px;
+	font-family:'robotoregular';
+}
+.content-emergencia .lista-relacionados li {
+	float: left;
+	width: 284px;
+	border-right: 1px solid #FFF;
+	padding: 10px;
+	margin: 3px 10px 0 0;
+	display: block;
+}
+.content-emergencia .lista-relacionados li p {
+	font-size: 13px;
+	color: #FFF;
+	font-weight: normal;
+}
+.content-emergencia .lista-relacionados ul {
+	margin: 0;
+	padding: 0;
+}
+.content-emergencia .lista-relacionados li a:hover {
+	text-decoration: underline;
+	color: #FFF;
+}
+.content-emergencia .lista-relacionados li:last-child {
+	border: none;
+	margin: 0;
+}
+.content-emergencia .iconos-redes {
+	float: right;
+	margin: 16px 4px 0 0;
+	background: rgba(219, 219, 219, 0.73);
+	padding: 5px 0px 5px 5px;
+	width: 162px;
+
+}
+
+
+/* Page 404 */
+.column.last, .columns.last {
+  float: right;
+  margin: 0; }
+
+.daily-topics {
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
+  position: relative;
+  margin-bottom: 10px;
+  height: 30px;
+  padding: 6px 115px 0px 20px;
+  overflow: hidden; }
+  /* line 363, ../../../scss/components/_module-header.scss */
+  .daily-topics li {
+    display: inline-block;
+    font-family: "roboto_slabregular";
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin-right: 30px; }
+    /* line 368, ../../../scss/components/_module-header.scss */
+    .daily-topics li:first-child {
+      font-family: "cabinbold";
+      border-right: 1px dotted black;
+      font-size: 13px;
+      font-size: 0.8125rem;
+      padding-right: 20px; }
+      /* line 373, ../../../scss/components/_module-header.scss */
+      .daily-topics li:first-child a {
+        color: #0e65a5; }
+    /* line 377, ../../../scss/components/_module-header.scss */
+    .daily-topics li a {
+      color: #666666; }
+  /* line 381, ../../../scss/components/_module-header.scss */
+  .daily-topics .more-topics {
+    font-family: "cabinbold";
+    font-size: 11px;
+    font-size: 0.6875rem;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    margin-right: 15px; }
+    /* line 388, ../../../scss/components/_module-header.scss */
+    .daily-topics .more-topics a {
+      color: #0e65a5; }
+
+/*@end daily-topics*/
+/* line 396, ../../../scss/components/_module-header.scss */
+.ui-helper-hidden-accessible {
+  display: none; }
+
+.wrap_container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0px 10px 30px 10px; }
+
+.row {
+  *zoom: 1; }
+  /* line 32, ../../../scss/scss-comon/_mixins.scss */
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  /* line 39, ../../../scss/scss-comon/_mixins.scss */
+  .row:after {
+    clear: both; }
+
+/* @group Error 404 */
+/* line 2, ../../../scss/components/_404-error.scss */
+.error-404 {
+  margin: 30px auto 0;
+  text-align: center; }
+  /* line 5, ../../../scss/components/_404-error.scss */
+  .error-404 h1 {
+    text-transform: uppercase;
+    font-family: "roboto_slabbold";
+    font-size: 28px;
+    font-size: 1.75rem;
+    color: #393939; }
+  /* line 11, ../../../scss/components/_404-error.scss */
+  .error-404 h2 {
+    font-family: "roboto_slabregular";
+    font-size: 15px;
+    font-size: 0.9375rem;
+    color: #393939; }
+  /* line 16, ../../../scss/components/_404-error.scss */
+  .error-404 .img-error {
+    border: 0;
+    display: block;
+    margin: 0 auto 20px; }
+  /* line 21, ../../../scss/components/_404-error.scss */
+  .error-404 .btn-volver {
+    background: #2c2c2c;
+    text-transform: uppercase;
+    font-family: "cabinbold";
+    display: table;
+    border: 1px solid #DDD;
+    padding: 12px 20px 10px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #fff; }
+    /* line 32, ../../../scss/components/_404-error.scss */
+    .error-404 .btn-volver:hover {
+     color: #faa200; }
+
+/* @group Mapa del Sitio*/
+/* line 41, ../../../scss/components/_404-error.scss */
+.mapa-sitio h1 {
+  font-family: "roboto_slabbold";
+  color: #0e65a5;
+  font-size: 24px;
+  font-size: 1.5rem;
+  border-bottom: 1px dotted #DDD;
+  padding-bottom: 10px; }
+/* line 48, ../../../scss/components/_404-error.scss */
+.mapa-sitio .columna {
+  width: 32%;
+  float: left;
+  margin: 2% 2% 1% 0; }
+  /* line 52, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna.last {
+    margin: 2% 0 0 0; }
+  /* line 55, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna h3 {
+    font-size: 0.95em;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 0.4em;
+    text-transform: none; }
+  /* line 62, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna h5 {
+    font-size: 0.8em;
+    margin: 0;
+    text-transform: uppercase; }
+    /* line 66, ../../../scss/components/_404-error.scss */
+    .mapa-sitio .columna h5 a {
+      padding: 10px;
+      display: block;
+      margin: 0 0 10px 0; }
+  /* line 72, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna .btn-404 {
+    background: #f9f9f9; }
+    /* line 74, ../../../scss/components/_404-error.scss */
+    .mapa-sitio .columna .btn-404 a {
+      font-family: 'lato-reg-webfont';
+      color: #393939;
+      text-transform: uppercase;
+      border: 1px solid #ddd; }
+    /* line 80, ../../../scss/components/_404-error.scss */
+    .mapa-sitio .columna .btn-404:hover {
+      background: #f8a200; }
+      /* line 82, ../../../scss/components/_404-error.scss */
+      .mapa-sitio .columna .btn-404:hover a {
+        color: white; }
+  /* line 88, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna section ul {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px; }
+    /* line 92, ../../../scss/components/_404-error.scss */
+    .mapa-sitio .columna section ul li {
+      margin: 10px 0; }
+      /* line 95, ../../../scss/components/_404-error.scss */
+      .mapa-sitio .columna section ul li h3 a {
+        font-family: 'cabinregular';
+        color: #666666; }
+      /* line 99, ../../../scss/components/_404-error.scss */
+      .mapa-sitio .columna section ul li h3 a:hover {
+        color: #0e65a5; }
+  /* line 106, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .columna .titulo {
+    font-family: "cabinbold";
+    color: #393939;
+    font-size: 18px;
+    font-size: 1.125rem;
+    padding: 10px;
+    margin: 0 0 2px 0;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+/* line 117, ../../../scss/components/_404-error.scss */
+.mapa-sitio .buscador_mapa {
+  clear: both;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-top: 1px dotted #DDD;
+  border-bottom: 1px dotted #DDD; }
+  /* line 124, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .buscador_mapa form {
+    display: inline-block;
+    width: 54%;
+    margin-left: 35px; }
+  /* line 129, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .buscador_mapa p {
+    font-family: "roboto_slabregular";
+    margin: 5px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 136, ../../../scss/components/_404-error.scss */
+  .mapa-sitio .buscador_mapa input[type="text"] {
+    background: #f9f9f9;
+    border: 1px solid #DDD;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block; }
+
+/* Scroll top */
+/* line 225, ../../../scss/etcss/_generales.scss */
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: url(../../images/icon_top.png) no-repeat;
+  z-index: 200; }
+
+/* @group Footer */
+/* line 2, ../../../scss/components/_module-footer.scss */
+.container_footer {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0px; }
+
+/* line 9, ../../../scss/components/_module-footer.scss */
+.contenidoFooter section {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: normal;
+  line-height: 1;
+  font-family: "cabinregular";
+  width: 33.3%;
+  float: left;
+  color: #666666;
+  position: relative; }
+  /* line 16, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section a {
+    color: #00aef5;
+    text-transform: uppercase; }
+    /* line 19, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter section a:hover {
+      color: #666666; }
+  /* line 23, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section h4 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1;
+    font-family: "cabinbold";
+    text-transform: uppercase;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+    padding: 14px 0 14px 20px;
+    position: relative;
+    text-align: left;
+    /**&:after{
+      content: "\e052";
+      @extend %et-icon;
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      @include rem(22);
+    }
+    &.activo{
+      &:after{
+        content: "\e051";
+        color: $white;
+      }
+    }
+    &:hover,
+    &.activo{
+      color: $white;
+      background: $blue-ceet;
+      &:before {
+        border-bottom: 2px solid $blue-ceet;
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        z-index: 10000;
+        width: 100%;
+        left: 0;
+      }
+    }***/ }
+  /* line 63, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section:nth-child(3) h4 {
+    border-right: 0; }
+  /* line 67, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section li {
+    margin-bottom: 15px; }
+  /* line 70, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section:after {
+    content: "";
+    border-right: 1px solid #CACACA;
+    top: 55px;
+    bottom: 10px;
+    position: absolute;
+    left: 0; }
+  /* line 78, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section:first-child:after {
+    border: 0; }
+  /* line 81, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section .container-box {
+    display: none;
+    min-height: 172px; }
+  /* line 86, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter section.activo .container-box {
+    display: block; }
+/* line 92, ../../../scss/components/_module-footer.scss */
+.contenidoFooter .secciones ul {
+  width: 44%;
+  display: inline-block;
+  padding: 0 0 0 20px;
+  vertical-align: top;
+  margin: 25px 0; }
+/* line 102, ../../../scss/components/_module-footer.scss */
+.contenidoFooter .ayuda ul,
+.contenidoFooter .servicios ul {
+  padding: 0 0 0 20px;
+  vertical-align: top;
+  margin: 25px 0; }
+/* line 109, ../../../scss/components/_module-footer.scss */
+.contenidoFooter .ayuda .contact-info {
+  padding: 0 0 0 20px; }
+  /* line 111, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .ayuda .contact-info h3 {
+    margin-bottom: 20px; }
+/* line 116, ../../../scss/components/_module-footer.scss */
+.contenidoFooter .nivel {
+  width: 100%;
+  display: block;
+  clear: both; }
+  /* line 120, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel .btn-tab {
+    width: 33.33%;
+    float: left;
+    color: #666666;
+    background: #f3f3f3;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    border-right: 1px solid #cacaca; }
+    /* line 128, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .btn-tab h3 {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: normal;
+      line-height: 1;
+      font-family: "cabinbold";
+      text-transform: uppercase;
+      position: relative;
+      padding: 14px 0 14px 20px;
+      text-align: left; }
+      /* line 135, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .btn-tab h3 a {
+        color: #666666;
+        text-transform: uppercase; }
+      /* line 139, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .btn-tab h3:after {
+        content: "\e052";
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        font-size: 22px;
+        font-size: 1.375rem; }
+      /* line 148, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .btn-tab h3.activo:after {
+        content: "\e051";
+        color: white; }
+      /* line 154, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .btn-tab h3:hover, .contenidoFooter .nivel .btn-tab h3.activo {
+        color: white;
+        background: #0e65a5; }
+        /* line 156, ../../../scss/components/_module-footer.scss */
+        .contenidoFooter .nivel .btn-tab h3:hover a, .contenidoFooter .nivel .btn-tab h3.activo a {
+          color: white; }
+        /* line 160, ../../../scss/components/_module-footer.scss */
+        .contenidoFooter .nivel .btn-tab h3:hover:before, .contenidoFooter .nivel .btn-tab h3.activo:before {
+          border-bottom: 2px solid #0e65a5;
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          z-index: 10000;
+          width: 0; }
+      /* line 170, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .btn-tab h3.inactivo:after, .contenidoFooter .nivel .btn-tab h3.inactivo a {
+        color: #c9c9c9; }
+    /* line 176, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .btn-tab:nth-child(3) {
+      border-right: 0; }
+  /* line 183, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel .elTiempo h3.activo:before, .contenidoFooter .nivel .Secciones h3.activo:before {
+    left: 0;
+    width: 960px; }
+  /* line 193, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel .revistas h3.activo:before, .contenidoFooter .nivel .Ayuda h3.activo:before {
+    left: -319px;
+    width: 960px; }
+  /* line 203, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel .nuestrosPortales h3.activo:before, .contenidoFooter .nivel .Servicios h3.activo:before {
+    left: -640px;
+    width: 960px; }
+  /* line 210, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel .desplegable-tab {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    font-weight: normal;
+    line-height: 1;
+    font-family: "cabinregular"; }
+    /* line 213, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab a {
+      color: #00aef5;
+      text-transform: uppercase; }
+      /* line 216, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab a:hover {
+        color: #0e65a5; }
+    /* line 220, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab ul {
+      display: inline-block;
+      width: 33.3%;
+      float: left;
+      padding: 0 0 0 20px;
+      margin: 30px 0; }
+      /* line 226, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab ul li {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; }
+        /* line 230, ../../../scss/components/_module-footer.scss */
+        .contenidoFooter .nivel .desplegable-tab ul li:last-child {
+          margin-bottom: 0; }
+    /* line 235, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab .llamanos {
+      color: #666666;
+      text-transform: none; }
+      /* line 238, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab .llamanos li {
+        margin-bottom: 5px; }
+    /* line 242, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab .link_portal_descripcion {
+      display: inline-block; }
+      /* line 244, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab .link_portal_descripcion h3 a {
+        text-transform: none; }
+    /* line 248, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab .link_portal {
+      display: inline-block;
+      text-transform: uppercase; }
+      /* line 252, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab .link_portal .ico,
+      .contenidoFooter .nivel .desplegable-tab .link_portal a {
+        vertical-align: middle;
+        margin-right: 10px; }
+      /* line 257, ../../../scss/components/_module-footer.scss */
+      .contenidoFooter .nivel .desplegable-tab .link_portal .ico img {
+        float: left; }
+    /* line 262, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel .desplegable-tab.oculto {
+      display: none; }
+  /* line 269, ../../../scss/components/_module-footer.scss */
+  .contenidoFooter .nivel.nivel-2 .desplegable-tab .link_portal h3 {
+    color: #666666; }
+    /* line 271, ../../../scss/components/_module-footer.scss */
+    .contenidoFooter .nivel.nivel-2 .desplegable-tab .link_portal h3:after {
+      content: '·';
+      font-size: 20px;
+      font-size: 1.25rem;
+      position: relative;
+      top: 2px;
+      margin: 0 1px 0 3px;
+      display: inline-block;
+      color: #666666;
+      line-height: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

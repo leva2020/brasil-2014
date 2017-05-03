@@ -1,0 +1,15 @@
+<script>
+    <!--
+    var s_pageName="<?php echo $this->pageName; ?> - ELTIEMPOELECCIONES2014 - " + document.domain;
+    var s_channel = "<?php echo $this->channel; ?>";
+    var s_prop2 = "<?php echo $this->prop2; ?>";
+    //var s_prop3 = "<?php echo $this->prop3; ?>";
+    var s_prop4 = "<?php echo $this->prop4; ?>";
+    var s_prop11 = 'Normal';
+    var s_prop14 = "<?php echo $this->prop14; ?>";
+    var s_prop24 = "<?php echo $this->prop24; ?>";
+    var s_prop26 = "<?php echo $this->prop26; ?>";
+    var s_prop13 = "";
+    var s_hier1 = '';
+    -->
+</script>
